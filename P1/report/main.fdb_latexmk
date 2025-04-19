@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1745098218.36466 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex" "main.pdf" "main" 1745098219.03371 0
+["pdflatex"] 1745098643.26748 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex" "main.pdf" "main" 1745098643.89198 0
   "/etc/texmf/web2c/texmf.cnf" 1728302084.72637 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex" 1745098217.53587 2806 25385110fae527fd5b730a51a1642127 ""
+  "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex" 1745098643.0608 2818 028129b6d421f3b12b0cf9413dd7143c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -98,10 +98,10 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1732746323 6832104 b6b496d54b05523112511435600aeee5 ""
   "images/logos/INF.png" 1745096873.59264 15010 1abd8f9e244e530d3a1ab0c922b4a613 ""
   "images/logos/UFRGS.png" 1745096873.62364 88725 6440c8a13158bb4b7d2155d90ff2ae99 ""
-  "main.aux" 1745098218.9827 1654 6f54bbf289699a9cebca011044510747 "pdflatex"
-  "main.out" 1745098218.9837 1957 d799301e855038238018700251ec855c "pdflatex"
-  "main.tex" 1745098217.53587 2806 25385110fae527fd5b730a51a1642127 ""
-  "main.toc" 1745098218.9847 994 be7a63a841e9169942f84ac9dcea7560 "pdflatex"
+  "main.aux" 1745098643.84374 1654 6f54bbf289699a9cebca011044510747 "pdflatex"
+  "main.out" 1745098643.84474 1957 d799301e855038238018700251ec855c "pdflatex"
+  "main.tex" 1745098643.0608 2818 028129b6d421f3b12b0cf9413dd7143c ""
+  "main.toc" 1745098643.84474 994 be7a63a841e9169942f84ac9dcea7560 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
