@@ -1,0 +1,94 @@
+\documentclass{report}
+
+% Language setting
+\usepackage[main=portuguese, english]{babel}
+\usepackage{csquotes}
+
+% Set page size and margins
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.5cm]{geometry}
+
+% Useful packages
+\usepackage{ulem}
+\usepackage{parskip}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{array}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{subfigure}
+\usepackage{titlesec}
+\usepackage[colorlinks=false, allbordercolors={0 0 0}, pdfborderstyle={/S/U/W 0.25}]{hyperref}
+\usepackage[hypcap=true]{caption}
+\usepackage{enumitem}
+\usepackage{outlines}
+\usepackage{soul}
+\usepackage{ragged2e}
+
+% Set section numbering from 1.1
+\renewcommand{\thesection}{\arabic{section}.1}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\let\oldsection\section
+\renewcommand\section{\clearpage\oldsection}
+
+% Change section formatting
+\titleformat{\section}
+  {\fontsize{12}{15}\selectfont\bfseries}{\thesection}{1em}{}
+
+% Configure indentations
+\setlength{\parindent}{1.5cm}
+
+\begin{document}
+
+    \begin{titlepage}
+        \centering
+        
+        \LARGE {Universidade Federal do Rio Grande do Sul \\ Instituto de Informática}
+    
+        \begin{figure}[h!]
+            \centering
+            \subfigure
+            {\includegraphics[width=0.35\linewidth]{images/logos/UFRGS.png}}
+            \hspace{1cm}
+            \subfigure
+            {\includegraphics[width=0.35\linewidth]{images/logos/INF.png}}
+        \end{figure}
+    
+        \LARGE {INF01113 \\ Organização de Computadores B}
+        
+        \vfill
+        {\noindent\hrulefill \\
+        \bfseries \Huge{Trabalho Prático 1} \\ \LARGE{Implementação de Instruções no MIPS} \\
+        \noindent\hrulefill}
+        
+        \vfill
+        {\LARGE Bruno Alexandre Hofstetter Bourscheid (00550177) \\ Fernando Longhi de Andrade (XXXXXXX) \\ Luiz Augusto Ponzoni Schmidt (XXXXXXX) \\ Miguel Dutra Fontes Guerra (00342573) \\ Pedro Lubaszewski Lima (00341810) \\~\\ Turma B}
+    
+        \vfill
+        {\LARGE 19 de abril de 2025}
+        
+    \end{titlepage}
+
+    \renewcommand{\contentsname}{Sumário}
+    \tableofcontents
+    \clearpage
+    \addtocontents{toc}{\protect\thispagestyle{empty}}
+
+    \section{MIPS Singlecycle}
+        \subsection{Modificações no Bloco Operativo}
+        \subsection{Modificações no Bloco de Controle}
+
+    \section{MIPS Multicycle}
+        \subsection{Modificações no Bloco Operativo}
+        \subsection{Modificações no Bloco de Controle}
+        \subsection{Estados de Controle}
+
+    \section{MIPS Pipelined}
+        \subsection{Modificações no Bloco Operativo}
+        \subsection{Modificações no Bloco de Controle}
+
+\end{document}
