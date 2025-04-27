@@ -1,0 +1,50 @@
+Mudanças:
+
+Adicionada operação multiplicação na ALU;
+Adicionada saída dos bits superiores da multiplicação na ALU;
+Adicionada saída IsMULT da ALU;
+Adicionado controle de RegWrite usando IsMULT;
+Adicionados registradores especiais LO e HI;
+Atualizada a flag 0 na ALU;
+Adicionado MUX para o JR;
+Adicionado comparador para BLTZ e SLTIU;
+Adicionado MUX para o BLTZ;
+Adicionado controle de branch para BLTZ; (AND e OR)
+Adicionado sign extend para o BLTZ e SLTIU;
+Adicionado splitter para LB;
+Adicionado sign extend para LB;
+Adicionado MUX para LB;
+Adicionado MUX para SLTIU;
+Atualizado o ALU Control para as instruções de MULT e JR;
+Atualizado o splitter para a Data Memory;
+Atualizado o Register Bank para poder usar o Reg0;
+
+ROM para JR: 0x0241 end 0x00;
+ROM para BLTZ: 0x0404 end 0x01;
+ROM para LB: 0x0B18 end 0x20;
+ROM para MULT: 0x0241 end 0x00;
+ROM para SLTIU: 0x1300 end 0x0B;
+
+Adicionados os sinais de controle: LB, SLTIU, BLTZ, JR.
+
+Testes:
+
+JR: PC <- Reg0
+8C400000; Reg0 <- Mem[0] (3)
+00000008; PC <- Reg0 (3)
+
+BLTZ: if Reg0 < 0 then PC += IMED*4 + 4 (IMED = 10)
+8C400000; Reg0 <- Mem[0] (-1 (0xFFFFFFFF))
+0400000A; PC += IMED*4 + 4 (PC = 48)
+
+LB: Reg0 <- Mem[Reg1]
+8C410000; Reg1 <- Mem[0] (1)
+80200000; Reg0 <- Mem[Reg1] (Mem[1] = 4)
+
+MULT: HI, LO <- Reg0 * Reg1
+8C400000; Reg0 <- Mem[0] (3)
+8C410001; Reg1 <- Mem[1] (4)
+00010018; HI, LO <- Reg0 * Reg1 (HI = 0, LO = 12)
+
+SLTIU: Reg1 <- Reg0 < IMED (1)
+2C200001; Reg1 <- Reg0 < 1 (Reg0 = 0, Reg1 = 1)
