@@ -12,6 +12,9 @@ Utilizado o sinal IsMult para não habilitar a escrita nos registradores;
 Propagados todos os sinais de controle para as respectivas etapas do circuito:
   - BLTZ em MEM;
   - LB e SLTIU em WB;
+Propagado o sinal de imediato com 32bits para a etapa de MEM;
+Colocado comparador de menor que 0 ou menor que RS para instruções de BLTZ e SLTIU em MEM;
+Conectado o BLTZ ao mux de branches;
 
 ROM para JR: 0x0241 end 0x00;
 ROM para BLTZ: 0x0404 end 0x01;
