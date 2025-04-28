@@ -4,7 +4,9 @@ Atualizado o ALU Control para as instruções de MULT e JR;
 Adicionada operação multiplicação na ALU;
 Adicionada saída dos bits superiores da multiplicação na ALU;
 Adicionada saída IsMULT da ALU;
-Adicionada barreira temporal para a etapa de EX/MEM do JR
+Adicionada barreira temporal para a etapa de EX/MEM do JR;
+Adicionada barreira temporal para capturar valor de RS;
+Adicionado MUX para o JR na entrada do PC;
 
 ROM para JR: 0x0241 end 0x00;
 ROM para BLTZ: 0x0404 end 0x01;
