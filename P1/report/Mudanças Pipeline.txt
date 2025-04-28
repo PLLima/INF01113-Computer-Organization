@@ -9,6 +9,9 @@ Adicionada barreira temporal para capturar valor de RS;
 Adicionado MUX para o JR na entrada do PC;
 Corrigidos os timings entre barreiras temporais para o sinal de IsMult;
 Utilizado o sinal IsMult para não habilitar a escrita nos registradores;
+Propagados todos os sinais de controle para as respectivas etapas do circuito:
+  - BLTZ em MEM;
+  - LB e SLTIU em WB;
 
 ROM para JR: 0x0241 end 0x00;
 ROM para BLTZ: 0x0404 end 0x01;
