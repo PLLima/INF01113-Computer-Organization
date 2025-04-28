@@ -1,0 +1,14 @@
+Mudanças:
+
+Atualizado o ALU Control para as instruções de MULT e JR;
+
+ROM para JR: 0x0241 end 0x00;
+ROM para BLTZ: 0x0404 end 0x01;
+ROM para LB: 0x0B18 end 0x20;
+ROM para MULT: 0x0241 end 0x00;
+ROM para SLTIU: 0x1300 end 0x0B;
+
+Adicionados os sinais de controle: LB, SLTIU, BLTZ, JR.
+
+Testes:
+
