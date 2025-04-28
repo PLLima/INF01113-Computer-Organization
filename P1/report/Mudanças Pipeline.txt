@@ -7,6 +7,8 @@ Adicionada saída IsMULT da ALU;
 Adicionada barreira temporal para a etapa de EX/MEM do JR;
 Adicionada barreira temporal para capturar valor de RS;
 Adicionado MUX para o JR na entrada do PC;
+Corrigidos os timings entre barreiras temporais para o sinal de IsMult;
+Utilizado o sinal IsMult para não habilitar a escrita nos registradores;
 
 ROM para JR: 0x0241 end 0x00;
 ROM para BLTZ: 0x0404 end 0x01;
