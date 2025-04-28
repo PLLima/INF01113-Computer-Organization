@@ -1,0 +1,41 @@
+Mudanças:
+
+Adicionados registradores MULT_HI e MULT_LO para armazenar resultados da operação MULT [Top-level];
+Adicionados pinos de saída ligados ao output dos registradores MULT_HI e MULT_LO [top-level];
+Adicionada saída da parte alta (MSByte) da multiplicação à ALU [ALU];
+Adicionado sinal de isMult para controle dos registradores MULT_HI e MULT_LO [ALU];
+
+Adicionado registrador para armazenamento da saída da instrução SLTIU [top-level];
+Adicionado MUX com constantes para escrita do resultado de SLTIU [top-level];
+Acréscimo de novo estado na FSM, com mesmos sinais do estado 2, porém que passa para o estado 4 em seguida [unidade de controle];
+Acréscimo de sinal isSLTIU na unidade de controle, para controle de escrita nos registradores e muxes envolvidos [top-level, control-unit];
+Acréscimo de MUX (controlado por RegWrite AND isSLTIU) entre o MUX controlado pelo MemToReg (Agora controlado por MemToReg AND NOT isSLTIU) e o registrador de resultado de SLTIU [top-level];
+Adicionado usgn-ext (unsigned extender) para uso em SLTIU (implementado como "0000" & input, em notação VHDL);
+Acrescentado MUX para seleção entre sgn-ext e usign-ext, controlado pelo sinal isSLTIU;
+
+ROM para SLTIU: 0x0B0 -> 1a00 0000 0040 0000
+ROM para MULT: inalterada
+
+Testes: 
+
+MULT: 
+0x8d100030 // lw $s0, 30($0)
+0x8d110040 // lw $s1, 40($0)
+0x2110018 // MULT $s0, $s1
+9*0x0 // Zona zerada
+0x1c // End. 30; dados de teste
+0x0 0x0 0x0 // Zona zerada
+0x4 // End. 40; dados de teste
+31*0x0 // Zona zerada
+0x1c // End. 0x30; redundância
+15*0x0 // Zona zerada
+0x4 // End. 0x40; redundância
+
+SLTIU:
+0x8c100030 // lw $s0, 30($0)
+0x2c31ffff // SLTIU $s1, $s0, 0xffff
+6*0x0 // Zona zerada
+8*0x1c // End. 8 em diante; dados de teste
+32*0x0 // Zona zerada
+0x1c // End. 0x30; Dado de teste
+
