@@ -222,6 +222,14 @@
         \subsection{Modificações no Bloco Operativo}
         \subsection{Modificações no Bloco de Controle}
         \subsection{Estados de Controle}
+        São utilizados no projeto 12 estados diferentes, contendo instruções de 3 a 5 ciclos, todas representadas na FSM anexada a seguir:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Multicycle/FSM Multicycle.png}
+            \caption{\label{print:FSM_Multicycle} MIPS Multicycle - Maquina de estados Multicycle}
+        \end{figure}
+        Nota-se que os nodos representam os estados de controle, enquanto as arestas os OPCodes, assim formando uma máquina de Moore com as saídas em "1" de cada estado notadas em cada nodo.
+
         \subsection{Testes de Implementação}
 
     \section{MIPS Pipeline}
