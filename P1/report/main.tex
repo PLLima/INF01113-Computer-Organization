@@ -220,9 +220,52 @@
 
     \section{MIPS Multicycle}
         \subsection{Modificações no Bloco Operativo}
+        Como a implementação das instruções sorteadas possuiam uma similaridade parcial com as instruções bases, a maioria das mudanças aconteceram para integrar os novos sinais controle com o circuito.
+        Ainda assim, casos especificos foram tratados:
+            \begin{itemize}    
+            \item JR: Como se tratava de uma instrução R-Type não houve alterações nas ROMs, apenas na ULA-Control para lidar com o Funct e gerar o sinal isJR, este sendo utilizado como seletor no Mux que lida com o update do PC.
+            \item BLTZ: Aqui foi feita uma implementação dos estados B e C, tendo novamente o sinal utilizado como seletor para a parte operativa, cuja qual a partir dos blocos adicionados (conferir Figura \ref{print:Bloco Operativo Final}) realiza a comparação para testar a validade do branch, prossegue-se assim similar ao BEQ já implementado 
+            \item LB: Implementação muito parecida com o LW, aqui foi utilizado o sinal criado no controle como seletor para uma lógica MUX que separa a busca em duas opções, o dado completo ou apenas um Byte com Sign Extension
+            \item Mult: O multi por se tratar de uma instrução Especial teve seu controle trabalhado no ALU-Control, e sua implementação foi caracterizada pela criação dos registradore HI e LO, junto com um multiplicador. 
+            \item SLTIU: Foi adicionado um registrador para armazenamento da saída da instrução SLTIU, um MUX com constantes para escrita do resultado de SLTIU, além de um signal extension e os multiplexadores que tratam a lógica do novo sinal de controle isMult
+            \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Multicycle/Bloco Operativo Multicycle Antes.png}
+            \caption{\label{print:Bloco Operativo Inicial} MIPS Multicycle - Bloco Operativo Inicial}
+        \end{figure}
+
+        \clearpage
+        Observe as mundanças a seguir:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Multicycle/Bloco Operativo Multicycle Depois.png}
+            \caption{\label{print:Bloco Operativo Final} MIPS Multicycle - Bloco Operativo Final}
+        \end{figure}
+
+
+
 
         \subsection{Modificações no Bloco de Controle}
-        Além da adição de dois sinais (isBLTZ/isSLTIU)Foram modificadas as ROMs de controle de NextState e Saída, na primeira as alterações se deram pelas implementações da lógica de estado para as novas instruções de OPCode()
+        Além da adição de três sinais (isBLTZ/isSLTIU/isLB). Foram modificadas as ROMs de controle de NextState e Saída, na primeira as alterações se deram pelas implementações da lógica de estado para as novas instruções, todas descritas na FSM no tópico a seguir.
+        Na segunda foi adicionado as saídas para os estado A, B e C; 60, 30 e 31 respectivamente.
+        Ademais bastou-se as alterações na ULA-Control, onde foi feito a lógica para o isMult e o isJR, ambas similares as implementações do singlecycle.
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Multicycle/Bloco de Controle Multicycle Antes.png}
+            \caption{\label{print:Controle Inicial} MIPS Multicycle - Controle Inicial}
+        \end{figure}
+
+        \clearpage
+        Observe as mundanças a seguir:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Multicycle/Bloco de Controle Multicycle Depois.png}
+            \caption{\label{print:Controle Final} MIPS Multicycle - Controle Final}
+        \end{figure}
+
         
         \subsection{Estados de Controle}
         São utilizados no projeto 12 estados diferentes, contendo instruções de 3 a 5 ciclos, todas representadas na FSM anexada a seguir:
@@ -234,6 +277,11 @@
         Nota-se que os nodos representam os estados de controle, enquanto as arestas os OPCodes, assim formando uma máquina de Moore com as saídas em "1" de cada estado notadas em cada nodo.
 
         \subsection{Testes de Implementação}
+
+
+        
+
+
 
     \section{MIPS Pipeline}
         \subsection{Modificações no Bloco Operativo}
