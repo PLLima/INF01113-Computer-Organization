@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.27)  29 APR 2025 01:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.27)  29 APR 2025 01:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -545,69 +545,129 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.78     \clearpage
                     [1
 
-] [2
+]
+<images/prints/Monocycle/Bloco Operativo Monocycle Antes.png, id=89, 981.6675pt x 522.45187pt>
+File: images/prints/Monocycle/Bloco Operativo Monocycle Antes.png Graphic file (type png)
+<use images/prints/Monocycle/Bloco Operativo Monocycle Antes.png>
+Package pdftex.def Info: images/prints/Monocycle/Bloco Operativo Monocycle Antes.png  used on input line 86.
+(pdftex.def)             Requested size: 426.79135pt x 227.13718pt.
+ [2
 
 
-] [3
+ <./images/prints/Monocycle/Bloco Operativo Monocycle Antes.png>]
+<images/prints/Monocycle/Bloco Operativo Monocycle Depois.png, id=97, 932.73468pt x 490.83376pt>
+File: images/prints/Monocycle/Bloco Operativo Monocycle Depois.png Graphic file (type png)
+<use images/prints/Monocycle/Bloco Operativo Monocycle Depois.png>
+Package pdftex.def Info: images/prints/Monocycle/Bloco Operativo Monocycle Depois.png  used on input line 108.
+(pdftex.def)             Requested size: 426.79135pt x 224.58794pt.
+<images/prints/Monocycle/Bloco de Controle Monocycle Antes.png, id=98, 1052.43187pt x 469.755pt>
+File: images/prints/Monocycle/Bloco de Controle Monocycle Antes.png Graphic file (type png)
+<use images/prints/Monocycle/Bloco de Controle Monocycle Antes.png>
+Package pdftex.def Info: images/prints/Monocycle/Bloco de Controle Monocycle Antes.png  used on input line 116.
+(pdftex.def)             Requested size: 426.79135pt x 190.50061pt.
+ [3
+
+ <./images/prints/Monocycle/Bloco Operativo Monocycle Depois.png> <./images/prints/Monocycle/Bloco de Controle Monocycle Antes.png>]
+<images/prints/Monocycle/Bloco de Controle Monocycle Depois.png, id=107, 811.53188pt x 405.01312pt>
+File: images/prints/Monocycle/Bloco de Controle Monocycle Depois.png Graphic file (type png)
+<use images/prints/Monocycle/Bloco de Controle Monocycle Depois.png>
+Package pdftex.def Info: images/prints/Monocycle/Bloco de Controle Monocycle Depois.png  used on input line 144.
+(pdftex.def)             Requested size: 426.79135pt x 213.00586pt.
+ [4 <./images/prints/Monocycle/Bloco de Controle Monocycle Depois.png>]
+<images/prints/Monocycle/Teste JR.png, id=114, 939.51pt x 498.36188pt>
+File: images/prints/Monocycle/Teste JR.png Graphic file (type png)
+<use images/prints/Monocycle/Teste JR.png>
+Package pdftex.def Info: images/prints/Monocycle/Teste JR.png  used on input line 165.
+(pdftex.def)             Requested size: 426.79135pt x 226.39pt.
+<images/prints/Monocycle/Teste BLTZ.png, id=115, 946.28531pt x 494.59781pt>
+File: images/prints/Monocycle/Teste BLTZ.png Graphic file (type png)
+<use images/prints/Monocycle/Teste BLTZ.png>
+Package pdftex.def Info: images/prints/Monocycle/Teste BLTZ.png  used on input line 178.
+(pdftex.def)             Requested size: 426.79135pt x 223.07259pt.
+ [5
+
+ <./images/prints/Monocycle/Teste JR.png> <./images/prints/Monocycle/Teste BLTZ.png>]
+<images/prints/Monocycle/Teste LB.png, id=126, 940.26282pt x 497.60907pt>
+File: images/prints/Monocycle/Teste LB.png Graphic file (type png)
+<use images/prints/Monocycle/Teste LB.png>
+Package pdftex.def Info: images/prints/Monocycle/Teste LB.png  used on input line 190.
+(pdftex.def)             Requested size: 426.79135pt x 225.86578pt.
+<images/prints/Monocycle/Teste MULT.png, id=127, 941.76843pt x 496.85625pt>
+File: images/prints/Monocycle/Teste MULT.png Graphic file (type png)
+<use images/prints/Monocycle/Teste MULT.png>
+Package pdftex.def Info: images/prints/Monocycle/Teste MULT.png  used on input line 204.
+(pdftex.def)             Requested size: 426.79135pt x 225.16776pt.
+ [6 <./images/prints/Monocycle/Teste LB.png> <./images/prints/Monocycle/Teste MULT.png>]
+<images/prints/Monocycle/Teste SLTIU.png, id=137, 948.54375pt x 498.36188pt>
+File: images/prints/Monocycle/Teste SLTIU.png Graphic file (type png)
+<use images/prints/Monocycle/Teste SLTIU.png>
+Package pdftex.def Info: images/prints/Monocycle/Teste SLTIU.png  used on input line 217.
+(pdftex.def)             Requested size: 426.79135pt x 224.23035pt.
+ [7
+
+ <./images/prints/Monocycle/Teste SLTIU.png>] [8
 
 ]
-<images/prints/Pipeline/Bloco Operativo Pipeline Antes.png, id=97, 1238.6275pt x 749.80125pt>
+<images/prints/Pipeline/Bloco Operativo Pipeline Antes.png, id=148, 1238.6275pt x 749.80125pt>
 File: images/prints/Pipeline/Bloco Operativo Pipeline Antes.png Graphic file (type png)
 <use images/prints/Pipeline/Bloco Operativo Pipeline Antes.png>
-Package pdftex.def Info: images/prints/Pipeline/Bloco Operativo Pipeline Antes.png  used on input line 98.
+Package pdftex.def Info: images/prints/Pipeline/Bloco Operativo Pipeline Antes.png  used on input line 233.
 (pdftex.def)             Requested size: 426.79135pt x 258.36136pt.
-<images/prints/Pipeline/Bloco Operativo Pipeline Depois.png, id=98, 1380.15625pt x 958.58125pt>
+<images/prints/Pipeline/Bloco Operativo Pipeline Depois.png, id=149, 1380.15625pt x 958.58125pt>
 File: images/prints/Pipeline/Bloco Operativo Pipeline Depois.png Graphic file (type png)
 <use images/prints/Pipeline/Bloco Operativo Pipeline Depois.png>
-Package pdftex.def Info: images/prints/Pipeline/Bloco Operativo Pipeline Depois.png  used on input line 124.
+Package pdftex.def Info: images/prints/Pipeline/Bloco Operativo Pipeline Depois.png  used on input line 259.
 (pdftex.def)             Requested size: 426.79135pt x 296.42578pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/prints/Pipeline/Bloco de Controle Pipeline Antes.png, id=99, 1238.6275pt x 212.795pt>
+<images/prints/Pipeline/Bloco de Controle Pipeline Antes.png, id=150, 1238.6275pt x 212.795pt>
 File: images/prints/Pipeline/Bloco de Controle Pipeline Antes.png Graphic file (type png)
 <use images/prints/Pipeline/Bloco de Controle Pipeline Antes.png>
-Package pdftex.def Info: images/prints/Pipeline/Bloco de Controle Pipeline Antes.png  used on input line 132.
+Package pdftex.def Info: images/prints/Pipeline/Bloco de Controle Pipeline Antes.png  used on input line 267.
 (pdftex.def)             Requested size: 426.79135pt x 73.32343pt.
-[4
+[9
 
- <./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png>] [5 <./images/prints/Pipeline/Bloco Operativo Pipeline Depois.png> <./images/prints/Pipeline/Bloco de Controle Pipeline Antes.png>]
-<images/prints/Pipeline/Bloco de Controle Pipeline Depois.png, id=115, 1187.43625pt x 249.93375pt>
+ <./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png>] [10 <./images/prints/Pipeline/Bloco Operativo Pipeline Depois.png> <./images/prints/Pipeline/Bloco de Controle Pipeline Antes.png>]
+<images/prints/Pipeline/Bloco de Controle Pipeline Depois.png, id=166, 1187.43625pt x 249.93375pt>
 File: images/prints/Pipeline/Bloco de Controle Pipeline Depois.png Graphic file (type png)
 <use images/prints/Pipeline/Bloco de Controle Pipeline Depois.png>
-Package pdftex.def Info: images/prints/Pipeline/Bloco de Controle Pipeline Depois.png  used on input line 160.
+Package pdftex.def Info: images/prints/Pipeline/Bloco de Controle Pipeline Depois.png  used on input line 295.
 (pdftex.def)             Requested size: 426.79135pt x 89.83116pt.
-<images/prints/Pipeline/Teste JR.png, id=116, 1310.8975pt x 658.46pt>
+<images/prints/Pipeline/Teste JR.png, id=167, 1310.8975pt x 658.46pt>
 File: images/prints/Pipeline/Teste JR.png Graphic file (type png)
 <use images/prints/Pipeline/Teste JR.png>
-Package pdftex.def Info: images/prints/Pipeline/Teste JR.png  used on input line 183.
+Package pdftex.def Info: images/prints/Pipeline/Teste JR.png  used on input line 320.
 (pdftex.def)             Requested size: 426.79135pt x 214.37875pt.
- [6 <./images/prints/Pipeline/Bloco de Controle Pipeline Depois.png> <./images/prints/Pipeline/Teste JR.png>]
-<images/prints/Pipeline/Teste MULT.png, id=127, 1332.98pt x 472.76625pt>
+ [11 <./images/prints/Pipeline/Bloco de Controle Pipeline Depois.png> <./images/prints/Pipeline/Teste JR.png>]
+<images/prints/Pipeline/Teste MULT.png, id=176, 1332.98pt x 472.76625pt>
 File: images/prints/Pipeline/Teste MULT.png Graphic file (type png)
 <use images/prints/Pipeline/Teste MULT.png>
-Package pdftex.def Info: images/prints/Pipeline/Teste MULT.png  used on input line 201.
+Package pdftex.def Info: images/prints/Pipeline/Teste MULT.png  used on input line 338.
 (pdftex.def)             Requested size: 426.79135pt x 151.36763pt.
-<images/prints/Pipeline/Teste BLTZ.png, id=128, 1310.8975pt x 693.59125pt>
+ [12 <./images/prints/Pipeline/Teste MULT.png>]
+<images/prints/Pipeline/Teste BLTZ.png, id=184, 1310.8975pt x 693.59125pt>
 File: images/prints/Pipeline/Teste BLTZ.png Graphic file (type png)
 <use images/prints/Pipeline/Teste BLTZ.png>
-Package pdftex.def Info: images/prints/Pipeline/Teste BLTZ.png  used on input line 218.
+Package pdftex.def Info: images/prints/Pipeline/Teste BLTZ.png  used on input line 356.
 (pdftex.def)             Requested size: 426.79135pt x 225.81665pt.
- [7 <./images/prints/Pipeline/Teste MULT.png> <./images/prints/Pipeline/Teste BLTZ.png>]
-<images/prints/Pipeline/Teste LB.png, id=138, 1367.1075pt x 623.32875pt>
+<images/prints/Pipeline/Teste LB.png, id=185, 1367.1075pt x 623.32875pt>
 File: images/prints/Pipeline/Teste LB.png Graphic file (type png)
 <use images/prints/Pipeline/Teste LB.png>
-Package pdftex.def Info: images/prints/Pipeline/Teste LB.png  used on input line 231.
+Package pdftex.def Info: images/prints/Pipeline/Teste LB.png  used on input line 368.
 (pdftex.def)             Requested size: 426.79135pt x 194.59001pt.
-<images/prints/Pipeline/Teste SLTIU.png, id=139, 1278.7775pt x 657.45625pt>
+ [13
+
+ <./images/prints/Pipeline/Teste BLTZ.png> <./images/prints/Pipeline/Teste LB.png>]
+<images/prints/Pipeline/Teste SLTIU.png, id=194, 1278.7775pt x 657.45625pt>
 File: images/prints/Pipeline/Teste SLTIU.png Graphic file (type png)
 <use images/prints/Pipeline/Teste SLTIU.png>
-Package pdftex.def Info: images/prints/Pipeline/Teste SLTIU.png  used on input line 243.
+Package pdftex.def Info: images/prints/Pipeline/Teste SLTIU.png  used on input line 381.
 (pdftex.def)             Requested size: 426.79135pt x 219.4291pt.
- [8
+ [14
 
- <./images/prints/Pipeline/Teste LB.png> <./images/prints/Pipeline/Teste SLTIU.png>] (./main.aux)
+ <./images/prints/Pipeline/Teste SLTIU.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -616,18 +676,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0B4FE82B796754994DDDD719F37D0B1A;2519.
  ) 
 Here is how much of TeX's memory you used:
- 14679 strings out of 476089
- 238114 string characters out of 5793231
+ 14766 strings out of 476089
+ 241999 string characters out of 5793231
  1932975 words of memory out of 5000000
- 36463 multiletter control sequences out of 15000+600000
+ 36535 multiletter control sequences out of 15000+600000
  561094 words of font info for 47 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  69i,7n,79p,1265b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/pllima0909/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (9 pages, 416764 bytes).
+Output written on main.pdf (15 pages, 628773 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 

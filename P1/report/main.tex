@@ -80,8 +80,143 @@
 
     \section{MIPS Singlecycle}
         \subsection{Modificações no Bloco Operativo}
+        Para começar, segue uma ilustração de como estava inicialmente a parte operativa do MIPS Singleclycle:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Monocycle/Bloco Operativo Monocycle Antes.png}
+            \caption{\label{print:singlecycle_ob_before} MIPS Singlecycle - Bloco Operativo Antes}
+        \end{figure}
+
+        Essa parte operativa foi modificada de acordo com as instruções adicionadas ao MIPS Singlecycle:
+        \begin{itemize}
+            \item Adicionada operação multiplicação na ALU;
+            \item Adicionada saída dos bits superiores da multiplicação na ALU;
+            \item Adicionada saída IsMULT da ALU;
+            \item Adicionados registradores especiais LO e HI;
+            \item Atualizada a flag 0 na ALU;
+            \item Adicionado comparador para BLTZ e SLTIU;
+            \item Adicionado sign extend para o BLTZ e SLTIU;
+            \item Adicionado splitter para LB;
+            \item Adicionado sign extend para LB;
+            \item Atualizado o splitter para a Data Memory.
+        \end{itemize}
+
+        \clearpage
+        Segue uma ilustração de como ficou a parte operativa do MIPS Singlecycle após as modificações acima listadas:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Monocycle/Bloco Operativo Monocycle Depois.png}
+            \caption{\label{print:singlecycle_ob_after} MIPS Singlecycle - Bloco Operativo Depois}
+        \end{figure}
+
         \subsection{Modificações no Bloco de Controle}
+        Já para a parte de controle, segue uma representação inicial do MIPS Singlecycle:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Monocycle/Bloco de Controle Monocycle Antes.png}
+            \caption{\label{print:singlecycle_cb_before} MIPS Singlecycle - Bloco Controle Antes}
+        \end{figure}
+
+        Com ela em mente, foram feitas as seguintes modificações:
+        \begin{itemize}
+            \item Criados os sinais de controle LB, SLTIU, BLTZ, JR e IsMult;
+            \item Atualizado o ALU Control para as instruções de MULT e JR;
+            \item Adicionado MUX para o BLTZ;
+            \item Adicionado controle de branch para BLTZ;
+            \item Adicionado controle de RegWrite usando IsMULT;
+            \item Adicionado MUX para o JR;
+            \item Adicionado MUX para LB;
+            \item Adicionado MUX para SLTIU.
+        \end{itemize}
+
+        Abaixo segue também a codificação em memória ROM de controle das novas instruções:
+        \begin{itemize}
+            \item ROM para JR: 0x0241 end 0x00;
+            \item ROM para BLTZ: 0x0404 end 0x01;
+            \item ROM para LB: 0x0B18 end 0x20;
+            \item ROM para MULT: 0x0241 end 0x00;
+            \item ROM para SLTIU: 0x1300 end 0x0B.
+        \end{itemize}
+
+        Dessa forma, a parte de controle do processador terminou da seguinte forma:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Monocycle/Bloco de Controle Monocycle Depois.png}
+            \caption{\label{print:singlecycle_cb_after} MIPS Singlecycle - Bloco Controle Depois}
+        \end{figure}
+
+        Algumas dessas modificações aqui listadas foram mostradas em mais detalhes na subseção anterior.
+
+        \clearpage
         \subsection{Testes de Implementação}
+
+        Para comprovar que essas mudanças acima trouxeram a correta implementação das instruções especificados neste trabalho,
+        abaixo seguem os testes realizados com imagens e a respectiva sequência de instruções:
+        
+        \begin{itemize}
+            \item Teste da Instrução JR:
+                \subitem JR: PC $\leftarrow$ Reg1
+                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (3)
+                \subitem 0x00200008; PC $\leftarrow$ Reg1 (3)
+        \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Monocycle/Teste JR.png}
+            \caption{\label{print:singlecycle_test_JR} MIPS Singlecycle - Teste JR}
+        \end{figure}
+
+        \begin{itemize}
+            \item Teste da Instrução BLTZ:
+                \subitem BLTZ: if Reg1 $<$ 0 then PC += IMED$\cdot$4 + 4 (IMED = 10)
+                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (-1 (0xFFFFFFFF))
+                \subitem 0x0420000A; PC += IMED$\cdot$4 + 4 (PC = 48)
+        \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Monocycle/Teste BLTZ.png}
+            \caption{\label{print:singlecycle_test_BLTZ} MIPS Singlecycle - Teste BLTZ}
+        \end{figure}
+
+        \begin{itemize}
+            \item Teste da Instrução LB:
+                \subitem LB: Reg1 $\leftarrow$ byte(Mem[0]) (3)
+                \subitem 0x80010000; Reg1 $\leftarrow$ byte(Mem[0])
+        \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Monocycle/Teste LB.png}
+            \caption{\label{print:singlecycle_test_LB} MIPS Singlecycle - Teste LB}
+        \end{figure}
+
+        \begin{itemize}
+            \item Teste da Instrução MULT:
+                \subitem MULT: HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2
+                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (3)
+                \subitem 0x8C020001; Reg2 $\leftarrow$ Mem[1] (4)
+                \subitem 0x00220018; HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2 (HI = 0, LO = 12)
+        \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Monocycle/Teste MULT.png}
+            \caption{\label{print:singlecycle_test_MULT} MIPS Singlecycle - Teste MULT}
+        \end{figure}
+
+        \clearpage
+        \begin{itemize}
+            \item Teste da Instrução SLTIU:
+                \subitem SLTIU: Reg1 $\leftarrow$ Reg0 $<$ IMED (1)
+                \subitem 0x2C010001; Reg1 $\leftarrow$ Reg0 $<$ 1 (Reg1 = 1)
+        \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Monocycle/Teste SLTIU.png}
+            \caption{\label{print:singlecycle_test_SLTIU} MIPS Singlecycle - Teste SLTIU}
+        \end{figure}
 
     \section{MIPS Multicycle}
         \subsection{Modificações no Bloco Operativo}
@@ -161,6 +296,8 @@
             \caption{\label{print:pipeline_cb_after} MIPS Pipeline - Bloco Controle Depois}
         \end{figure}
 
+        Algumas dessas modificações aqui listadas foram mostradas em mais detalhes na subseção anterior.
+
         \subsection{Testes de Implementação}
         Para comprovar que essas mudanças acima trouxeram a correta implementação das instruções especificados neste trabalho,
         abaixo seguem os testes realizados com imagens e a respectiva sequência de instruções:
@@ -202,6 +339,7 @@
             \caption{\label{print:pipeline_test_MULT} MIPS Pipeline - Teste MULT}
         \end{figure}
 
+        \clearpage
         \begin{itemize}
             \item Teste da Instrução BLTZ:
                 \subitem BLTZ: if Reg1 $<$ 0 then PC += IMED$\cdot$4 + 4 (IMED = 10)
@@ -219,7 +357,6 @@
             \caption{\label{print:pipeline_test_BLTZ} MIPS Pipeline - Teste BLTZ}
         \end{figure}
 
-        \clearpage
         \begin{itemize}
             \item Teste da Instrução LB:
                 \subitem LB: Reg1 $\leftarrow$ byte(Mem[0]) (0x00000FFF)
@@ -232,6 +369,7 @@
             \caption{\label{print:pipeline_test_LB} MIPS Pipeline - Teste LB}
         \end{figure}
 
+        \clearpage
         \begin{itemize}
             \item Teste da Instrução SLTIU:
                 \subitem SLTIU: Reg1 $\leftarrow$ Reg0 $<$ IMED (1)
