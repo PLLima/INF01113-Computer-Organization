@@ -81,14 +81,166 @@
     \section{MIPS Singlecycle}
         \subsection{Modificações no Bloco Operativo}
         \subsection{Modificações no Bloco de Controle}
+        \subsection{Testes de Implementação}
 
     \section{MIPS Multicycle}
         \subsection{Modificações no Bloco Operativo}
         \subsection{Modificações no Bloco de Controle}
         \subsection{Estados de Controle}
+        \subsection{Testes de Implementação}
 
-    \section{MIPS Pipelined}
+    \section{MIPS Pipeline}
         \subsection{Modificações no Bloco Operativo}
+        Primeiramente, segue uma visão de como estava a implementação do MIPS com pipeline antes
+        do acrescimo das novas instruções:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Pipeline/Bloco Operativo Pipeline Antes.png}
+            \caption{\label{print:pipeline_ob_before} MIPS Pipeline - Bloco Operativo Antes}
+        \end{figure}
+
+        Sobre essa versão do MIPS com pipeline, foram feitas as modificações listadas à seguir:
+        \begin{itemize}
+            \item Adicionada operação multiplicação na ALU;
+            \item Adicionada saída dos bits superiores da multiplicação na ALU;
+            \item Adicionada barreira temporal para capturar valor de RS;
+            \item Adicionado MUX para o JR na entrada do PC;
+            \item Corrigidos os timings entre barreiras temporais para o sinal de IsMult;
+            \item Utilizado o sinal IsMult para não habilitar a escrita nos registradores;
+            \item Propagado o sinal de imediato com 32 bits para a etapa de MEM;
+            \item Colocado comparador de menor que 0 ou menor que RS para instruções de BLTZ e SLTIU em MEM;
+            \item Conectado o BLTZ ao mux de branches;
+            \item Propagado o bit de comparação RS < Imed para o estágio de MEM;
+            \item Adicionado bit extender para o resultado da comparação acima;
+            \item Conectado o resultado desse bit extender na entrada de escrita dos GPRs;
+            \item Adicionado splitter para pegar os 8 bits menos significativos de um dado da memória;
+            \item Extendido esses 8 bits acima;
+            \item Conectado esse resultado controlado pelo sinal LB nos GPRs.
+        \end{itemize}
+
+        Com essas modificações listadas acima, obteve-se a seguinte nova representação do bloco operativo do MIPS:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Pipeline/Bloco Operativo Pipeline Depois.png}
+            \caption{\label{print:pipeline_ob_after} MIPS Pipeline - Bloco Operativo Depois}
+        \end{figure}
+
         \subsection{Modificações no Bloco de Controle}
+        Já na parte de controle, anteriormente, tinha-se a seguinte representação:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Pipeline/Bloco de Controle Pipeline Antes.png}
+            \caption{\label{print:pipeline_cb_before} MIPS Pipeline - Bloco Controle Antes}
+        \end{figure}
+
+        A partir dessa parte de controle, é possível listar as seguintes modificações:
+        \begin{itemize}
+            \item Atualizado o ALU Control para as instruções de MULT e JR;
+            \item Adicionada saída IsMULT da ALU;
+            \item Adicionada barreira temporal para o estágio de EX/MEM do JR;
+            \item Propagados todos os sinais de controle para as respectivas etapas do circuito:
+                \subitem - BLTZ em MEM;
+                \subitem - LB e SLTIU em WB.
+        \end{itemize}
+
+        Além dessas modificações, foram reordenados os sinais de controle para serem equivalentes aos sinais de controle do MIPS Singlecycle.
+        Assim, as modificações da ROM de controle foram as mesmas listadas na seção do MIPS Singlecycle:
+        \begin{itemize}
+            \item ROM para JR: 0x0241 end 0x00;
+            \item ROM para BLTZ: 0x0404 end 0x01;
+            \item ROM para LB: 0x0B18 end 0x20;
+            \item ROM para MULT: 0x0241 end 0x00;
+            \item ROM para SLTIU: 0x1300 end 0x0B.
+        \end{itemize}
+
+        Com tudo isso, obteve-se o seguinte novo esquemático externo da parte de controle do MIPS com pipeline:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Pipeline/Bloco de Controle Pipeline Depois.png}
+            \caption{\label{print:pipeline_cb_after} MIPS Pipeline - Bloco Controle Depois}
+        \end{figure}
+
+        \subsection{Testes de Implementação}
+        Para comprovar que essas mudanças acima trouxeram a correta implementação das instruções especificados neste trabalho,
+        abaixo seguem os testes realizados com imagens e a respectiva sequência de instruções:
+        
+        É importante notar, em todos os testes, que há uma grande quantidade de NOPs espalhados entre as instruções. Isso é devido
+        a não terem sido implementadas soluções para lidar com dependências de dados e de controle.
+
+        \begin{itemize}
+            \item Teste da Instrução JR:
+                \subitem 0x8C010000; LW: Reg1 $\leftarrow$ Mem[0] (64 ou 0x40)
+                \subitem 0x00000000; NOP
+                \subitem 0x00000000; NOP
+                \subitem 0x00000000; NOP
+                \subitem 0x00000000; NOP
+                \subitem 0x00200008; JR: PC $\leftarrow$ Reg1 (64 ou 0x40)
+        \end{itemize}
+        
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Pipeline/Teste JR.png}
+            \caption{\label{print:pipeline_test_JR} MIPS Pipeline - Teste JR}
+        \end{figure}
+
+        \begin{itemize}
+            \item Teste da Instrução MULT:
+                \subitem MULT: HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2
+                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (17 ou 0x11)
+                \subitem 0x8C020001; Reg2 $\leftarrow$ Mem[1] (256 ou 0x100)
+                \subitem 0x00000000; NOP
+                \subitem 0x00000000; NOP
+                \subitem 0x00000000; NOP
+                \subitem 0x00000000; NOP
+                \subitem 0x00220018; HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2 (HI = 0, LO = 4352 ou 0x10400)
+        \end{itemize}
+        
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Pipeline/Teste MULT.png}
+            \caption{\label{print:pipeline_test_MULT} MIPS Pipeline - Teste MULT}
+        \end{figure}
+
+        \begin{itemize}
+            \item Teste da Instrução BLTZ:
+                \subitem BLTZ: if Reg1 $<$ 0 then PC += IMED$\cdot$4 + 4 (IMED = 10)
+                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (-1 (0xFFFFFFFF))
+                \subitem 0x00000000; NOP
+                \subitem 0x00000000; NOP
+                \subitem 0x00000000; NOP
+                \subitem 0x00000000; NOP
+                \subitem 0x0420000A; PC += IMED$\cdot$4 + 4 (PC = 64 ou 0x40)
+        \end{itemize}
+        
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Pipeline/Teste BLTZ.png}
+            \caption{\label{print:pipeline_test_BLTZ} MIPS Pipeline - Teste BLTZ}
+        \end{figure}
+
+        \clearpage
+        \begin{itemize}
+            \item Teste da Instrução LB:
+                \subitem LB: Reg1 $\leftarrow$ byte(Mem[0]) (0x00000FFF)
+                \subitem 0x80010000; Reg1 $\leftarrow$ byte(Mem[0]) (0xFFFFFFFF)
+        \end{itemize}
+        
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Pipeline/Teste LB.png}
+            \caption{\label{print:pipeline_test_LB} MIPS Pipeline - Teste LB}
+        \end{figure}
+
+        \begin{itemize}
+            \item Teste da Instrução SLTIU:
+                \subitem SLTIU: Reg1 $\leftarrow$ Reg0 $<$ IMED (1)
+                \subitem 0x2C010001; Reg1 $\leftarrow$ Reg0 $<$ 1 (Reg1 = 1)
+        \end{itemize}
+        
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Pipeline/Teste SLTIU.png}
+            \caption{\label{print:pipeline_test_SLTIU} MIPS Pipeline - Teste SLTIU}
+        \end{figure}
 
 \end{document}
