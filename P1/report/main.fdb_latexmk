@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1745916580.92619 "c:/ORGB/INF01113-Computer-Organization/P1/report/main.tex" "main.pdf" "main" 1745916585.79001 0
+["pdflatex"] 1745917330.75056 "c:/ORGB/INF01113-Computer-Organization/P1/report/main.tex" "main.pdf" "main" 1745917336.43614 0
   "C:/Users/Drows/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1745879188 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Drows/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1745899245 11548 12e566e6eeeac4b9b5f59a9cc33c3fd1 ""
   "C:/Users/Drows/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1745879067 13148254 cc9807d3c2e1d0d4980f823d2b883f67 ""
@@ -97,7 +97,7 @@
   "C:/Users/Drows/AppData/Local/Programs/MiKTeX/tex/latex/ulem/ulem.sty" 1578651445 15682 94f55b803e160cf7fb6e4d77d07cfe1d ""
   "C:/Users/Drows/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Drows/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/ORGB/INF01113-Computer-Organization/P1/report/main.tex" 1745916579 21607 810886087dcca3ce17a825205aa26d57 ""
+  "c:/ORGB/INF01113-Computer-Organization/P1/report/main.tex" 1745917323 24578 ffa1b5d02c1b2fb75024ccde48cd594e ""
   "images/logos/INF.png" 1745618246 15010 5904a212c54cc0d36d2b1bbe1142a078 ""
   "images/logos/UFRGS.png" 1745618246 88725 cdf446c599354a4d20abda816944c879 ""
   "images/prints/Monocycle/Bloco Operativo Monocycle Antes.png" 1745899238 31337 3810a729c035a1fac279d47f6c2f9952 ""
@@ -114,6 +114,11 @@
   "images/prints/Multicycle/Bloco de Controle Multicycle Antes.png" 1745913383 13094 13d878440ed722c41058f397820a4cab ""
   "images/prints/Multicycle/Bloco de Controle Multicycle Depois.png" 1745913383 20181 41cecd5dc790aadd7d54f1b9b821bd39 ""
   "images/prints/Multicycle/FSM Multicycle.png" 1745913383 96153 8a411e295bbbead2bfe60cb35c90b2ec ""
+  "images/prints/Multicycle/Teste BLTZ.png" 1745913383 33953 7a864ea785861fe9c58c09b0efd695c5 ""
+  "images/prints/Multicycle/Teste JR.png" 1745913383 33245 7ae8abe3e92d05616f7c0bf2843a8751 ""
+  "images/prints/Multicycle/Teste LB.png" 1745913383 37163 6d114d396b3bb88435166c3eddfc1540 ""
+  "images/prints/Multicycle/Teste MULT.png" 1745913383 34120 15e3a64e36092f7f5589cdab2e246768 ""
+  "images/prints/Multicycle/Teste SLTIU.png" 1745913383 37804 5089938764c1c8fac21e0f32bae80811 ""
   "images/prints/Pipeline/Bloco Operativo Pipeline Antes.png" 1745899238 36773 8497bd8d4a776137a28c56c0dc3686d9 ""
   "images/prints/Pipeline/Bloco Operativo Pipeline Depois.png" 1745899238 41935 a78b8f25dddca2d935d87db099196e8c ""
   "images/prints/Pipeline/Bloco de Controle Pipeline Antes.png" 1745899238 8083 fabff7731a5799c015af38f1a19eaf87 ""
@@ -123,10 +128,10 @@
   "images/prints/Pipeline/Teste LB.png" 1745899238 30605 46f0eab5a0bdb0608377aea43138778d ""
   "images/prints/Pipeline/Teste MULT.png" 1745899238 26826 0b007ed4a82c3f9b58f7c77c1258be88 ""
   "images/prints/Pipeline/Teste SLTIU.png" 1745899238 34081 3606de4d1d9aea1f1e2a25c8e8f531c0 ""
-  "main.aux" 1745916585 8087 54d0faeae6308d85becb73dee3372150 "pdflatex"
-  "main.out" 1745916585 2519 0b4fe82b796754994dddd719f37d0b1a "pdflatex"
-  "main.tex" 1745916579 21607 810886087dcca3ce17a825205aa26d57 ""
-  "main.toc" 1745916585 1284 0c85567e50d6b5c838ee276234cbfdde "pdflatex"
+  "main.aux" 1745917336 9329 a3f694fb6d6d22f31e988a7f933eab10 "pdflatex"
+  "main.out" 1745917336 2519 0b4fe82b796754994dddd719f37d0b1a "pdflatex"
+  "main.tex" 1745917323 24578 ffa1b5d02c1b2fb75024ccde48cd594e ""
+  "main.toc" 1745917336 1285 8e82b64f6c6c21639668e567be644c9d "pdflatex"
   (generated)
   "main.aux"
   "main.log"

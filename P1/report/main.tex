@@ -246,7 +246,7 @@
 
 
 
-
+        \clearpage
         \subsection{Modificações no Bloco de Controle}
         Além da adição de três sinais (isBLTZ/isSLTIU/isLB). Foram modificadas as ROMs de controle de NextState e Saída, na primeira as alterações se deram pelas implementações da lógica de estado para as novas instruções, todas descritas na FSM no tópico a seguir.
         Na segunda foi adicionado as saídas para os estado A, B e C; 60, 30 e 31 respectivamente.
@@ -259,7 +259,7 @@
         \end{figure}
 
         \clearpage
-        Observe as mundanças a seguir:
+        A próxima subseção mostra de forma mais detalhada as atualizações das ROMs e lógicas implementadas, mas por enquanto observe as mundanças a seguir:
         \begin{figure}[h!]
             \centering
             \includegraphics[width=\linewidth]{images/prints/Multicycle/Bloco de Controle Multicycle Depois.png}
@@ -277,9 +277,74 @@
         Nota-se que os nodos representam os estados de controle, enquanto as arestas os OPCodes, assim formando uma máquina de Moore com as saídas em "1" de cada estado notadas em cada nodo.
 
         \subsection{Testes de Implementação}
+        Segue a seguir os testes realizados acompanhados do código utilizado:
+
+        \begin{itemize}
+            \item Teste da Instrução JR:
+                \subitem JR: PC $\leftarrow$ Reg1
+                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (3)
+                \subitem 0x00200008; PC $\leftarrow$ Reg1 (3)
+        \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Multicycle/Teste JR.png}
+            \caption{\label{print:multicycle_test_JR} MIPS Multicycle - Teste JR}
+        \end{figure}
+
+        \begin{itemize}
+            \item Teste da Instrução BLTZ:
+                \subitem BLTZ: if Reg1 $<$ 0 then PC += IMED$\cdot$4 + 4 (IMED = 10)
+                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (-1 (0xFFFFFFFF))
+                \subitem 0x0420000A; PC += IMED$\cdot$4 + 4 (PC = 48)
+        \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Multicycle/Teste BLTZ.png}
+            \caption{\label{print:multicycle_test_BLTZ} MIPS Multicycle - Teste BLTZ}
+        \end{figure}
+
+        \begin{itemize}
+            \item Teste da Instrução LB:
+                \subitem LB: Reg1 $\leftarrow$ byte(Mem[0]) (3)
+                \subitem 0x80010000; Reg1 $\leftarrow$ byte(Mem[0])
+        \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Multicycle/Teste LB.png}
+            \caption{\label{print:multicycle_test_LB} MIPS Multicycle - Teste LB}
+        \end{figure}
+
+        \begin{itemize}
+            \item Teste da Instrução MULT:
+                \subitem MULT: HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2
+                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (3)
+                \subitem 0x8C020001; Reg2 $\leftarrow$ Mem[1] (4)
+                \subitem 0x00220018; HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2 (HI = 0, LO = 12)
+        \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Multicycle/Teste MULT.png}
+            \caption{\label{print:multicycle_test_MULT} MIPS Multicycle - Teste MULT}
+        \end{figure}
+
+        \clearpage
+        \begin{itemize}
+            \item Teste da Instrução SLTIU:
+                \subitem SLTIU: Reg1 $\leftarrow$ Reg0 $<$ IMED (1)
+                \subitem 0x2C010001; Reg1 $\leftarrow$ Reg0 $<$ 1 (Reg1 = 1)
+        \end{itemize}
+
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\linewidth]{images/prints/Multicycle/Teste SLTIU.png}
+            \caption{\label{print:multicycle_test_SLTIU} MIPS Multicycle - Teste SLTIU}
+        \end{figure}
 
 
-        
 
 
 
