@@ -32,3 +32,34 @@ Adicionados os sinais de controle: LB, SLTIU, BLTZ, JR e IsMult.
 
 Testes:
 
+JR: PC <- Reg1
+
+0x8C010000; LW: Reg1 <- Mem[0] (0)
+0x00000000; NOP
+0x00000000; NOP
+0x00000000; NOP
+0x00000000; NOP
+0x00200008; JR: PC <- Reg1 (0)
+
+BLTZ: if Reg1 < 0 then PC += IMED*4 + 4 (IMED = 10)
+0x8C010000; Reg1 <- Mem[0] (-1 (0xFFFFFFFF))
+0x00000000; NOP
+0x00000000; NOP
+0x00000000; NOP
+0x00000000; NOP
+0x0420000A; PC += IMED*4 + 4 (PC = 68)
+
+LB: Reg1 <- byte(Mem[0]) (0x00000FFF)
+0x80010000; Reg1 <- byte(Mem[0]) (0xFFFFFFFF)
+
+MULT: HI, LO <- Reg1 * Reg2
+0x8C010000; Reg1 <- Mem[0] (17 ou 0x11)
+0x8C020001; Reg2 <- Mem[1] (256 ou 0x100)
+0x00000000; NOP
+0x00000000; NOP
+0x00000000; NOP
+0x00000000; NOP
+0x00220018; HI, LO <- Reg1 * Reg2 (HI = 0, LO = 4352 ou 0x10400)
+
+SLTIU: Reg1 <- Reg0 < IMED (1)
+0x2C010001; Reg1 <- Reg0 < 1 (Reg1 = 1)
