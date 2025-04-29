@@ -15,6 +15,9 @@ Propagados todos os sinais de controle para as respectivas etapas do circuito:
 Propagado o sinal de imediato com 32bits para a etapa de MEM;
 Colocado comparador de menor que 0 ou menor que RS para instruções de BLTZ e SLTIU em MEM;
 Conectado o BLTZ ao mux de branches;
+Propagado o bit de comparação RS < Imed para o estágio de MEM;
+Adicionado bit_extender para o resultado da comparação acima;
+Conectado o resultado desse bit_extender na entrada de escrita dos GPRs;
 
 ROM para JR: 0x0241 end 0x00;
 ROM para BLTZ: 0x0404 end 0x01;
