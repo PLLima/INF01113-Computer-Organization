@@ -220,7 +220,10 @@
 
     \section{MIPS Multicycle}
         \subsection{Modificações no Bloco Operativo}
+
         \subsection{Modificações no Bloco de Controle}
+        Além da adição de dois sinais (isBLTZ/isSLTIU)Foram modificadas as ROMs de controle de NextState e Saída, na primeira as alterações se deram pelas implementações da lógica de estado para as novas instruções de OPCode()
+        
         \subsection{Estados de Controle}
         São utilizados no projeto 12 estados diferentes, contendo instruções de 3 a 5 ciclos, todas representadas na FSM anexada a seguir:
         \begin{figure}[h!]

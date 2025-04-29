@@ -284,7 +284,13 @@ INPUT .\images\prints\Monocycle\Teste SLTIU.png
 INPUT .\images\prints\Monocycle\Teste SLTIU.png
 INPUT .\images\prints\Monocycle\Teste SLTIU.png
 INPUT .\images\prints\Monocycle\Teste SLTIU.png
-INPUT C:\Users\Drows\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
+INPUT .\images\prints\Multicycle\FSM Multicycle.png
+INPUT .\images\prints\Multicycle\FSM Multicycle.png
+INPUT .\images\prints\Multicycle\FSM Multicycle.png
+INPUT .\images\prints\Multicycle\FSM Multicycle.png
+INPUT .\images\prints\Multicycle\FSM Multicycle.png
+INPUT .\images\prints\Multicycle\FSM Multicycle.png
+INPUT .\images\prints\Multicycle\FSM Multicycle.png
 INPUT .\images\prints\Pipeline\Bloco Operativo Pipeline Antes.png
 INPUT .\images\prints\Pipeline\Bloco Operativo Pipeline Antes.png
 INPUT .\images\prints\Pipeline\Bloco Operativo Pipeline Antes.png
@@ -363,5 +369,3 @@ INPUT C:\Users\Drows\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\Drows\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\Drows\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Drows\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\Drows\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
-INPUT C:\Users\Drows\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
