@@ -2775,7 +2775,6 @@
     <wire from="(430,390)" to="(440,390)"/>
     <wire from="(480,760)" to="(490,760)"/>
     <wire from="(1050,120)" to="(1120,120)"/>
-    <wire from="(1360,500)" to="(1390,500)"/>
     <wire from="(70,670)" to="(80,670)"/>
     <wire from="(700,540)" to="(700,590)"/>
     <wire from="(1000,160)" to="(1010,160)"/>
@@ -2952,6 +2951,7 @@
     <wire from="(550,360)" to="(550,700)"/>
     <wire from="(520,110)" to="(560,110)"/>
     <wire from="(690,510)" to="(690,550)"/>
+    <wire from="(1360,500)" to="(1370,500)"/>
     <wire from="(760,420)" to="(760,460)"/>
     <wire from="(1230,530)" to="(1240,530)"/>
     <wire from="(520,120)" to="(550,120)"/>
@@ -3173,6 +3173,7 @@
     <wire from="(740,460)" to="(760,460)"/>
     <wire from="(740,620)" to="(760,620)"/>
     <wire from="(980,430)" to="(980,470)"/>
+    <wire from="(1370,500)" to="(1370,560)"/>
     <wire from="(560,340)" to="(650,340)"/>
     <wire from="(260,470)" to="(270,470)"/>
     <wire from="(170,920)" to="(250,920)"/>
@@ -3405,10 +3406,6 @@
     </comp>
     <comp lib="0" loc="(260,470)" name="Constant"/>
     <comp loc="(430,680)" name="sig_ext"/>
-    <comp lib="0" loc="(1390,500)" name="Tunnel">
-      <a name="width" val="32"/>
-      <a name="label" val="RD"/>
-    </comp>
     <comp lib="5" loc="(406,359)" name="Text">
       <a name="text" val="shl_26_28"/>
       <a name="font" val="SansSerif plain 9"/>
@@ -3590,6 +3587,11 @@
     <comp lib="0" loc="(1000,960)" name="Constant"/>
     <comp lib="0" loc="(100,900)" name="Tunnel">
       <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(1370,560)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="32"/>
+      <a name="label" val="RD"/>
     </comp>
     <comp lib="0" loc="(470,470)" name="Constant"/>
     <comp lib="0" loc="(1180,340)" name="Pin">

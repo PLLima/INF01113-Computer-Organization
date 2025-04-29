@@ -34,12 +34,12 @@ Testes:
 
 JR: PC <- Reg1
 
-0x8C010000; LW: Reg1 <- Mem[0] (0)
+0x8C010000; LW: Reg1 <- Mem[0] (64 ou 0x40)
 0x00000000; NOP
 0x00000000; NOP
 0x00000000; NOP
 0x00000000; NOP
-0x00200008; JR: PC <- Reg1 (0)
+0x00200008; JR: PC <- Reg1 (64 ou 0x40)
 
 BLTZ: if Reg1 < 0 then PC += IMED*4 + 4 (IMED = 10)
 0x8C010000; Reg1 <- Mem[0] (-1 (0xFFFFFFFF))
@@ -47,7 +47,7 @@ BLTZ: if Reg1 < 0 then PC += IMED*4 + 4 (IMED = 10)
 0x00000000; NOP
 0x00000000; NOP
 0x00000000; NOP
-0x0420000A; PC += IMED*4 + 4 (PC = 68)
+0x0420000A; PC += IMED*4 + 4 (PC = 64 ou 0x40)
 
 LB: Reg1 <- byte(Mem[0]) (0x00000FFF)
 0x80010000; Reg1 <- byte(Mem[0]) (0xFFFFFFFF)
