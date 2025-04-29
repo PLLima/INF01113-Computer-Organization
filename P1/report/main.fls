@@ -214,12 +214,57 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT main.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png
-INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png
-INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png
-INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png
-INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png
+INPUT ./images/prints/Monocycle/Bloco Operativo Monocycle Antes.png
+INPUT ./images/prints/Monocycle/Bloco Operativo Monocycle Antes.png
+INPUT ./images/prints/Monocycle/Bloco Operativo Monocycle Antes.png
+INPUT ./images/prints/Monocycle/Bloco Operativo Monocycle Antes.png
+INPUT ./images/prints/Monocycle/Bloco Operativo Monocycle Antes.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT ./images/prints/Monocycle/Bloco Operativo Monocycle Depois.png
+INPUT ./images/prints/Monocycle/Bloco Operativo Monocycle Depois.png
+INPUT ./images/prints/Monocycle/Bloco Operativo Monocycle Depois.png
+INPUT ./images/prints/Monocycle/Bloco Operativo Monocycle Depois.png
+INPUT ./images/prints/Monocycle/Bloco Operativo Monocycle Depois.png
+INPUT ./images/prints/Monocycle/Bloco de Controle Monocycle Antes.png
+INPUT ./images/prints/Monocycle/Bloco de Controle Monocycle Antes.png
+INPUT ./images/prints/Monocycle/Bloco de Controle Monocycle Antes.png
+INPUT ./images/prints/Monocycle/Bloco de Controle Monocycle Antes.png
+INPUT ./images/prints/Monocycle/Bloco de Controle Monocycle Antes.png
+INPUT ./images/prints/Monocycle/Bloco de Controle Monocycle Depois.png
+INPUT ./images/prints/Monocycle/Bloco de Controle Monocycle Depois.png
+INPUT ./images/prints/Monocycle/Bloco de Controle Monocycle Depois.png
+INPUT ./images/prints/Monocycle/Bloco de Controle Monocycle Depois.png
+INPUT ./images/prints/Monocycle/Bloco de Controle Monocycle Depois.png
+INPUT ./images/prints/Monocycle/Teste JR.png
+INPUT ./images/prints/Monocycle/Teste JR.png
+INPUT ./images/prints/Monocycle/Teste JR.png
+INPUT ./images/prints/Monocycle/Teste JR.png
+INPUT ./images/prints/Monocycle/Teste JR.png
+INPUT ./images/prints/Monocycle/Teste BLTZ.png
+INPUT ./images/prints/Monocycle/Teste BLTZ.png
+INPUT ./images/prints/Monocycle/Teste BLTZ.png
+INPUT ./images/prints/Monocycle/Teste BLTZ.png
+INPUT ./images/prints/Monocycle/Teste BLTZ.png
+INPUT ./images/prints/Monocycle/Teste LB.png
+INPUT ./images/prints/Monocycle/Teste LB.png
+INPUT ./images/prints/Monocycle/Teste LB.png
+INPUT ./images/prints/Monocycle/Teste LB.png
+INPUT ./images/prints/Monocycle/Teste LB.png
+INPUT ./images/prints/Monocycle/Teste MULT.png
+INPUT ./images/prints/Monocycle/Teste MULT.png
+INPUT ./images/prints/Monocycle/Teste MULT.png
+INPUT ./images/prints/Monocycle/Teste MULT.png
+INPUT ./images/prints/Monocycle/Teste MULT.png
+INPUT ./images/prints/Monocycle/Teste SLTIU.png
+INPUT ./images/prints/Monocycle/Teste SLTIU.png
+INPUT ./images/prints/Monocycle/Teste SLTIU.png
+INPUT ./images/prints/Monocycle/Teste SLTIU.png
+INPUT ./images/prints/Monocycle/Teste SLTIU.png
+INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png
+INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png
+INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png
+INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png
+INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png
 INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Depois.png
 INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Depois.png
 INPUT ./images/prints/Pipeline/Bloco Operativo Pipeline Depois.png
