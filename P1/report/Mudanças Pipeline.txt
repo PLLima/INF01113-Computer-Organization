@@ -18,6 +18,9 @@ Conectado o BLTZ ao mux de branches;
 Propagado o bit de comparação RS < Imed para o estágio de MEM;
 Adicionado bit_extender para o resultado da comparação acima;
 Conectado o resultado desse bit_extender na entrada de escrita dos GPRs;
+Adicionado splitter para pegar os 8 bits menos significativos de um dado da memória;
+Extendido esses 8 bits acima;
+Conectado esse resultado controlado pelo sinal LB nos GPRs.
 
 ROM para JR: 0x0241 end 0x00;
 ROM para BLTZ: 0x0404 end 0x01;
@@ -25,7 +28,7 @@ ROM para LB: 0x0B18 end 0x20;
 ROM para MULT: 0x0241 end 0x00;
 ROM para SLTIU: 0x1300 end 0x0B;
 
-Adicionados os sinais de controle: LB, SLTIU, BLTZ, JR.
+Adicionados os sinais de controle: LB, SLTIU, BLTZ, JR e IsMult.
 
 Testes:
 
