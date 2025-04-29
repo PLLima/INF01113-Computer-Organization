@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1745898952.70508 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex" "main.pdf" "main" 1745898954.50587 0
+["pdflatex"] 1745899520.90991 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex" "main.pdf" "main" 1745899522.7967 0
   "/etc/texmf/web2c/texmf.cnf" 1728302084.72637 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/pllima0909/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1731633889.42296 11524 46404977bb45dc231b19acb652bcda32 ""
-  "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex" 1745898952.50248 10635 cdf873d289d96763af5b95168f65f7dd ""
+  "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex" 1745899520.68877 10713 8f040bdb7ae51762f8b9f1dc1b3baf39 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -111,10 +111,10 @@
   "images/prints/Pipeline/Teste LB.png" 1745896520.87408 30605 bfad0200074384cb53e6752179cb29e9 ""
   "images/prints/Pipeline/Teste MULT.png" 1745896686.8063 26826 90c33b189cf2bbcfabe32efaedc38fa4 ""
   "images/prints/Pipeline/Teste SLTIU.png" 1745896919.64976 34081 31bc310f50bbc8707e89064abc8d471c ""
-  "main.aux" 1745898954.4425 4348 69e08c890db834e4a5757e3dbb383c85 "pdflatex"
-  "main.out" 1745898954.4435 2519 0b4fe82b796754994dddd719f37d0b1a "pdflatex"
-  "main.tex" 1745898952.50248 10635 cdf873d289d96763af5b95168f65f7dd ""
-  "main.toc" 1745898954.4435 1278 2519cee03543934708ad118f6d2b2795 "pdflatex"
+  "main.aux" 1745899522.72977 4348 69e08c890db834e4a5757e3dbb383c85 "pdflatex"
+  "main.out" 1745899522.73177 2519 0b4fe82b796754994dddd719f37d0b1a "pdflatex"
+  "main.tex" 1745899520.68877 10713 8f040bdb7ae51762f8b9f1dc1b3baf39 ""
+  "main.toc" 1745899522.73177 1278 2519cee03543934708ad118f6d2b2795 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
