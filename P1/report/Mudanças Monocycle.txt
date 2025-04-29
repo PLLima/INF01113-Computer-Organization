@@ -42,7 +42,7 @@ LB: Reg1 <- byte(Mem[0]) (3)
 MULT: HI, LO <- Reg1 * Reg2
 0x8C010000; Reg1 <- Mem[0] (3)
 0x8C020001; Reg2 <- Mem[1] (4)
-0x00220018; HI, LO <- Reg1 * Reg2 (HI = 0, LO = 12) //
+0x00220018; HI, LO <- Reg1 * Reg2 (HI = 0, LO = 12)
 
 SLTIU: Reg1 <- Reg0 < IMED (1)
 0x2C010001; Reg1 <- Reg0 < 1 (Reg1 = 1)
