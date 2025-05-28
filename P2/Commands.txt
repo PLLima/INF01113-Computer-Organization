@@ -8,7 +8,7 @@ gcc binary_search.c -o binary_search -static
 ./gem5 orgb_configs/simulate.py run-benchmark -c orgb_progs/fft
 ./gem5 orgb_configs/simulate.py run-benchmark -c orgb_progs/binary_search
 
-// Initial parameters: 1kB L1 Cache, 32 bytes Fetch Buffer, 8-way L1 Cache
+// Initial parameters: 16kB L1 Cache, 32 bytes Fetch Buffer, 8-way L1 Cache
 
 // L1 Cache Size:
 Cfg 1a = 2kB
