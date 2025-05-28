@@ -1,0 +1,29 @@
+// Compilation commands
+gcc bubble_sort.c -o bubble_sort -static
+gcc fft.c -o fft -lm -static
+gcc binary_search.c -o binary_search -static
+
+// Simulation commands
+./gem5 orgb_configs/simulate.py run-benchmark -c orgb_progs/bubble_sort
+./gem5 orgb_configs/simulate.py run-benchmark -c orgb_progs/fft
+./gem5 orgb_configs/simulate.py run-benchmark -c orgb_progs/binary_search
+
+// Initial parameters: 1kB L1 Cache, 32 bytes Fetch Buffer, 8-way L1 Cache
+
+// L1 Cache Size:
+Cfg 1a = 2kB
+Cfg 1b = 4kB
+Cfg 1c = 8kB
+Cfg 1d = 16kB
+
+// Fetch Buffer Size:
+Cfg 2a = 4
+Cfg 2b = 8
+Cfg 2c = 16
+Cfg 2d = 32
+
+// L1 Cache Associativity:
+Cfg 3a = 1-way
+Cfg 3b = 2-way
+Cfg 3c = 4-way
+Cfg 3d = 8-way
