@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 2000
+#define N 1400
 
 int main() {
     int arr[N];

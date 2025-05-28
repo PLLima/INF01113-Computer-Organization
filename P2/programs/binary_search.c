@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 2000000
+#define N 1200000
 
 int binary_search(int arr[], int size, int key) {
     int left = 0, right = size - 1;
