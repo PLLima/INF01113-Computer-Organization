@@ -1,497 +1,781 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.28)  29 APR 2025 06:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.27)  30 MAY 2025 20:51
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/ORGB/INF01113-Computer-Organization/P1/report/main.tex
-(c:/ORGB/INF01113-Computer-Organization/P1/report/main.tex
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-03-26>
-(C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
-Document Class: report 2024/06/29 v1.4n Standard LaTeX document class
-(C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+**/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex
+(/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
+Document Class: beamer 2024/01/06 v3.71 A class for typesetting presentations
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count187
 )
-\c@part=\count197
-\c@chapter=\count198
-\c@section=\count199
-\c@subsection=\count266
-\c@subsubsection=\count267
-\c@paragraph=\count268
-\c@subparagraph=\count269
-\c@figure=\count270
-\c@table=\count271
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
-\bibindent=\dimen146
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2025/03/27 v25.6 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
-\babel@savecnt=\count272
-\U@D=\dimen147
-\l@unhyphenated=\language79
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
-\bbl@readstream=\read2
-\bbl@dirlevel=\count273
-
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+\beamer@tempbox=\box51
+\beamer@tempcount=\count188
+\c@beamerpauses=\count189
+ (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
+\beamer@slideinframe=\count190
+\beamer@minimum=\count191
+\beamer@decode@box=\box52
 )
-Package babel Info: Main language set with 'main='. Except if you have
-(babel)             problems, prefer the default mechanism for setting
-(babel)             the main language, i.e., as the last declared.
-(babel)             Reported on input line 4120.
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 108.
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\portuguese.ldf
-Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
-Package babel Info: Making " an active character on input line 143.
-)) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/pt\babel-portuguese.tex
-Package babel Info: Importing font and identification data for portuguese
-(babel)             from babel-pt.ini. Reported on input line 11.
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 11.
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
-Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count274
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+\beamer@commentbox=\box53
+\beamer@modecount=\count192
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+\headdp=\dimen140
+\footheight=\dimen141
+\sidebarheight=\dimen142
+\beamer@tempdim=\dimen143
+\beamer@finalheight=\dimen144
+\beamer@animht=\dimen145
+\beamer@animdp=\dimen146
+\beamer@animwd=\dimen147
+\beamer@leftmargin=\dimen148
+\beamer@rightmargin=\dimen149
+\beamer@leftsidebar=\dimen150
+\beamer@rightsidebar=\dimen151
+\beamer@boxsize=\dimen152
+\beamer@vboxoffset=\dimen153
+\beamer@descdefault=\dimen154
+\beamer@descriptionwidth=\dimen155
+\beamer@lastskip=\skip48
+\beamer@areabox=\box54
+\beamer@animcurrent=\box55
+\beamer@animshowbox=\box56
+\beamer@sectionbox=\box57
+\beamer@logobox=\box58
+\beamer@linebox=\box59
+\beamer@sectioncount=\count193
+\beamer@subsubsectionmax=\count194
+\beamer@subsectionmax=\count195
+\beamer@sectionmax=\count196
+\beamer@totalheads=\count197
+\beamer@headcounter=\count198
+\beamer@partstartpage=\count199
+\beamer@sectionstartpage=\count266
+\beamer@subsectionstartpage=\count267
+\beamer@animationtempa=\count268
+\beamer@animationtempb=\count269
+\beamer@xpos=\count270
+\beamer@ypos=\count271
+\beamer@ypos@offset=\count272
+\beamer@showpartnumber=\count273
+\beamer@currentsubsection=\count274
+\beamer@coveringdepth=\count275
+\beamer@sectionadjust=\count276
+\beamer@toclastsection=\count277
+\beamer@tocsectionnumber=\count278
+ (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-)
-\csq@reset=\count275
-\csq@gtype=\count276
-\csq@glevel=\count277
-\csq@qlevel=\count278
-\csq@maxlvl=\count279
-\csq@tshold=\count280
-\csq@ltx@everypar=\toks18
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
-File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
-)
-Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
-Package csquotes Info: ... configuration file loaded successfully.
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
-File: csquotes.cfg 
-)) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count281
-\Gm@cntv=\count282
-\c@Gm@tempcnt=\count283
-\Gm@bindingoffset=\dimen148
-\Gm@wd@mp=\dimen149
-\Gm@odd@mp=\dimen150
-\Gm@even@mp=\dimen151
-\Gm@layoutwidth=\dimen152
-\Gm@layoutheight=\dimen153
-\Gm@layouthoffset=\dimen154
-\Gm@layoutvoffset=\dimen155
-\Gm@dimlist=\toks19
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
-\UL@box=\box53
-\UL@hyphenbox=\box54
-\UL@skip=\skip51
-\UL@hook=\toks20
-\UL@height=\dimen156
-\UL@pe=\count284
-\UL@pixel=\dimen157
-\ULC@box=\box55
-Package: ulem 2019/11/18
-\ULdepth=\dimen158
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
-Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
-Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2024/11/05 v2.17t AMS math features
-\@mathmargin=\skip52
-
-For additional information on amsmath, use the `?' option.
-(C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks21
-\ex@=\dimen159
-)) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen160
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
+\beamer@paperwidth=\skip49
+\beamer@paperheight=\skip50
+ (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\inf@bad=\count285
-LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count286
-\leftroot@=\count287
-LaTeX Info: Redefining \overline on input line 398.
-LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count288
-\DOTSCASE@=\count289
-LaTeX Info: Redefining \ldots on input line 495.
-LaTeX Info: Redefining \dots on input line 498.
-LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box56
-\strutbox@=\box57
-LaTeX Info: Redefining \big on input line 721.
-LaTeX Info: Redefining \Big on input line 722.
-LaTeX Info: Redefining \bigg on input line 723.
-LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen161
-LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count290
-LaTeX Info: Redefining \bmod on input line 904.
-LaTeX Info: Redefining \pmod on input line 909.
-LaTeX Info: Redefining \smash on input line 939.
-LaTeX Info: Redefining \relbar on input line 969.
-LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count291
-\dotsspace@=\muskip17
-\c@parentequation=\count292
-\dspbrk@lvl=\count293
-\tag@help=\toks22
-\row@=\count294
-\column@=\count295
-\maxfields@=\count296
-\andhelp@=\toks23
-\eqnshift@=\dimen162
-\alignsep@=\dimen163
-\tagshift@=\dimen164
-\tagwidth@=\dimen165
-\totwidth@=\dimen166
-\lineht@=\dimen167
-\@envbody=\toks24
-\multlinegap=\skip53
-\multlinetaggap=\skip54
-\mathdisplay@stack=\toks25
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen168
-\ar@mcellbox=\box58
-\extrarowheight=\dimen169
-\NC@list=\toks26
-\extratabsurround=\skip55
-\backup@length=\skip56
-\ar@cellbox=\box59
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+\Gm@cnth=\count279
+\Gm@cntv=\count280
+\c@Gm@tempcnt=\count281
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen164
+\pgfutil@tempdimb=\dimen165
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box60
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks22
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen166
+\pgf@xa=\dimen167
+\pgf@xb=\dimen168
+\pgf@xc=\dimen169
+\pgf@y=\dimen170
+\pgf@ya=\dimen171
+\pgf@yb=\dimen172
+\pgf@yc=\dimen173
+\c@pgf@counta=\count282
+\c@pgf@countb=\count283
+\c@pgf@countc=\count284
+\c@pgf@countd=\count285
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen174
+\pgfmath@count=\count286
+\pgfmath@box=\box61
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count287
+))) (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen170
-\Gin@req@width=\dimen171
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+\pgf@x=\dimen177
+\pgf@y=\dimen178
+\pgf@xa=\dimen179
+\pgf@ya=\dimen180
+\pgf@xb=\dimen181
+\pgf@yb=\dimen182
+\pgf@xc=\dimen183
+\pgf@yc=\dimen184
+\pgf@xd=\dimen185
+\pgf@yd=\dimen186
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count288
+\c@pgf@countb=\count289
+\c@pgf@countc=\count290
+\c@pgf@countd=\count291
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count292
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count293
+\pgfsyssoftpath@bigbuffer@items=\count294
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
-Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
-\everycr=\toks27
-\minrowclearance=\skip57
-\rownum=\count297
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.sty
-Package: subfigure 2002/07/30 v2.1.4 subfigure package
-\subfigtopskip=\skip58
-\subfigcapskip=\skip59
-\subfigcaptopadj=\dimen172
-\subfigbottomskip=\skip60
-\subfigcapmargin=\dimen173
-\subfiglabelskip=\skip61
-\c@subfigure=\count298
-\c@lofdepth=\count299
-\c@subtable=\count300
-\c@lotdepth=\count301
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.cfg)
-\subfig@top=\skip62
-\subfig@bottom=\skip63
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
-Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box60
-\beforetitleunit=\skip64
-\aftertitleunit=\skip65
-\ttl@plus=\dimen174
-\ttl@minus=\dimen175
-\ttl@toksa=\toks28
-\titlewidth=\dimen176
-\titlewidthlast=\dimen177
-\titlewidthfirst=\dimen178
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen187
+\pgf@picmaxx=\dimen188
+\pgf@picminy=\dimen189
+\pgf@picmaxy=\dimen190
+\pgf@pathminx=\dimen191
+\pgf@pathmaxx=\dimen192
+\pgf@pathminy=\dimen193
+\pgf@pathmaxy=\dimen194
+\pgf@xx=\dimen195
+\pgf@xy=\dimen196
+\pgf@yx=\dimen197
+\pgf@yy=\dimen198
+\pgf@zx=\dimen199
+\pgf@zy=\dimen256
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen257
+\pgf@path@lasty=\dimen258
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen259
+\pgf@shorten@start@additional=\dimen260
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count295
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen261
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen262
+\pgf@pt@y=\dimen263
+\pgf@pt@temp=\dimen264
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen265
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen266
+\pgf@sys@shading@range@num=\count296
+\pgf@shadingcount=\count297
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box65
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count298
+\XC@countmixins=\count299
+) (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count300
 )
-\c@section@level=\count302
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
-)
-\@linkdim=\dimen179
-\Hy@linkcounter=\count303
-\Hy@pagecounter=\count304
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen267
+\Hy@linkcounter=\count301
+\Hy@pagecounter=\count302
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count305
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count303
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 4040.
-Package hyperref Info: Hyper figures OFF on input line 4157.
-Package hyperref Info: Link nesting OFF on input line 4162.
-Package hyperref Info: Hyper index ON on input line 4165.
-Package hyperref Info: Plain pages OFF on input line 4172.
-Package hyperref Info: Backreferencing OFF on input line 4177.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count306
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
-\Urlmuskip=\muskip18
+Package hyperref Info: Option `bookmarks' set `true' on input line 4062.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4062.
+Package hyperref Info: Option `implicit' set `false' on input line 4062.
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count304
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen180
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen268
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count307
-\Field@Width=\dimen181
-\Fld@charsize=\dimen182
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-\Hy@abspage=\count308
-\c@Item=\count309
-\c@Hfootnote=\count310
+\Fld@menulength=\count305
+\Field@Width=\dimen269
+\Fld@charsize=\dimen270
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+\Hy@abspage=\count306
+
+
+Package hyperref Message: Stopped early.
+
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count311
-\c@bookmark@seq@number=\count312
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaserequires.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasefont.sty (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks29
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty (/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
+)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemisc.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+\beamer@argscount=\count309
+\beamer@lastskipcover=\skip51
+\beamer@trivlistdepth=\count310
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetitle.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+\c@lecture=\count311
+\c@part=\count312
+\c@section=\count313
+\c@subsection=\count314
+\c@subsubsection=\count315
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+\beamer@framebox=\box66
+\beamer@frametitlebox=\box67
+\beamer@zoombox=\box68
+\beamer@zoomcount=\count316
+\beamer@zoomframecount=\count317
+\beamer@frametextheight=\dimen271
+\c@subsectionslide=\count318
+\beamer@frametopskip=\skip52
+\beamer@framebottomskip=\skip53
+\beamer@frametopskipautobreak=\skip54
+\beamer@framebottomskipautobreak=\skip55
+\beamer@envbody=\toks30
+\framewidth=\dimen272
+\c@framenumber=\count319
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+\beamer@verbatimfileout=\write4
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
+\beamer@splitbox=\box69
+\beamer@autobreakcount=\count320
+\beamer@autobreaklastheight=\dimen273
+\beamer@frametitletoks=\toks31
+\beamer@framesubtitletoks=\toks32
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
+\beamer@footins=\box70
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecolor.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+\beamer@frameboxcopy=\box71
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetoc.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
+\beamer@sbttoks=\toks33
+ (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+\bmb@box=\box72
+\bmb@colorbox=\box73
+\bmb@boxwidth=\dimen274
+\bmb@boxheight=\dimen275
+\bmb@prevheight=\dimen276
+\bmb@temp=\dimen277
+\bmb@dima=\dimen278
+\bmb@dimb=\dimen279
+\bmb@prevheight=\dimen280
 )
-\Hy@SectionHShift=\skip66
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+\beamer@blockheadheight=\dimen281
+)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
+\@enLab=\toks34
+)
+\beamer@bibiconwidth=\skip56
+\c@figure=\count321
+\c@table=\count322
+\abovecaptionskip=\skip57
+\belowcaptionskip=\skip58
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex)
+\beamer@section@min@dim=\dimen282
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip59
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks35
+\ex@=\dimen283
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen284
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count323
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count324
+\leftroot@=\count325
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count326
+\DOTSCASE@=\count327
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box74
+\strutbox@=\box75
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen285
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count328
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count329
+\dotsspace@=\muskip17
+\c@parentequation=\count330
+\dspbrk@lvl=\count331
+\tag@help=\toks36
+\row@=\count332
+\column@=\count333
+\maxfields@=\count334
+\andhelp@=\toks37
+\eqnshift@=\dimen286
+\alignsep@=\dimen287
+\tagshift@=\dimen288
+\tagwidth@=\dimen289
+\totwidth@=\dimen290
+\lineht@=\dimen291
+\@envbody=\toks38
+\multlinegap=\skip60
+\multlinetaggap=\skip61
+\mathdisplay@stack=\toks39
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks40
+\thm@bodyfont=\toks41
+\thm@headfont=\toks42
+\thm@notefont=\toks43
+\thm@headpunct=\toks44
+\thm@preskip=\skip62
+\thm@postskip=\skip63
+\thm@headsep=\skip64
+\dth@everypar=\toks45
+)
+\c@theorem=\count335
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
+\beamer@dima=\dimen292
+\beamer@dimb=\dimen293
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeMadrid.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeseahorse.sty) (/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/01/07 v24.1 The Babel package
+\babel@savecnt=\count336
+\U@D=\dimen294
+\l@unhyphenated=\language10
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+LaTeX Info: Redefining \textlatin on input line 3986.
+\bbl@dirlevel=\count337
+Package babel Info: Main language set with 'main='. Except if you have
+(babel)             problems, prefer the default mechanism for setting
+(babel)             the main language, ie, as the last declared.
+(babel)             Reported on input line 4250.
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
+) (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazilian' set to \l@portuguese
+(babel)             (\language7). Reported on input line 111.
+Package babel Info: Making " an active character on input line 143.
+)) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/pt/babel-brazilian.tex
+Package babel Info: Importing font and identification data for brazilian
+(babel)             from babel-pt-BR.ini. Reported on input line 11.
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box76
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen295
+\pgf@nodesepend=\dimen296
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks46
+\verbatim@line=\toks47
+\verbatim@in@stream=\read4
+) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box77
+\tcb@upperbox=\box78
+\tcb@lowerbox=\box79
+\tcb@phantombox=\box80
+\c@tcbbreakpart=\count338
+\c@tcblayer=\count339
+\c@tcolorbox@number=\count340
+\l__tcobox_tmpa_box=\box81
+\l__tcobox_tmpa_dim=\dimen297
+\tcb@temp=\box82
+\tcb@temp=\box83
+\tcb@temp=\box84
+\tcb@temp=\box85
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count341
+\lst@gtempboxa=\box86
+\lst@token=\toks48
+\lst@length=\count342
+\lst@currlwidth=\dimen298
+\lst@column=\count343
+\lst@pos=\count344
+\lst@lostspace=\dimen299
+\lst@width=\dimen300
+\lst@newlines=\count345
+\lst@lineno=\count346
+\lst@maxwidth=\dimen301
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count347
+\lst@skipnumbers=\count348
+\lst@framebox=\box87
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks49
+\XKV@tempa@toks=\toks50
+)
+\XKV@depth=\count349
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box88
+)
+\tc@llx=\dimen302
+\tc@lly=\dimen303
+\tc@urx=\dimen304
+\tc@ury=\dimen305
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen306
+\adjbox@Height=\dimen307
+\adjbox@Depth=\dimen308
+\adjbox@Totalheight=\dimen309
+\adjbox@pwidth=\dimen310
+\adjbox@pheight=\dimen311
+\adjbox@pdepth=\dimen312
+\adjbox@ptotalheight=\dimen313
+ (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count350
+) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box89
+\sift@deathcycles=\count351
+\@vwid@loff=\dimen314
+\@vwid@roff=\dimen315
+)) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen183
-\captionmargin=\dimen184
-\caption@leftmargin=\dimen185
-\caption@rightmargin=\dimen186
-\caption@width=\dimen187
-\caption@indent=\dimen188
-\caption@parindent=\dimen189
-\caption@hangindent=\dimen190
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count313
-\c@continuedfloat=\count314
+\caption@tempdima=\dimen316
+\captionmargin=\dimen317
+\caption@leftmargin=\dimen318
+\caption@rightmargin=\dimen319
+\caption@width=\dimen320
+\caption@indent=\dimen321
+\caption@parindent=\dimen322
+\caption@hangindent=\dimen323
+Package caption Info: beamer document class detected.
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption-beamer.sto
+File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to the beamer document classes (AR)
+))
+\c@caption@flags=\count352
+\c@continuedfloat=\count353
 Package caption Info: hyperref package is loaded.
-Package caption Info: subfigure package is loaded.
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
-Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip67
-\enit@outerparindent=\dimen191
-\enit@toks=\toks29
-\enit@inbox=\box61
-\enit@count@id=\count315
-\enitdp@description=\count316
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/outlines\outlines.sty
-Package: outlines 2012/1/23 1.1 Ch. Pecheur
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-)) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
-Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.sty
-Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
-\SOUL@word=\toks30
-\SOUL@lasttoken=\toks31
-\SOUL@syllable=\toks32
-\SOUL@cmds=\toks33
-\SOUL@buffer=\toks34
-\SOUL@token=\toks35
-\SOUL@syllgoal=\dimen192
-\SOUL@syllwidth=\dimen193
-\SOUL@charkern=\dimen194
-\SOUL@hyphkern=\dimen195
-\SOUL@dimen=\dimen196
-\SOUL@dimeni=\dimen197
-\SOUL@minus=\count317
-\SOUL@comma=\count318
-\SOUL@apo=\count319
-\SOUL@grave=\count320
-\SOUL@spaceskip=\skip68
-\SOUL@ttwidth=\dimen198
-\SOUL@uldp=\dimen199
-\SOUL@ulht=\dimen256
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
-Package: ragged2e 2023/06/22 v3.6 ragged2e Package
-\CenteringLeftskip=\skip69
-\RaggedLeftLeftskip=\skip70
-\RaggedRightLeftskip=\skip71
-\CenteringRightskip=\skip72
-\RaggedLeftRightskip=\skip73
-\RaggedRightRightskip=\skip74
-\CenteringParfillskip=\skip75
-\RaggedLeftParfillskip=\skip76
-\RaggedRightParfillskip=\skip77
-\JustifyingParfillskip=\skip78
-\CenteringParindent=\skip79
-\RaggedLeftParindent=\skip80
-\RaggedRightParindent=\skip81
-\JustifyingParindent=\skip82
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+Package caption Info: listings package is loaded.
 )
-Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... found 'babel' package.
-Package csquotes Info: Adjusting default style.
-Package csquotes Info: Redefining alias 'default' -> 'portuguese'.
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count321
-) (main.aux
-Package babel Info: 'portuguese' activates 'portuges' shorthands.
-(babel)             Reported  on input line 8.
-)
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 90.
+ (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count354
+\l__pdf_internal_box=\box90
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=426.79135pt
-* \textheight=731.23584pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=-52.36449pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=42.67912pt
-* \marginparsep=11.0pt
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(10.95003pt, 342.2953pt, 10.95003pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=342.2953pt
+* \textheight=244.6939pt
+* \oddsidemargin=-61.31996pt
+* \evensidemargin=-61.31996pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -501,304 +785,584 @@ LaTeX Font Info:    ... okay on input line 45.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen257
-\scratchbox=\box62
-\nofMPsegments=\count323
-\nofMParguments=\count324
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen258
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
-\everyMPtoPDFconversion=\toks37
-) (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+\scratchcounter=\count355
+\scratchdimen=\dimen324
+\scratchbox=\box91
+\nofMPsegments=\count356
+\nofMParguments=\count357
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count358
+\MPscratchDim=\dimen325
+\MPnumerator=\count359
+\makeMPintoPDFobject=\count360
+\everyMPtoPDFconversion=\toks52
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\Drows\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 45.
- (main.out) (main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
+Package hyperref Info: Link coloring OFF on input line 90.
+\@outlinefile=\write5
+\openout5 = `main.out'.
 
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 90.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 90.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 90.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 90.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 90.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/b/n on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/b/n on input line 90.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 90.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 90.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 90.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 90.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/lmss/m/it --> OT1/lmss/b/it on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/lmss/b/n --> OT1/lmr/b/n on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/lmss/b/n --> OT1/lmss/b/n on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmss/m/it --> OT1/lmss/b/it on input line 90.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/b/n on input line 90.
+ (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+\c@lstlisting=\count361
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<images/logos/UFRGS.png, id=55, 1204.5pt x 962.59625pt>
+
+No file main.nav.
+<images/logos/UFRGS.png, id=15, 1204.5pt x 962.59625pt>
 File: images/logos/UFRGS.png Graphic file (type png)
 <use images/logos/UFRGS.png>
-Package pdftex.def Info: images/logos/UFRGS.png  used on input line 55.
-(pdftex.def)             Requested size: 149.37958pt x 119.3695pt.
-<images/logos/INF.png, id=57, 219.9417pt x 130.5678pt>
+Package pdftex.def Info: images/logos/UFRGS.png  used on input line 94.
+(pdftex.def)             Requested size: 68.45801pt x 54.69817pt.
+<images/logos/INF.png, id=17, 219.9417pt x 130.5678pt>
 File: images/logos/INF.png Graphic file (type png)
 <use images/logos/INF.png>
-Package pdftex.def Info: images/logos/INF.png  used on input line 58.
-(pdftex.def)             Requested size: 149.37958pt x 88.67932pt.
+Package pdftex.def Info: images/logos/INF.png  used on input line 94.
+(pdftex.def)             Requested size: 68.45801pt x 40.63896pt.
+File: images/logos/UFRGS.png Graphic file (type png)
+<use images/logos/UFRGS.png>
+Package pdftex.def Info: images/logos/UFRGS.png  used on input line 94.
+(pdftex.def)             Requested size: 68.45801pt x 54.69817pt.
+File: images/logos/INF.png Graphic file (type png)
+<use images/logos/INF.png>
+Package pdftex.def Info: images/logos/INF.png  used on input line 94.
+(pdftex.def)             Requested size: 68.45801pt x 40.63896pt.
 
+Overfull \vbox (30.00967pt too high) detected at line 94
+ []
 
 [1
 
-{C:/Users/Drows/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/logos/UFRGS.png> <./images/logos/INF.png>] (main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.78     \clearpage
-                    [1
-
-]
-<images/prints/Monocycle/Bloco Operativo Monocycle Antes.png, id=88, 981.6675pt x 522.45187pt>
-File: images/prints/Monocycle/Bloco Operativo Monocycle Antes.png Graphic file (type png)
-<use images/prints/Monocycle/Bloco Operativo Monocycle Antes.png>
-Package pdftex.def Info: images/prints/Monocycle/Bloco Operativo Monocycle Antes.png  used on input line 86.
-(pdftex.def)             Requested size: 426.79135pt x 227.13718pt.
-
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc} <./images/logos/UFRGS.png> <./images/logos/INF.png>]
+No file main.toc.
 [2
 
-
- <./images/prints/Monocycle/Bloco Operativo Monocycle Antes.png>]
-<images/prints/Monocycle/Bloco Operativo Monocycle Depois.png, id=96, 932.73468pt x 490.83376pt>
-File: images/prints/Monocycle/Bloco Operativo Monocycle Depois.png Graphic file (type png)
-<use images/prints/Monocycle/Bloco Operativo Monocycle Depois.png>
-Package pdftex.def Info: images/prints/Monocycle/Bloco Operativo Monocycle Depois.png  used on input line 108.
-(pdftex.def)             Requested size: 426.79135pt x 224.58794pt.
-<images/prints/Monocycle/Bloco de Controle Monocycle Antes.png, id=97, 1052.43187pt x 469.755pt>
-File: images/prints/Monocycle/Bloco de Controle Monocycle Antes.png Graphic file (type png)
-<use images/prints/Monocycle/Bloco de Controle Monocycle Antes.png>
-Package pdftex.def Info: images/prints/Monocycle/Bloco de Controle Monocycle Antes.png  used on input line 116.
-(pdftex.def)             Requested size: 426.79135pt x 190.50061pt.
-
-
+]
+No file main.toc.
 [3
 
- <./images/prints/Monocycle/Bloco Operativo Monocycle Depois.png> <./images/prints/Monocycle/Bloco de Controle Monocycle Antes.png>]
-<images/prints/Monocycle/Bloco de Controle Monocycle Depois.png, id=106, 811.53188pt x 405.01312pt>
-File: images/prints/Monocycle/Bloco de Controle Monocycle Depois.png Graphic file (type png)
-<use images/prints/Monocycle/Bloco de Controle Monocycle Depois.png>
-Package pdftex.def Info: images/prints/Monocycle/Bloco de Controle Monocycle Depois.png  used on input line 144.
-(pdftex.def)             Requested size: 426.79135pt x 213.00586pt.
+]
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 134.
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 134.
+ (/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 134.
+ (/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 134.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 134.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 134.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 134.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 134.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 134.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 134.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 134.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 134.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 134.
+ [4
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [5
+
+]
+No file main.toc.
+[6
+
+]
+
+LaTeX Warning: File `./images/solutions/PC-PO_-_ASM.jpg' not found on input line 156.
 
 
-[4 <./images/prints/Monocycle/Bloco de Controle Monocycle Depois.png>]
-<images/prints/Monocycle/Teste JR.png, id=113, 939.51pt x 498.36188pt>
-File: images/prints/Monocycle/Teste JR.png Graphic file (type png)
-<use images/prints/Monocycle/Teste JR.png>
-Package pdftex.def Info: images/prints/Monocycle/Teste JR.png  used on input line 165.
-(pdftex.def)             Requested size: 426.79135pt x 226.39pt.
-<images/prints/Monocycle/Teste BLTZ.png, id=114, 946.28531pt x 494.59781pt>
-File: images/prints/Monocycle/Teste BLTZ.png Graphic file (type png)
-<use images/prints/Monocycle/Teste BLTZ.png>
-Package pdftex.def Info: images/prints/Monocycle/Teste BLTZ.png  used on input line 178.
-(pdftex.def)             Requested size: 426.79135pt x 223.07259pt.
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:156: Package pdftex.def Error: File `./images/solutions/PC-PO_-_ASM.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 156.
+(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \hbox (44.76862pt too wide) in paragraph at lines 156--156
+ [] 
+ []
 
 
-[5
-
- <./images/prints/Monocycle/Teste JR.png> <./images/prints/Monocycle/Teste BLTZ.png>]
-<images/prints/Monocycle/Teste LB.png, id=125, 940.26282pt x 497.60907pt>
-File: images/prints/Monocycle/Teste LB.png Graphic file (type png)
-<use images/prints/Monocycle/Teste LB.png>
-Package pdftex.def Info: images/prints/Monocycle/Teste LB.png  used on input line 190.
-(pdftex.def)             Requested size: 426.79135pt x 225.86578pt.
-<images/prints/Monocycle/Teste MULT.png, id=126, 941.76843pt x 496.85625pt>
-File: images/prints/Monocycle/Teste MULT.png Graphic file (type png)
-<use images/prints/Monocycle/Teste MULT.png>
-Package pdftex.def Info: images/prints/Monocycle/Teste MULT.png  used on input line 204.
-(pdftex.def)             Requested size: 426.79135pt x 225.16776pt.
+LaTeX Warning: File `./images/solutions/PC-PO_-_ASM.jpg' not found on input line 156.
 
 
-[6 <./images/prints/Monocycle/Teste LB.png> <./images/prints/Monocycle/Teste MULT.png>]
-<images/prints/Monocycle/Teste SLTIU.png, id=136, 948.54375pt x 498.36188pt>
-File: images/prints/Monocycle/Teste SLTIU.png Graphic file (type png)
-<use images/prints/Monocycle/Teste SLTIU.png>
-Package pdftex.def Info: images/prints/Monocycle/Teste SLTIU.png  used on input line 217.
-(pdftex.def)             Requested size: 426.79135pt x 224.23035pt.
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:156: Package pdftex.def Error: File `./images/solutions/PC-PO_-_ASM.jpg' not found: using draft setting.
 
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (44.76862pt too wide) in paragraph at lines 156--156
+ [] 
+ []
+
+
+Overfull \vbox (12.0612pt too high) detected at line 156
+ []
 
 [7
 
- <./images/prints/Monocycle/Teste SLTIU.png>]
-<images/prints/Multicycle/Bloco Operativo Multicycle Antes.png, id=144, 1419.3025pt x 993.7125pt>
-File: images/prints/Multicycle/Bloco Operativo Multicycle Antes.png Graphic file (type png)
-<use images/prints/Multicycle/Bloco Operativo Multicycle Antes.png>
-Package pdftex.def Info: images/prints/Multicycle/Bloco Operativo Multicycle Antes.png  used on input line 235.
-(pdftex.def)             Requested size: 426.79135pt x 298.81354pt.
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}]
 
+LaTeX Warning: File `./images/solutions/PC-PO_-_ASM.jpg' not found on input line 156.
+
+
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:156: Package pdftex.def Error: File `./images/solutions/PC-PO_-_ASM.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (44.76862pt too wide) in paragraph at lines 156--156
+ [] 
+ []
+
+
+LaTeX Warning: File `./images/solutions/PC-PO_-_ASM.jpg' not found on input line 156.
+
+
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:156: Package pdftex.def Error: File `./images/solutions/PC-PO_-_ASM.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (44.76862pt too wide) in paragraph at lines 156--156
+ [] 
+ []
+
+
+Overfull \vbox (12.0612pt too high) detected at line 156
+ []
 
 [8
 
- <./images/prints/Multicycle/Bloco Operativo Multicycle Antes.png>]
-<images/prints/Multicycle/Bloco Operativo Multicycle Depois.png, id=152, 1043.39813pt x 505.89pt>
-File: images/prints/Multicycle/Bloco Operativo Multicycle Depois.png Graphic file (type png)
-<use images/prints/Multicycle/Bloco Operativo Multicycle Depois.png>
-Package pdftex.def Info: images/prints/Multicycle/Bloco Operativo Multicycle Depois.png  used on input line 243.
-(pdftex.def)             Requested size: 426.79135pt x 206.92992pt.
+]
 
+LaTeX Warning: File `./images/solutions/PC-PO_-_PO.jpg' not found on input line 176.
+
+
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:176: Package pdftex.def Error: File `./images/solutions/PC-PO_-_PO.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (133.20605pt too wide) in paragraph at lines 176--176
+ [] 
+ []
+
+
+LaTeX Warning: File `./images/solutions/PC-PO_-_PO.jpg' not found on input line 176.
+
+
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:176: Package pdftex.def Error: File `./images/solutions/PC-PO_-_PO.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 176.
+
+Overfull \vbox (12.05725pt too high) detected at line 176
+ []
 
 [9
 
- <./images/prints/Multicycle/Bloco Operativo Multicycle Depois.png>]
-<images/prints/Multicycle/Bloco de Controle Multicycle Antes.png, id=158, 1040.88875pt x 975.645pt>
-File: images/prints/Multicycle/Bloco de Controle Multicycle Antes.png Graphic file (type png)
-<use images/prints/Multicycle/Bloco de Controle Multicycle Antes.png>
-Package pdftex.def Info: images/prints/Multicycle/Bloco de Controle Multicycle Antes.png  used on input line 257.
-(pdftex.def)             Requested size: 426.79135pt x 400.03192pt.
+]
 
+LaTeX Warning: File `./images/solutions/PC-PO_-_PO.jpg' not found on input line 176.
+
+
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:176: Package pdftex.def Error: File `./images/solutions/PC-PO_-_PO.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (133.20605pt too wide) in paragraph at lines 176--176
+ [] 
+ []
+
+
+LaTeX Warning: File `./images/solutions/PC-PO_-_PO.jpg' not found on input line 176.
+
+
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:176: Package pdftex.def Error: File `./images/solutions/PC-PO_-_PO.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 [10
 
- <./images/prints/Multicycle/Bloco de Controle Multicycle Antes.png>]
-<images/prints/Multicycle/Bloco de Controle Multicycle Depois.png, id=165, 1030.60031pt x 408.02437pt>
-File: images/prints/Multicycle/Bloco de Controle Multicycle Depois.png Graphic file (type png)
-<use images/prints/Multicycle/Bloco de Controle Multicycle Depois.png>
-Package pdftex.def Info: images/prints/Multicycle/Bloco de Controle Multicycle Depois.png  used on input line 265.
-(pdftex.def)             Requested size: 426.79135pt x 168.96585pt.
-<images/prints/Multicycle/FSM Multicycle.png, id=166, 815.045pt x 638.385pt>
-File: images/prints/Multicycle/FSM Multicycle.png Graphic file (type png)
-<use images/prints/Multicycle/FSM Multicycle.png>
-Package pdftex.def Info: images/prints/Multicycle/FSM Multicycle.png  used on input line 274.
-(pdftex.def)             Requested size: 426.79135pt x 334.28044pt.
+]
 
+LaTeX Warning: File `./images/solutions/PC-PO_-_FSM.jpg' not found on input line 196.
+
+
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:196: Package pdftex.def Error: File `./images/solutions/PC-PO_-_FSM.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (69.52762pt too wide) in paragraph at lines 196--196
+ [] 
+ []
+
+
+LaTeX Warning: File `./images/solutions/PC-PO_-_FSM.jpg' not found on input line 196.
+
+
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:196: Package pdftex.def Error: File `./images/solutions/PC-PO_-_FSM.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (22.81833pt too wide) in paragraph at lines 196--196
+ [] 
+ []
+
+
+Overfull \vbox (12.0866pt too high) detected at line 196
+ []
 
 [11
 
- <./images/prints/Multicycle/Bloco de Controle Multicycle Depois.png> <./images/prints/Multicycle/FSM Multicycle.png>]
-<images/prints/Multicycle/Teste JR.png, id=175, 1033.61156pt x 536.75531pt>
-File: images/prints/Multicycle/Teste JR.png Graphic file (type png)
-<use images/prints/Multicycle/Teste JR.png>
-Package pdftex.def Info: images/prints/Multicycle/Teste JR.png  used on input line 291.
-(pdftex.def)             Requested size: 426.79135pt x 221.63542pt.
-<images/prints/Multicycle/Teste BLTZ.png, id=176, 1038.12843pt x 548.0475pt>
-File: images/prints/Multicycle/Teste BLTZ.png Graphic file (type png)
-<use images/prints/Multicycle/Teste BLTZ.png>
-Package pdftex.def Info: images/prints/Multicycle/Teste BLTZ.png  used on input line 304.
-(pdftex.def)             Requested size: 426.79135pt x 225.30302pt.
+]
+
+LaTeX Warning: File `./images/solutions/PC-PO_-_FSM.jpg' not found on input line 196.
 
 
-[12 <./images/prints/Multicycle/Teste JR.png> <./images/prints/Multicycle/Teste BLTZ.png>]
-<images/prints/Multicycle/Teste LB.png, id=186, 1015.54407pt x 531.48563pt>
-File: images/prints/Multicycle/Teste LB.png Graphic file (type png)
-<use images/prints/Multicycle/Teste LB.png>
-Package pdftex.def Info: images/prints/Multicycle/Teste LB.png  used on input line 316.
-(pdftex.def)             Requested size: 426.79135pt x 223.3603pt.
-<images/prints/Multicycle/Teste MULT.png, id=187, 1018.55531pt x 547.2947pt>
-File: images/prints/Multicycle/Teste MULT.png Graphic file (type png)
-<use images/prints/Multicycle/Teste MULT.png>
-Package pdftex.def Info: images/prints/Multicycle/Teste MULT.png  used on input line 330.
-(pdftex.def)             Requested size: 426.79135pt x 229.32773pt.
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:196: Package pdftex.def Error: File `./images/solutions/PC-PO_-_FSM.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-[13 <./images/prints/Multicycle/Teste LB.png> <./images/prints/Multicycle/Teste MULT.png>]
-<images/prints/Multicycle/Teste SLTIU.png, id=196, 1022.31938pt x 539.01375pt>
-File: images/prints/Multicycle/Teste SLTIU.png Graphic file (type png)
-<use images/prints/Multicycle/Teste SLTIU.png>
-Package pdftex.def Info: images/prints/Multicycle/Teste SLTIU.png  used on input line 343.
-(pdftex.def)             Requested size: 426.79135pt x 225.01892pt.
+Overfull \hbox (69.52762pt too wide) in paragraph at lines 196--196
+ [] 
+ []
 
 
-[14
-
- <./images/prints/Multicycle/Teste SLTIU.png>]
-<images/prints/Pipeline/Bloco Operativo Pipeline Antes.png, id=203, 1238.6275pt x 749.80125pt>
-File: images/prints/Pipeline/Bloco Operativo Pipeline Antes.png Graphic file (type png)
-<use images/prints/Pipeline/Bloco Operativo Pipeline Antes.png>
-Package pdftex.def Info: images/prints/Pipeline/Bloco Operativo Pipeline Antes.png  used on input line 357.
-(pdftex.def)             Requested size: 426.79135pt x 258.36136pt.
-<images/prints/Pipeline/Bloco Operativo Pipeline Depois.png, id=204, 1380.15625pt x 958.58125pt>
-File: images/prints/Pipeline/Bloco Operativo Pipeline Depois.png Graphic file (type png)
-<use images/prints/Pipeline/Bloco Operativo Pipeline Depois.png>
-Package pdftex.def Info: images/prints/Pipeline/Bloco Operativo Pipeline Depois.png  used on input line 383.
-(pdftex.def)             Requested size: 426.79135pt x 296.42578pt.
+LaTeX Warning: File `./images/solutions/PC-PO_-_FSM.jpg' not found on input line 196.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:196: Package pdftex.def Error: File `./images/solutions/PC-PO_-_FSM.jpg' not found: using draft setting.
 
-<images/prints/Pipeline/Bloco de Controle Pipeline Antes.png, id=205, 1238.6275pt x 212.795pt>
-File: images/prints/Pipeline/Bloco de Controle Pipeline Antes.png Graphic file (type png)
-<use images/prints/Pipeline/Bloco de Controle Pipeline Antes.png>
-Package pdftex.def Info: images/prints/Pipeline/Bloco de Controle Pipeline Antes.png  used on input line 391.
-(pdftex.def)             Requested size: 426.79135pt x 73.32343pt.
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
+
+Overfull \hbox (22.81833pt too wide) in paragraph at lines 196--196
+ [] 
+ []
+
+
+Overfull \vbox (12.03905pt too high) detected at line 196
+ []
+
+[12
+
+] [13
+
+] [14
+
+]
+
+LaTeX Warning: File `./images/solutions/PC-PO-Sim1.png' not found on input line 239.
+
+
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:239: Package pdftex.def Error: File `./images/solutions/PC-PO-Sim1.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 239.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 239.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 239.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 239.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 239.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 239.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 239.
+
+Overfull \vbox (191.85313pt too high) detected at line 239
+ []
 
 [15
 
- <./images/prints/Pipeline/Bloco Operativo Pipeline Antes.png>]
+]
 
-[16 <./images/prints/Pipeline/Bloco Operativo Pipeline Depois.png> <./images/prints/Pipeline/Bloco de Controle Pipeline Antes.png>]
-<images/prints/Pipeline/Bloco de Controle Pipeline Depois.png, id=220, 1187.43625pt x 249.93375pt>
-File: images/prints/Pipeline/Bloco de Controle Pipeline Depois.png Graphic file (type png)
-<use images/prints/Pipeline/Bloco de Controle Pipeline Depois.png>
-Package pdftex.def Info: images/prints/Pipeline/Bloco de Controle Pipeline Depois.png  used on input line 419.
-(pdftex.def)             Requested size: 426.79135pt x 89.83116pt.
-<images/prints/Pipeline/Teste JR.png, id=221, 1310.8975pt x 658.46pt>
-File: images/prints/Pipeline/Teste JR.png Graphic file (type png)
-<use images/prints/Pipeline/Teste JR.png>
-Package pdftex.def Info: images/prints/Pipeline/Teste JR.png  used on input line 444.
-(pdftex.def)             Requested size: 426.79135pt x 214.37875pt.
+LaTeX Warning: File `./images/solutions/PC-PO-Sim1.png' not found on input line 239.
 
 
-[17 <./images/prints/Pipeline/Bloco de Controle Pipeline Depois.png> <./images/prints/Pipeline/Teste JR.png>]
-<images/prints/Pipeline/Teste MULT.png, id=230, 1332.98pt x 472.76625pt>
-File: images/prints/Pipeline/Teste MULT.png Graphic file (type png)
-<use images/prints/Pipeline/Teste MULT.png>
-Package pdftex.def Info: images/prints/Pipeline/Teste MULT.png  used on input line 462.
-(pdftex.def)             Requested size: 426.79135pt x 151.36763pt.
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:239: Package pdftex.def Error: File `./images/solutions/PC-PO-Sim1.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-[18 <./images/prints/Pipeline/Teste MULT.png>]
-<images/prints/Pipeline/Teste BLTZ.png, id=238, 1310.8975pt x 693.59125pt>
-File: images/prints/Pipeline/Teste BLTZ.png Graphic file (type png)
-<use images/prints/Pipeline/Teste BLTZ.png>
-Package pdftex.def Info: images/prints/Pipeline/Teste BLTZ.png  used on input line 480.
-(pdftex.def)             Requested size: 426.79135pt x 225.81665pt.
-<images/prints/Pipeline/Teste LB.png, id=239, 1367.1075pt x 623.32875pt>
-File: images/prints/Pipeline/Teste LB.png Graphic file (type png)
-<use images/prints/Pipeline/Teste LB.png>
-Package pdftex.def Info: images/prints/Pipeline/Teste LB.png  used on input line 492.
-(pdftex.def)             Requested size: 426.79135pt x 194.59001pt.
+Overfull \vbox (191.85313pt too high) detected at line 239
+ []
+
+[16
+
+]
+
+LaTeX Warning: File `./images/solutions/PC-PO-Sim2.png' not found on input line 255.
 
 
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:255: Package pdftex.def Error: File `./images/solutions/PC-PO-Sim2.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \vbox (191.85313pt too high) detected at line 255
+ []
+
+[17
+
+]
+
+LaTeX Warning: File `./images/solutions/PC-PO-Sim2.png' not found on input line 255.
+
+
+/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P1/report/main.tex:255: Package pdftex.def Error: File `./images/solutions/PC-PO-Sim2.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255     \end{frame}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \vbox (191.85313pt too high) detected at line 255
+ []
+
+[18
+
+]
+No file main.toc.
 [19
 
- <./images/prints/Pipeline/Teste BLTZ.png> <./images/prints/Pipeline/Teste LB.png>]
-<images/prints/Pipeline/Teste SLTIU.png, id=248, 1278.7775pt x 657.45625pt>
-File: images/prints/Pipeline/Teste SLTIU.png Graphic file (type png)
-<use images/prints/Pipeline/Teste SLTIU.png>
-Package pdftex.def Info: images/prints/Pipeline/Teste SLTIU.png  used on input line 505.
-(pdftex.def)             Requested size: 426.79135pt x 219.4291pt.
+]
+\openout4 = `main.vrb'.
 
+ (./main.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+)
 
-[20
+! Package Listings Error: File `./code/matrix_operations(.h)' not found.
 
- <./images/prints/Pipeline/Teste SLTIU.png>] (main.aux)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-03-26>
- ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0B4FE82B796754994DDDD719F37D0B1A;2519.
- ) 
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: h)
+
+Enter file name: 
+./main.vrb:13: Emergency stop.
+<read *> 
+         
+l.13         {./code/matrix_operations.h}
+                                         ^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
 Here is how much of TeX's memory you used:
- 15012 strings out of 469958
- 252203 string characters out of 5469813
- 668626 words of memory out of 5000000
- 41536 multiletter control sequences out of 15000+600000
- 629850 words of font info for 51 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 69i,7n,79p,1242b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Drows\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Drows/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Drows/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Drows/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Drows/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Drows/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (21 pages, 889448 bytes).
-PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 29375 strings out of 476089
+ 579577 string characters out of 5793231
+ 1941975 words of memory out of 5000000
+ 50762 multiletter control sequences out of 15000+600000
+ 619777 words of font info for 91 fonts, out of 8000000 for 9000
+ 61 hyphenation exceptions out of 8191
+ 101i,15n,117p,503b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
+./main.vrb:13:  ==> Fatal error occurred, no output PDF file produced!

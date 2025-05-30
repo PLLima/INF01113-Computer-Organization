@@ -1,509 +1,446 @@
-\documentclass{report}
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+\setbeamertemplate{caption}[numbered]
+
+\usepackage{lmodern}
 
 % Language setting
-\usepackage[main=portuguese, english]{babel}
-\usepackage{csquotes}
+\usepackage[main=brazilian, english]{babel}
 
-% Set page size and margins
-\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.5cm]{geometry}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{adjustbox}
 
-% Useful packages
-\usepackage{ulem}
-\usepackage{parskip}
-\usepackage{indentfirst}
-\usepackage{setspace}
-\usepackage{amsmath}
-\usepackage{array}
+\usepackage{caption}
 
-\usepackage{graphicx}
-\usepackage{xcolor}
-\usepackage{colortbl}
-\usepackage{subfigure}
-\usepackage{titlesec}
-\usepackage[colorlinks=false, allbordercolors={0 0 0}, pdfborderstyle={/S/U/W 0.25}]{hyperref}
-\usepackage[hypcap=true]{caption}
-\usepackage{enumitem}
-\usepackage{outlines}
-\usepackage{soul}
-\usepackage{ragged2e}
+\setbeamerfont{title}{series=\bfseries}
+\setbeamerfont{subtitle}{series=\normalfont}
+\defbeamertemplate*{title page}{customized}[1][]
+{
+    \vbox{}
+    \vfill
+    \begingroup
+        \centering
+        \usebeamertemplate{titlegraphic}
+        \inserttitlegraphic
+        \par
+        
+        \vskip 0.15cm
 
-% Set section numbering from 1.1
-\renewcommand{\thesection}{\arabic{section}.1}
-\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
-\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+        \usebeamerfont{institute}
+        \insertinstitute
+        \par
 
-\let\oldsection\section
-\renewcommand\section{\clearpage\oldsection}
+        \vskip 0.75cm
 
-% Change section formatting
-\titleformat{\section}
-  {\fontsize{12}{15}\selectfont\bfseries}{\thesection}{1em}{}
+        \begin{tcolorbox}[colframe=darkgray, colback=lightgray]
 
-% Configure indentations
-\setlength{\parindent}{1.5cm}
+            \centering
+            \usebeamerfont{title}
+            \inserttitle
+            \par
+
+            \usebeamerfont{subtitle}
+            \insertsubtitle
+            \par
+
+        \end{tcolorbox}
+
+        \vskip 0.75cm
+
+        \usebeamerfont{author}
+        \insertauthor
+        \par
+        \usebeamerfont{author}
+        Turma U
+        \par
+
+        \vskip 0.75cm
+
+        \usebeamerfont{date}
+        \insertdate
+        \par
+
+    \endgroup
+    \vfill
+}
+
+\AtBeginSection{
+    \begin{frame}
+        \frametitle{Sumário}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\titlegraphic
+{
+    \includegraphics[width=0.2\linewidth]{images/logos/UFRGS.png}
+    \hspace{0.5cm}
+    \includegraphics[width=0.2\linewidth]{images/logos/INF.png}        
+}
+\title[Projeto PC-PO/HLS]{Projeto PC-PO/HLS}
+\subtitle{Operações com Matrizes 2x2}
+\author[Pedro Lubaszewski Lima]{Pedro Lubaszewski Lima (00341810)}
+\institute[]{INF01175\\Sistemas Digitais para Computadores A}
+\date[\today]{\today}
+
+\renewcommand{\lstlistingname}{Código}
 
 \begin{document}
 
-    \begin{titlepage}
-        \centering
-        
-        \LARGE {Universidade Federal do Rio Grande do Sul \\ Instituto de Informática}
-    
-        \begin{figure}[h!]
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Sumário}
+        \tableofcontents
+    \end{frame}
+
+    \section{Enunciado do Problema}
+    \begin{frame}
+        \frametitle{Enunciado do Problema}
+
+        \begin{block}<1->
+            {Objetivo}
+            Projetar e descrever em VHDL um
+            circuito que multiplique duas matrizes,
+            some com uma terceira matriz e filtre a
+            matriz resultado de acordo com a definição
+            do cálculo abaixo. Além disso, comparar
+            a construção manual com a solução HLS do
+            Xilinx Vitis HLS.
+        \end{block}
+
+        \begin{block}<2->
+            {Função da Saída do Sistema $ (R_{2x2}) $}
+            Dadas as matrizes $ A_{2x2} $, $ B_{2x2} $
+            e $ C_{2x2} $ tais que $ a_{ij} $, $ b_{ij} $,
+            $ c_{ij} \in \mathbb{N} $ e $ a_{ij} < 255 $,
+            $ b_{ij} < 255 $, $ c_{ij} < 65535 $, $ \forall i $,
+            $ j \in \{ 1,2 \}$, e $ F(M_{2x2}) = Q_{2x2} $ tal que
+
+            $$ q_{ij} = 
+                \begin{cases}
+                    m_{ij} & \text{se } 0 < m_{ij} \leqslant 128 \\
+                    128 & \text{se } m_{ij} > 128
+                \end{cases}
+                \text{,} \,\forall i \text{, } j \in \{ 1,2 \} \text{, então}
+            $$
+
+            $$ R = F[(A \times B) + C] $$
+        \end{block}
+    \end{frame}
+
+    \section{Resolução PC-PO}
+    \subsection{Fluxograma ASM}
+    \begin{frame}
+        \frametitle{Fluxograma ASM}
+
+        \begin{onlyenv}<1>
+            \begin{figure}[h]
+                \centering
+                \adjincludegraphics[height=6.8cm, trim={0 {0.5\height} 0 0}, clip]{./images/solutions/PC-PO_-_ASM.jpg}
+                \caption{\label{img:asm-1} Fluxograma ASM – Parte 1}
+            \end{figure}
+        \end{onlyenv}
+
+        \begin{onlyenv}<2>
+          \begin{figure}[h]
             \centering
-            \subfigure
-            {\includegraphics[width=0.35\linewidth]{images/logos/UFRGS.png}}
-            \hspace{1cm}
-            \subfigure
-            {\includegraphics[width=0.35\linewidth]{images/logos/INF.png}}
-        \end{figure}
-    
-        \LARGE {INF01113 \\ Organização de Computadores B}
-        
+            \adjincludegraphics[height=6.8cm, trim={0 0 0 {0.5\height}}, clip]{./images/solutions/PC-PO_-_ASM.jpg}
+            \caption{\label{img:asm-2} Fluxograma ASM – Parte 2}
+          \end{figure}
+        \end{onlyenv}
+    \end{frame}
+
+    \subsection{Parte Operativa}
+    \begin{frame}
+        \frametitle{\textit{Datapath}}
+        \begin{onlyenv}<1>
+            \begin{figure}[h]
+                \centering
+                \adjincludegraphics[height=6.8cm, trim={0 {0.593\height} 0 0}, clip]{./images/solutions/PC-PO_-_PO.jpg}
+                \caption{\label{img:po-1} Parte Operativa – Parte 1}
+            \end{figure}
+        \end{onlyenv}
+
+        \begin{onlyenv}<2>
+          \begin{figure}[h]
+            \centering
+            \adjincludegraphics[height=6.8cm, trim={0 0 0 {0.407\height}}, clip]{./images/solutions/PC-PO_-_PO.jpg}
+            \caption{\label{img:po-2} Parte Operativa – Parte 2}
+          \end{figure}
+        \end{onlyenv}
+    \end{frame}
+
+    \subsection{Parte de Controle}
+    \begin{frame}
+        \frametitle{FSM}
+        \begin{onlyenv}<1>
+            \begin{figure}[h]
+                \centering
+                \adjincludegraphics[height=6.8cm, trim={0 {0.53\height} 0 0}, clip]{./images/solutions/PC-PO_-_FSM.jpg}
+                \caption{\label{img:fsm-1} Parte de Controle – Parte 1}
+            \end{figure}
+        \end{onlyenv}
+
+        \begin{onlyenv}<2>
+          \begin{figure}[h]
+            \centering
+            \adjincludegraphics[height=6.8cm, trim={0 0 0 {0.47\height}}, clip]{./images/solutions/PC-PO_-_FSM.jpg}
+            \caption{\label{img:fsm-2} Parte de Controle – Parte 2}
+          \end{figure}
+        \end{onlyenv}
+    \end{frame}
+
+    \subsection{Validações da Solução}
+    \begin{frame}
+        \frametitle{Propostas de Testes}
+
+        \begingroup \onslide<1->
+        Para testar a solução, foram criadas as seguintes entradas:
+
+        \begin{itemize}
+            \item $ A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} $;
+            \item $ B = \begin{bmatrix} 4 & 3 \\ 2 & 1 \end{bmatrix} $;
+            \item $ B_{NULL} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} $;
+            \item $ C = \begin{bmatrix} 121 & 10 \\ 50 & 3 \end{bmatrix} $.
+        \end{itemize}
+        \endgroup
+
+        \begingroup \onslide<2->
+        Esperando as seguintes saídas:
+        \begin{itemize} \onslide<2->
+            \item $ R_1 = \begin{bmatrix} 128 & 15 \\ 70 & 16 \end{bmatrix} $,
+                  com $ A $, $ B $ e $ C $ como entradas;
+            \item $ R_2 = \begin{bmatrix} 121 & 10 \\ 50 & 3 \end{bmatrix} $,
+                  com $ A $, $ B_{NULL} $ e $ C $ como entradas.
+        \end{itemize}
+        \endgroup
+
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Simulação para Validação de $ R_1 $}
+
+        \begingroup \onslide<2->
+            Como a saída $ doutr = [128, 15, 70, 16] $, 
+            no modo da memória \textit{read first}, então
+            foi validado que $ R_1 = \begin{bmatrix} 128 & 15 \\ 70 & 16 \end{bmatrix} $.
+        \endgroup
+
+        \begin{figure}[h] \onslide<1->
+            \centering
+            \adjincludegraphics[width=0.85\linewidth, trim={{0.4\height} {0.3\height} 0 0}, clip]{./images/solutions/PC-PO-Sim1.png}
+            \caption{\label{img:pc-po-simulation-1} Forma de Onda Funcional com entradas $ A $, $ B $ e $ C $}
+          \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Simulação para Validação de $ R_2 $}
+
+        \begingroup \onslide<2->
+            Como a saída $ doutr = [121, 10, 50, 3] $, 
+            no modo da memória \textit{read first}, então
+            foi validado que $ R_2 = \begin{bmatrix} 121 & 10 \\ 50 & 3 \end{bmatrix} $.
+        \endgroup
+
+        \begin{figure}[h] \onslide<1->
+            \centering
+            \adjincludegraphics[width=0.85\linewidth, trim={{0.4\height} {0.3\height} 0 0}, clip]{./images/solutions/PC-PO-Sim2.png}
+            \caption{\label{img:pc-po-simulation-2} Forma de Onda Funcional com entradas $ A $, $ B_{NULL} $ e $ C $}
+          \end{figure}
+    \end{frame}
+
+    \section{Resolução HLS}
+    \subsection{Programa em C}
+    \begin{frame}[fragile]
+        \frametitle{Algoritmo em C}
+
+        \lstinputlisting
+        [caption= \textit{Header} de \texttt{matrix\_operations.cpp},
+        captionpos=b,
+        basicstyle=\tiny,
+        numbers=left,
+        columns=flexible,
+        xleftmargin=26pt,
+        frame=single,
+        framexleftmargin=22pt,
+        language=C++]
+        {./code/matrix_operations.h}
+    \end{frame}
+
+    \begin{frame}[fragile]
+        \frametitle{Algoritmo em C}
+
+        \lstinputlisting
+        [caption= Implementação de \texttt{matrix\_operations.h},
+        captionpos=b, 
+        basicstyle=\tiny,
+        numbers=left,
+        columns=flexible,
+        xleftmargin=26pt,
+        frame=single,
+        framexleftmargin=22pt,
+        language=C++]
+        {./code/matrix_operations.cpp}
+    \end{frame}
+
+    \subsection{Solução Básica com HLS}
+    \begin{frame}
+        \frametitle{Síntese da Solução Básica com HLS}
+
+        \begingroup \onslide<1->
+        Como solução básica,
+        não se utilizou \textbf{nenhuma otimização}.
+        \endgroup
+
+        \begin{figure}[h] \onslide<2->
+            \centering
+            \includegraphics[width=1\linewidth]{./images/solutions/HLS_-_Basic_Solution.png}
+            \caption{\label{img:syn-hls-basic-solution} Resultado da Síntese Básica com HLS}
+          \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Interface da Solução Básica com HLS}
+
+        \begingroup \onslide<2->
+        Percebe-se um total de \textbf{12 IOBs}, totalizando
+        \textbf{68 \textit{bits}} de interface de dados.
+        \endgroup
+
+        \begin{figure}[h] \onslide<1->
+            \centering
+            \includegraphics[width=0.62\linewidth]{./images/solutions/VHDL_-_Basic_Solution.png}
+            \caption{\label{img:int-hls-basic-solution} Interface da Solução Básica com HLS}
+          \end{figure}
+    \end{frame}
+
+    \subsection{Primeira Solução Otimizada com HLS}
+    \begin{frame}
+        \frametitle{Síntese da Primeira Solução Otimizada com HLS}
+
+        \begingroup \onslide<1->
+        Como primeira solução otimizada, utilizou-se \textbf{\texttt{loop unroll}}
+        em cada um dos \textit{loops} da aplicação, buscando aumentar o paralelismo
+        da solução.
+        \endgroup
+
+        \begin{figure}[h] \onslide<2->
+            \centering
+            \includegraphics[width=1\linewidth]{./images/solutions/HLS_-_Loop_Unroll.png}
+            \caption{\label{img:syn-hls-optimized-solution-1} Resultado da Síntese da Solução Otimizada 1 com HLS}
+          \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Interface da Primeira Solução Otimizada com HLS}
+
+        \begingroup \onslide<2->
+        Percebe-se um total de \textbf{16 IOBs}, totalizando
+        \textbf{96 bits} de interface de dados.
+        \endgroup
+
+        \begin{figure}[h] \onslide<1->
+            \centering
+            \includegraphics[width=0.55\linewidth]{./images/solutions/VHDL_-_Loop_Unroll.png}
+            \caption{\label{img:int-hls-optimized-solution-1} Interface da Solução Otimizada 1 com HLS}
+          \end{figure}
+    \end{frame}
+
+    \subsection{Segunda Solução Otimizada com HLS}
+    \begin{frame}
+        \frametitle{Síntese da Segunda Solução Otimizada com HLS}
+
+        \begingroup \onslide<1->
+        Além das otimizações da versão anterior (\texttt{loop unroll}), acrescentou-se
+        \textbf{\texttt{array partitioning}} com dimensão zero em todas as entradas e
+        saídas do sistema. Isso foi feito em busca do maior nível de paralelismo possível
+        para este circuito.
+        \endgroup
+
+        \begin{figure}[h] \onslide<2->
+            \centering
+            \includegraphics[width=1\linewidth]{./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png}
+            \caption{\label{img:syn-hls-optimized-solution-2} Resultado da Síntese da Solução Otimizada 2 com HLS}
+          \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Interface da Segunda Solução Otimizada com HLS}
+
+        \begingroup \onslide<2->
+        Percebe-se um total de \textbf{16 IOBs}, totalizando
+        \textbf{160 bits} de interface de dados.
+        \endgroup
+
+        \begin{figure}[h] \onslide<1->
+            \centering
+            \includegraphics[width=0.55\linewidth]{./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png}
+            \caption{\label{img:int-hls-optimized-solution-2} Interface da Solução Otimizada 2 com HLS}
+          \end{figure}
+    \end{frame}
+
+    \section{Comparação das Soluções}
+    \begin{frame}
+        \frametitle{Comparação do PC-PO com HLS}
+        \begin{columns}
+            \onslide<1->
+            \begin{column}{0.49\textwidth}
+                Ao construir a solução partindo do \textbf{Fluxograma ASM},
+                da \textbf{Parte Operativa} e da \textbf{Parte de Controle},
+                obteve-se um circuito com:
+
+                \begin{itemize}
+                    \item \textcolor<3->{green}{174 LUTs};
+                    \item \textcolor<3->{red}{43 flip flops};
+                    \item \textcolor<3->{green}{0 DSPs};
+                    \item \textcolor<3->{red}{4 BRAMs};
+                    \item Latência de \textcolor<3->{red}{76 ciclos de \textit{clock}};
+                    \item Interface de dados com \textcolor<3->{green}{4 IOBs, 40 bits}.
+                \end{itemize}
+
+            \end{column}
+
+            \onslide<2->
+            \begin{column}{0.02\textwidth}
+                \rule{.1mm}{0.65\textheight}
+            \end{column}
+            \begin{column}{0.49\textwidth}
+                Através da melhor solução com \textbf{HLS}, obteve-se os
+                seguintes resultados:
+
+                \begin{itemize}
+                    \item \textcolor<3->{red}{405 LUTs};
+                    \item \textcolor<3->{green}{36 flip flops};
+                    \item \textcolor<3->{red}{4 DSPs};
+                    \item \textcolor<3->{green}{0 BRAMs};
+                    \item Latência de \textcolor<3->{green}{3 ciclos de \textit{clock}};
+                    \item Interface de dados com \textcolor<3->{red}{16 IOBs, 160 bits}.
+                \end{itemize}
+
+            \end{column}
+        \end{columns}
+
+        \onslide<3->
+        {
+            De forma geral, a solução HLS tem um \textbf{paralelismo} melhor que a PC-PO.
+            No entanto, a solução PC-PO apresenta uma \textbf{melhor utilização de recursos} (LUTs
+            em particular) e uma \textbf{interface mais compacta}.
+        }
+
+    \end{frame}
+
+    \begin{frame}
+        \centering \huge
         \vfill
-        {\noindent\hrulefill \\
-        \bfseries \Huge{Trabalho Prático 1 - Tarefa 09} \\ \LARGE{Implementação de Instruções no MIPS} \\
-        \noindent\hrulefill}
-        
+        Obrigado pela atenção!
+
+        Alguma dúvida?
         \vfill
-        {\LARGE Bruno Alexandre Hofstetter Bourscheid (00550177) \\ Fernando Longhi de Andrade (00580366) \\ Luiz Augusto Ponzoni Schmidt (00580108) \\ Miguel Dutra Fontes Guerra (00342573) \\ Pedro Lubaszewski Lima (00341810) \\~\\ Turma B}
-    
-        \vfill
-        {\LARGE 19 de abril de 2025}
-        
-    \end{titlepage}
-
-    \renewcommand{\contentsname}{Sumário}
-    \tableofcontents
-    \clearpage
-    \addtocontents{toc}{\protect\thispagestyle{empty}}
-
-    \section{MIPS Singlecycle}
-        \subsection{Modificações no Bloco Operativo}
-        Para começar, segue uma ilustração de como estava inicialmente a parte operativa do MIPS Singleclycle:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Monocycle/Bloco Operativo Monocycle Antes.png}
-            \caption{\label{print:singlecycle_ob_before} MIPS Singlecycle - Bloco Operativo Antes}
-        \end{figure}
-
-        Essa parte operativa foi modificada de acordo com as instruções adicionadas ao MIPS Singlecycle:
-        \begin{itemize}
-            \item Adicionada operação multiplicação na ALU;
-            \item Adicionada saída dos bits superiores da multiplicação na ALU;
-            \item Adicionada saída IsMULT da ALU;
-            \item Adicionados registradores especiais LO e HI;
-            \item Atualizada a flag 0 na ALU;
-            \item Adicionado comparador para BLTZ e SLTIU;
-            \item Adicionado sign extend para o BLTZ e SLTIU;
-            \item Adicionado splitter para LB;
-            \item Adicionado sign extend para LB;
-            \item Atualizado o splitter para a Data Memory.
-        \end{itemize}
-
-        \clearpage
-        Segue uma ilustração de como ficou a parte operativa do MIPS Singlecycle após as modificações acima listadas:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Monocycle/Bloco Operativo Monocycle Depois.png}
-            \caption{\label{print:singlecycle_ob_after} MIPS Singlecycle - Bloco Operativo Depois}
-        \end{figure}
-
-        \subsection{Modificações no Bloco de Controle}
-        Já para a parte de controle, segue uma representação inicial do MIPS Singlecycle:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Monocycle/Bloco de Controle Monocycle Antes.png}
-            \caption{\label{print:singlecycle_cb_before} MIPS Singlecycle - Bloco Controle Antes}
-        \end{figure}
-
-        Com ela em mente, foram feitas as seguintes modificações:
-        \begin{itemize}
-            \item Criados os sinais de controle LB, SLTIU, BLTZ, JR e IsMult;
-            \item Atualizado o ALU Control para as instruções de MULT e JR;
-            \item Adicionado MUX para o BLTZ;
-            \item Adicionado controle de branch para BLTZ;
-            \item Adicionado controle de RegWrite usando IsMULT;
-            \item Adicionado MUX para o JR;
-            \item Adicionado MUX para LB;
-            \item Adicionado MUX para SLTIU.
-        \end{itemize}
-
-        Abaixo segue também a codificação em memória ROM de controle das novas instruções:
-        \begin{itemize}
-            \item ROM para JR: 0x0241 end 0x00;
-            \item ROM para BLTZ: 0x0404 end 0x01;
-            \item ROM para LB: 0x0B18 end 0x20;
-            \item ROM para MULT: 0x0241 end 0x00;
-            \item ROM para SLTIU: 0x1300 end 0x0B.
-        \end{itemize}
-
-        Dessa forma, a parte de controle do processador terminou da seguinte forma:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Monocycle/Bloco de Controle Monocycle Depois.png}
-            \caption{\label{print:singlecycle_cb_after} MIPS Singlecycle - Bloco Controle Depois}
-        \end{figure}
-
-        Algumas dessas modificações aqui listadas foram mostradas em mais detalhes na subseção anterior.
-
-        \clearpage
-        \subsection{Testes de Implementação}
-
-        Para comprovar que essas mudanças acima trouxeram a correta implementação das instruções especificados neste trabalho,
-        abaixo seguem os testes realizados com imagens e a respectiva sequência de instruções:
-        
-        \begin{itemize}
-            \item Teste da Instrução JR:
-                \subitem JR: PC $\leftarrow$ Reg1
-                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (3)
-                \subitem 0x00200008; PC $\leftarrow$ Reg1 (3)
-        \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Monocycle/Teste JR.png}
-            \caption{\label{print:singlecycle_test_JR} MIPS Singlecycle - Teste JR}
-        \end{figure}
-
-        \begin{itemize}
-            \item Teste da Instrução BLTZ:
-                \subitem BLTZ: if Reg1 $<$ 0 then PC += IMED$\cdot$4 + 4 (IMED = 10)
-                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (-1 (0xFFFFFFFF))
-                \subitem 0x0420000A; PC += IMED$\cdot$4 + 4 (PC = 48)
-        \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Monocycle/Teste BLTZ.png}
-            \caption{\label{print:singlecycle_test_BLTZ} MIPS Singlecycle - Teste BLTZ}
-        \end{figure}
-
-        \begin{itemize}
-            \item Teste da Instrução LB:
-                \subitem LB: Reg1 $\leftarrow$ byte(Mem[0]) (3)
-                \subitem 0x80010000; Reg1 $\leftarrow$ byte(Mem[0])
-        \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Monocycle/Teste LB.png}
-            \caption{\label{print:singlecycle_test_LB} MIPS Singlecycle - Teste LB}
-        \end{figure}
-
-        \begin{itemize}
-            \item Teste da Instrução MULT:
-                \subitem MULT: HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2
-                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (3)
-                \subitem 0x8C020001; Reg2 $\leftarrow$ Mem[1] (4)
-                \subitem 0x00220018; HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2 (HI = 0, LO = 12)
-        \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Monocycle/Teste MULT.png}
-            \caption{\label{print:singlecycle_test_MULT} MIPS Singlecycle - Teste MULT}
-        \end{figure}
-
-        \clearpage
-        \begin{itemize}
-            \item Teste da Instrução SLTIU:
-                \subitem SLTIU: Reg1 $\leftarrow$ Reg0 $<$ IMED (1)
-                \subitem 0x2C010001; Reg1 $\leftarrow$ Reg0 $<$ 1 (Reg1 = 1)
-        \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Monocycle/Teste SLTIU.png}
-            \caption{\label{print:singlecycle_test_SLTIU} MIPS Singlecycle - Teste SLTIU}
-        \end{figure}
-
-    \section{MIPS Multicycle}
-        \subsection{Modificações no Bloco Operativo}
-        Como a implementação das instruções sorteadas possuiam uma similaridade parcial com as instruções bases, a maioria das mudanças aconteceram para integrar os novos sinais controle com o circuito.
-        Ainda assim, casos especificos foram tratados:
-            \begin{itemize}    
-            \item JR: Como se tratava de uma instrução R-Type não houve alterações nas ROMs, apenas na ULA-Control para lidar com o Funct e gerar o sinal isJR, este sendo utilizado como seletor no Mux que lida com o update do PC.
-            \item BLTZ: Aqui foi feita uma implementação dos estados B e C, tendo novamente o sinal utilizado como seletor para a parte operativa, cuja qual a partir dos blocos adicionados (conferir Figura \ref{print:Bloco Operativo Final}) realiza a comparação para testar a validade do branch, prossegue-se assim similar ao BEQ já implementado 
-            \item LB: Implementação muito parecida com o LW, aqui foi utilizado o sinal criado no controle como seletor para uma lógica MUX que separa a busca em duas opções, o dado completo ou apenas um Byte com Sign Extension
-            \item Mult: O multi por se tratar de uma instrução Especial teve seu controle trabalhado no ALU-Control, e sua implementação foi caracterizada pela criação dos registradore HI e LO, junto com um multiplicador. 
-            \item SLTIU: Foi adicionado um registrador para armazenamento da saída da instrução SLTIU, um MUX com constantes para escrita do resultado de SLTIU, além de um signal extension e os multiplexadores que tratam a lógica do novo sinal de controle isMult
-            \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Multicycle/Bloco Operativo Multicycle Antes.png}
-            \caption{\label{print:Bloco Operativo Inicial} MIPS Multicycle - Bloco Operativo Inicial}
-        \end{figure}
-
-        \clearpage
-        Observe as mundanças a seguir:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Multicycle/Bloco Operativo Multicycle Depois.png}
-            \caption{\label{print:Bloco Operativo Final} MIPS Multicycle - Bloco Operativo Final}
-        \end{figure}
-
-
-
-        \clearpage
-        \subsection{Modificações no Bloco de Controle}
-        Além da adição de três sinais (isBLTZ/isSLTIU/isLB). Foram modificadas as ROMs de controle de NextState e Saída, na primeira as alterações se deram pelas implementações da lógica de estado para as novas instruções, todas descritas na FSM no tópico a seguir.
-        Na segunda foi adicionado as saídas para os estado A, B e C; 60, 30 e 31 respectivamente.
-        Ademais bastou-se as alterações na ULA-Control, onde foi feito a lógica para o isMult e o isJR, ambas similares as implementações do singlecycle.
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Multicycle/Bloco de Controle Multicycle Antes.png}
-            \caption{\label{print:Controle Inicial} MIPS Multicycle - Controle Inicial}
-        \end{figure}
-
-        \clearpage
-        A próxima subseção mostra de forma mais detalhada as atualizações das ROMs e lógicas implementadas, mas por enquanto observe as mundanças a seguir:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Multicycle/Bloco de Controle Multicycle Depois.png}
-            \caption{\label{print:Controle Final} MIPS Multicycle - Controle Final}
-        \end{figure}
-
-        
-        \subsection{Estados de Controle}
-        São utilizados no projeto 12 estados diferentes, contendo instruções de 3 a 5 ciclos, todas representadas na FSM anexada a seguir:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Multicycle/FSM Multicycle.png}
-            \caption{\label{print:FSM_Multicycle} MIPS Multicycle - Maquina de estados Multicycle}
-        \end{figure}
-        Nota-se que os nodos representam os estados de controle, enquanto as arestas os OPCodes, assim formando uma máquina de Moore com as saídas em "1" de cada estado notadas em cada nodo.
-
-        \subsection{Testes de Implementação}
-        Segue a seguir os testes realizados acompanhados do código utilizado:
-
-        \begin{itemize}
-            \item Teste da Instrução JR:
-                \subitem JR: PC $\leftarrow$ Reg1
-                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (3)
-                \subitem 0x00200008; PC $\leftarrow$ Reg1 (3)
-        \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Multicycle/Teste JR.png}
-            \caption{\label{print:multicycle_test_JR} MIPS Multicycle - Teste JR}
-        \end{figure}
-
-        \begin{itemize}
-            \item Teste da Instrução BLTZ:
-                \subitem BLTZ: if Reg1 $<$ 0 then PC += IMED$\cdot$4 + 4 (IMED = 10)
-                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (-1 (0xFFFFFFFF))
-                \subitem 0x0420000A; PC += IMED$\cdot$4 + 4 (PC = 48)
-        \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Multicycle/Teste BLTZ.png}
-            \caption{\label{print:multicycle_test_BLTZ} MIPS Multicycle - Teste BLTZ}
-        \end{figure}
-
-        \begin{itemize}
-            \item Teste da Instrução LB:
-                \subitem LB: Reg1 $\leftarrow$ byte(Mem[0]) (3)
-                \subitem 0x80010000; Reg1 $\leftarrow$ byte(Mem[0])
-        \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Multicycle/Teste LB.png}
-            \caption{\label{print:multicycle_test_LB} MIPS Multicycle - Teste LB}
-        \end{figure}
-
-        \begin{itemize}
-            \item Teste da Instrução MULT:
-                \subitem MULT: HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2
-                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (3)
-                \subitem 0x8C020001; Reg2 $\leftarrow$ Mem[1] (4)
-                \subitem 0x00220018; HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2 (HI = 0, LO = 12)
-        \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Multicycle/Teste MULT.png}
-            \caption{\label{print:multicycle_test_MULT} MIPS Multicycle - Teste MULT}
-        \end{figure}
-
-        \clearpage
-        \begin{itemize}
-            \item Teste da Instrução SLTIU:
-                \subitem SLTIU: Reg1 $\leftarrow$ Reg0 $<$ IMED (1)
-                \subitem 0x2C010001; Reg1 $\leftarrow$ Reg0 $<$ 1 (Reg1 = 1)
-        \end{itemize}
-
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Multicycle/Teste SLTIU.png}
-            \caption{\label{print:multicycle_test_SLTIU} MIPS Multicycle - Teste SLTIU}
-        \end{figure}
-
-
-
-
-
-    \section{MIPS Pipeline}
-        \subsection{Modificações no Bloco Operativo}
-        Primeiramente, segue uma visão de como estava a implementação do MIPS com pipeline antes
-        do acrescimo das novas instruções:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Pipeline/Bloco Operativo Pipeline Antes.png}
-            \caption{\label{print:pipeline_ob_before} MIPS Pipeline - Bloco Operativo Antes}
-        \end{figure}
-
-        Sobre essa versão do MIPS com pipeline, foram feitas as modificações listadas à seguir:
-        \begin{itemize}
-            \item Adicionada operação multiplicação na ALU;
-            \item Adicionada saída dos bits superiores da multiplicação na ALU;
-            \item Adicionada barreira temporal para capturar valor de RS;
-            \item Adicionado MUX para o JR na entrada do PC;
-            \item Corrigidos os timings entre barreiras temporais para o sinal de IsMult;
-            \item Utilizado o sinal IsMult para não habilitar a escrita nos registradores;
-            \item Propagado o sinal de imediato com 32 bits para a etapa de MEM;
-            \item Colocado comparador de menor que 0 ou menor que RS para instruções de BLTZ e SLTIU em MEM;
-            \item Conectado o BLTZ ao mux de branches;
-            \item Propagado o bit de comparação RS < Imed para o estágio de MEM;
-            \item Adicionado bit extender para o resultado da comparação acima;
-            \item Conectado o resultado desse bit extender na entrada de escrita dos GPRs;
-            \item Adicionado splitter para pegar os 8 bits menos significativos de um dado da memória;
-            \item Extendido esses 8 bits acima;
-            \item Conectado esse resultado controlado pelo sinal LB nos GPRs.
-        \end{itemize}
-
-        Com essas modificações listadas acima, obteve-se a seguinte nova representação do bloco operativo do MIPS:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Pipeline/Bloco Operativo Pipeline Depois.png}
-            \caption{\label{print:pipeline_ob_after} MIPS Pipeline - Bloco Operativo Depois}
-        \end{figure}
-
-        \subsection{Modificações no Bloco de Controle}
-        Já na parte de controle, anteriormente, tinha-se a seguinte representação:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Pipeline/Bloco de Controle Pipeline Antes.png}
-            \caption{\label{print:pipeline_cb_before} MIPS Pipeline - Bloco Controle Antes}
-        \end{figure}
-
-        A partir dessa parte de controle, é possível listar as seguintes modificações:
-        \begin{itemize}
-            \item Criados os sinais de controle LB, SLTIU, BLTZ, JR e IsMult;
-            \item Atualizado o ALU Control para as instruções de MULT e JR;
-            \item Adicionada saída IsMULT da ALU;
-            \item Adicionada barreira temporal para o estágio de EX/MEM do JR;
-            \item Propagados todos os sinais de controle para as respectivas etapas do circuito:
-                \subitem - BLTZ em MEM;
-                \subitem - LB e SLTIU em WB.
-        \end{itemize}
-
-        Além dessas modificações, foram reordenados os sinais de controle para serem equivalentes aos sinais de controle do MIPS Singlecycle.
-        Assim, as modificações da ROM de controle foram as mesmas listadas na seção do MIPS Singlecycle:
-        \begin{itemize}
-            \item ROM para JR: 0x0241 end 0x00;
-            \item ROM para BLTZ: 0x0404 end 0x01;
-            \item ROM para LB: 0x0B18 end 0x20;
-            \item ROM para MULT: 0x0241 end 0x00;
-            \item ROM para SLTIU: 0x1300 end 0x0B.
-        \end{itemize}
-
-        Com tudo isso, obteve-se o seguinte novo esquemático externo da parte de controle do MIPS com pipeline:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Pipeline/Bloco de Controle Pipeline Depois.png}
-            \caption{\label{print:pipeline_cb_after} MIPS Pipeline - Bloco Controle Depois}
-        \end{figure}
-
-        Algumas dessas modificações aqui listadas foram mostradas em mais detalhes na subseção anterior.
-
-        \subsection{Testes de Implementação}
-        Para comprovar que essas mudanças acima trouxeram a correta implementação das instruções especificados neste trabalho,
-        abaixo seguem os testes realizados com imagens e a respectiva sequência de instruções:
-        
-        É importante notar, em todos os testes, que há uma grande quantidade de NOPs espalhados entre as instruções. Isso é devido
-        a não terem sido implementadas soluções para lidar com dependências de dados e de controle.
-
-        \begin{itemize}
-            \item Teste da Instrução JR:
-                \subitem 0x8C010000; LW: Reg1 $\leftarrow$ Mem[0] (64 ou 0x40)
-                \subitem 0x00000000; NOP
-                \subitem 0x00000000; NOP
-                \subitem 0x00000000; NOP
-                \subitem 0x00000000; NOP
-                \subitem 0x00200008; JR: PC $\leftarrow$ Reg1 (64 ou 0x40)
-        \end{itemize}
-        
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Pipeline/Teste JR.png}
-            \caption{\label{print:pipeline_test_JR} MIPS Pipeline - Teste JR}
-        \end{figure}
-
-        \begin{itemize}
-            \item Teste da Instrução MULT:
-                \subitem MULT: HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2
-                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (17 ou 0x11)
-                \subitem 0x8C020001; Reg2 $\leftarrow$ Mem[1] (256 ou 0x100)
-                \subitem 0x00000000; NOP
-                \subitem 0x00000000; NOP
-                \subitem 0x00000000; NOP
-                \subitem 0x00000000; NOP
-                \subitem 0x00220018; HI, LO $\leftarrow$ Reg1 $\cdot$ Reg2 (HI = 0, LO = 4352 ou 0x10400)
-        \end{itemize}
-        
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Pipeline/Teste MULT.png}
-            \caption{\label{print:pipeline_test_MULT} MIPS Pipeline - Teste MULT}
-        \end{figure}
-
-        \clearpage
-        \begin{itemize}
-            \item Teste da Instrução BLTZ:
-                \subitem BLTZ: if Reg1 $<$ 0 then PC += IMED$\cdot$4 + 4 (IMED = 10)
-                \subitem 0x8C010000; Reg1 $\leftarrow$ Mem[0] (-1 (0xFFFFFFFF))
-                \subitem 0x00000000; NOP
-                \subitem 0x00000000; NOP
-                \subitem 0x00000000; NOP
-                \subitem 0x00000000; NOP
-                \subitem 0x0420000A; PC += IMED$\cdot$4 + 4 (PC = 64 ou 0x40)
-        \end{itemize}
-        
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Pipeline/Teste BLTZ.png}
-            \caption{\label{print:pipeline_test_BLTZ} MIPS Pipeline - Teste BLTZ}
-        \end{figure}
-
-        \begin{itemize}
-            \item Teste da Instrução LB:
-                \subitem LB: Reg1 $\leftarrow$ byte(Mem[0]) (0x00000FFF)
-                \subitem 0x80010000; Reg1 $\leftarrow$ byte(Mem[0]) (0xFFFFFFFF)
-        \end{itemize}
-        
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Pipeline/Teste LB.png}
-            \caption{\label{print:pipeline_test_LB} MIPS Pipeline - Teste LB}
-        \end{figure}
-
-        \clearpage
-        \begin{itemize}
-            \item Teste da Instrução SLTIU:
-                \subitem SLTIU: Reg1 $\leftarrow$ Reg0 $<$ IMED (1)
-                \subitem 0x2C010001; Reg1 $\leftarrow$ Reg0 $<$ 1 (Reg1 = 1)
-        \end{itemize}
-        
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\linewidth]{images/prints/Pipeline/Teste SLTIU.png}
-            \caption{\label{print:pipeline_test_SLTIU} MIPS Pipeline - Teste SLTIU}
-        \end{figure}
+    \end{frame}
 
 \end{document}
