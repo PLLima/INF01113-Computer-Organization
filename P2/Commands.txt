@@ -23,7 +23,8 @@ Cfg 2c = 32
 Cfg 2d = 64
 
 // L1 Cache Associativity:
-Cfg 3a = 2-way
-Cfg 3b = 4-way
-Cfg 3c = 8-way
-Cfg 3d = 16-way
+Cfg 3a = 1-way
+Cfg 3b = 2-way
+Cfg 3c = 3-way
+Cfg 3d = 8-way
+Cfg 3e = 16-way
