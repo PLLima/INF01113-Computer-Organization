@@ -88,7 +88,7 @@
             \begin{column}{0.33\textwidth}
 
                 \begin{center}
-                    \textbf{Bubble Sort}
+                    \textbf{\textit{Bubble Sort}}
                 \end{center}
 
                 \begin{itemize}
@@ -110,7 +110,7 @@
             \begin{column}{0.33\textwidth}
 
                 \begin{center}
-                    \textbf{Fast Fourrier Transform (FFT)}
+                    \textbf{\textit{Fast Fourrier Transform} (FFT)}
                 \end{center}
 
                 \begin{itemize}
@@ -132,7 +132,7 @@
             \begin{column}{0.33\textwidth}
 
                 \begin{center}
-                    \textbf{Binary Search}
+                    \textbf{\textit{Binary Search}}
                 \end{center}
 
                 \begin{itemize}
@@ -140,7 +140,7 @@
                     \item Tamanho da entrada: 1.200.000;
                     \item Complexidade: $O(log(n))$ (vetor ordenado);
                     \item Poucas instruções;
-                    \item Bastante acesso à memória (depende da cache);
+                    \item Bastante acesso à memória (depende da \textit{cache});
                     \item Depende da latência de acesso à memória.
                 \end{itemize}
 
@@ -149,67 +149,42 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Fluxograma ASM}
+        \frametitle{Parâmetros de Organização}
 
-        \begin{onlyenv}<1>
-            \begin{figure}[h]
-                \centering
-                % \adjincludegraphics[height=6.8cm, trim={0 {0.5\height} 0 0}, clip]{./images/solutions/PC-PO_-_ASM.jpg}
-                % \caption{\label{img:asm-1} Fluxograma ASM – Parte 1}
-            \end{figure}
-        \end{onlyenv}
+        \begin{figure}[h]
+        \centering
+        % \adjincludegraphics[height=6.8cm, trim={0 0 0 {0.5\height}}, clip]{./images/solutions/PC-PO_-_ASM.jpg}
+        % \caption{\label{img:asm-2} Fluxograma ASM – Parte 2}
+        \end{figure}
 
-        \begin{onlyenv}<2>
-          \begin{figure}[h]
-            \centering
-            % \adjincludegraphics[height=6.8cm, trim={0 0 0 {0.5\height}}, clip]{./images/solutions/PC-PO_-_ASM.jpg}
-            % \caption{\label{img:asm-2} Fluxograma ASM – Parte 2}
-          \end{figure}
-        \end{onlyenv}
     \end{frame}
 
     \begin{frame}
-        \frametitle{\textit{Datapath}}
-        \begin{onlyenv}<1>
-            \begin{figure}[h]
-                \centering
-                % \adjincludegraphics[height=6.8cm, trim={0 {0.593\height} 0 0}, clip]{./images/solutions/PC-PO_-_PO.jpg}
-                % \caption{\label{img:po-1} Parte Operativa – Parte 1}
-            \end{figure}
-        \end{onlyenv}
+        \frametitle{Configuração Fixa}
 
-        \begin{onlyenv}<2>
-          \begin{figure}[h]
+        \begin{figure}[h]
             \centering
-            % \adjincludegraphics[height=6.8cm, trim={0 0 0 {0.407\height}}, clip]{./images/solutions/PC-PO_-_PO.jpg}
-            % \caption{\label{img:po-2} Parte Operativa – Parte 2}
-          \end{figure}
-        \end{onlyenv}
+            % \adjincludegraphics[height=6.8cm, trim={0 {0.593\height} 0 0}, clip]{./images/solutions/PC-PO_-_PO.jpg}
+            % \caption{\label{img:po-1} Parte Operativa – Parte 1}
+        \end{figure}
+
     \end{frame}
 
     \begin{frame}
-        \frametitle{FSM}
-        \begin{onlyenv}<1>
-            \begin{figure}[h]
-                \centering
-                % \adjincludegraphics[height=6.8cm, trim={0 {0.53\height} 0 0}, clip]{./images/solutions/PC-PO_-_FSM.jpg}
-                % \caption{\label{img:fsm-1} Parte de Controle – Parte 1}
-            \end{figure}
-        \end{onlyenv}
+        \frametitle{Resultados mudando o tamanho de \textit{cache} L1}
 
-        \begin{onlyenv}<2>
-          \begin{figure}[h]
+        \begin{figure}[h]
             \centering
-            % \adjincludegraphics[height=6.8cm, trim={0 0 0 {0.47\height}}, clip]{./images/solutions/PC-PO_-_FSM.jpg}
-            % \caption{\label{img:fsm-2} Parte de Controle – Parte 2}
-          \end{figure}
-        \end{onlyenv}
+            % \adjincludegraphics[height=6.8cm, trim={0 {0.53\height} 0 0}, clip]{./images/solutions/PC-PO_-_FSM.jpg}
+            % \caption{\label{img:fsm-1} Parte de Controle – Parte 1}
+        \end{figure}
+
     \end{frame}
 
     \begin{frame}
-        \frametitle{Propostas de Testes}
+        \frametitle{Análise dos Resultados}
 
-        \begingroup \onslide<1->
+        \begingroup
         Para testar a solução, foram criadas as seguintes entradas:
 
         \begin{itemize}
@@ -220,9 +195,9 @@
         \end{itemize}
         \endgroup
 
-        \begingroup \onslide<2->
+        \begingroup
         Esperando as seguintes saídas:
-        \begin{itemize} \onslide<2->
+        \begin{itemize}
             \item $ R_1 = \begin{bmatrix} 128 & 15 \\ 70 & 16 \end{bmatrix} $,
                   com $ A $, $ B $ e $ C $ como entradas;
             \item $ R_2 = \begin{bmatrix} 121 & 10 \\ 50 & 3 \end{bmatrix} $,
@@ -233,15 +208,15 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Simulação para Validação de $ R_1 $}
+        \frametitle{Resultados mudando a associatividade da cache L1}
 
-        \begingroup \onslide<2->
+        \begingroup
             Como a saída $ doutr = [128, 15, 70, 16] $, 
             no modo da memória \textit{read first}, então
             foi validado que $ R_1 = \begin{bmatrix} 128 & 15 \\ 70 & 16 \end{bmatrix} $.
         \endgroup
 
-        \begin{figure}[h] \onslide<1->
+        \begin{figure}[h]
             \centering
             % \adjincludegraphics[width=0.85\linewidth, trim={{0.4\height} {0.3\height} 0 0}, clip]{./images/solutions/PC-PO-Sim1.png}
             % \caption{\label{img:pc-po-simulation-1} Forma de Onda Funcional com entradas $ A $, $ B $ e $ C $}
@@ -249,15 +224,15 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Simulação para Validação de $ R_2 $}
+        \frametitle{Análise dos Resultados}
 
-        \begingroup \onslide<2->
+        \begingroup
             Como a saída $ doutr = [121, 10, 50, 3] $, 
             no modo da memória \textit{read first}, então
             foi validado que $ R_2 = \begin{bmatrix} 121 & 10 \\ 50 & 3 \end{bmatrix} $.
         \endgroup
 
-        \begin{figure}[h] \onslide<1->
+        \begin{figure}[h]
             \centering
             % \adjincludegraphics[width=0.85\linewidth, trim={{0.4\height} {0.3\height} 0 0}, clip]{./images/solutions/PC-PO-Sim2.png}
             % \caption{\label{img:pc-po-simulation-2} Forma de Onda Funcional com entradas $ A $, $ B_{NULL} $ e $ C $}
@@ -265,20 +240,19 @@
     \end{frame}
 
     \begin{frame}[fragile]
-        \frametitle{Algoritmo em C}
+        \frametitle{Resultados mudando o tamanho do \textit{fetch buffer}}
 
-        % \lstinputlisting
-        % [caption= \textit{Header} de \texttt{matrix\_operations.cpp},
-        % captionpos=b,
-        % basicstyle=\tiny,
-        % numbers=left,
-        % columns=flexible,
-        % xleftmargin=26pt,
-        % frame=single,
-        % framexleftmargin=22pt,
-        % language=C++]
-        % {./code/matrix_operations.h}
+
+
     \end{frame}
+
+    \begin{frame}
+        \frametitle{Análise dos Resultados}
+
+        
+
+    \end{frame}
+
 
     \begin{frame}[fragile]
         \frametitle{Algoritmo em C}
@@ -294,157 +268,6 @@
         % framexleftmargin=22pt,
         % language=C++]
         % {./code/matrix_operations.cpp}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Síntese da Solução Básica com HLS}
-
-        \begingroup \onslide<1->
-        Como solução básica,
-        não se utilizou \textbf{nenhuma otimização}.
-        \endgroup
-
-        \begin{figure}[h] \onslide<2->
-            \centering
-            % \includegraphics[width=1\linewidth]{./images/solutions/HLS_-_Basic_Solution.png}
-            % \caption{\label{img:syn-hls-basic-solution} Resultado da Síntese Básica com HLS}
-          \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Interface da Solução Básica com HLS}
-
-        \begingroup \onslide<2->
-        Percebe-se um total de \textbf{12 IOBs}, totalizando
-        \textbf{68 \textit{bits}} de interface de dados.
-        \endgroup
-
-        \begin{figure}[h] \onslide<1->
-            \centering
-            % \includegraphics[width=0.62\linewidth]{./images/solutions/VHDL_-_Basic_Solution.png}
-            % \caption{\label{img:int-hls-basic-solution} Interface da Solução Básica com HLS}
-          \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Síntese da Primeira Solução Otimizada com HLS}
-
-        \begingroup \onslide<1->
-        Como primeira solução otimizada, utilizou-se \textbf{\texttt{loop unroll}}
-        em cada um dos \textit{loops} da aplicação, buscando aumentar o paralelismo
-        da solução.
-        \endgroup
-
-        \begin{figure}[h] \onslide<2->
-            \centering
-            % \includegraphics[width=1\linewidth]{./images/solutions/HLS_-_Loop_Unroll.png}
-            % \caption{\label{img:syn-hls-optimized-solution-1} Resultado da Síntese da Solução Otimizada 1 com HLS}
-          \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Interface da Primeira Solução Otimizada com HLS}
-
-        \begingroup \onslide<2->
-        Percebe-se um total de \textbf{16 IOBs}, totalizando
-        \textbf{96 bits} de interface de dados.
-        \endgroup
-
-        \begin{figure}[h] \onslide<1->
-            \centering
-            % \includegraphics[width=0.55\linewidth]{./images/solutions/VHDL_-_Loop_Unroll.png}
-            % \caption{\label{img:int-hls-optimized-solution-1} Interface da Solução Otimizada 1 com HLS}
-          \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Síntese da Segunda Solução Otimizada com HLS}
-
-        \begingroup \onslide<1->
-        Além das otimizações da versão anterior (\texttt{loop unroll}), acrescentou-se
-        \textbf{\texttt{array partitioning}} com dimensão zero em todas as entradas e
-        saídas do sistema. Isso foi feito em busca do maior nível de paralelismo possível
-        para este circuito.
-        \endgroup
-
-        \begin{figure}[h] \onslide<2->
-            \centering
-            % \includegraphics[width=1\linewidth]{./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png}
-            % \caption{\label{img:syn-hls-optimized-solution-2} Resultado da Síntese da Solução Otimizada 2 com HLS}
-          \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Interface da Segunda Solução Otimizada com HLS}
-
-        \begingroup \onslide<2->
-        Percebe-se um total de \textbf{16 IOBs}, totalizando
-        \textbf{160 bits} de interface de dados.
-        \endgroup
-
-        \begin{figure}[h] \onslide<1->
-            \centering
-            % \includegraphics[width=0.55\linewidth]{./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png}
-            % \caption{\label{img:int-hls-optimized-solution-2} Interface da Solução Otimizada 2 com HLS}
-          \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Comparação do PC-PO com HLS}
-        \begin{columns}
-            \onslide<1->
-            \begin{column}{0.49\textwidth}
-                Ao construir a solução partindo do \textbf{Fluxograma ASM},
-                da \textbf{Parte Operativa} e da \textbf{Parte de Controle},
-                obteve-se um circuito com:
-
-                \begin{itemize}
-                    \item \textcolor<3->{green}{174 LUTs};
-                    \item \textcolor<3->{red}{43 flip flops};
-                    \item \textcolor<3->{green}{0 DSPs};
-                    \item \textcolor<3->{red}{4 BRAMs};
-                    \item Latência de \textcolor<3->{red}{76 ciclos de \textit{clock}};
-                    \item Interface de dados com \textcolor<3->{green}{4 IOBs, 40 bits}.
-                \end{itemize}
-
-            \end{column}
-
-            \onslide<2->
-            \begin{column}{0.02\textwidth}
-                \rule{.1mm}{0.65\textheight}
-            \end{column}
-            \begin{column}{0.49\textwidth}
-                Através da melhor solução com \textbf{HLS}, obteve-se os
-                seguintes resultados:
-
-                \begin{itemize}
-                    \item \textcolor<3->{red}{405 LUTs};
-                    \item \textcolor<3->{green}{36 flip flops};
-                    \item \textcolor<3->{red}{4 DSPs};
-                    \item \textcolor<3->{green}{0 BRAMs};
-                    \item Latência de \textcolor<3->{green}{3 ciclos de \textit{clock}};
-                    \item Interface de dados com \textcolor<3->{red}{16 IOBs, 160 bits}.
-                \end{itemize}
-
-            \end{column}
-        \end{columns}
-
-        \onslide<3->
-        {
-            De forma geral, a solução HLS tem um \textbf{paralelismo} melhor que a PC-PO.
-            No entanto, a solução PC-PO apresenta uma \textbf{melhor utilização de recursos} (LUTs
-            em particular) e uma \textbf{interface mais compacta}.
-        }
-
-    \end{frame}
-
-    \begin{frame}
-        \centering \huge
-        \vfill
-        Obrigado pela atenção!
-
-        Alguma dúvida?
-        \vfill
     \end{frame}
 
 \end{document}
