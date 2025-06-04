@@ -418,7 +418,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmss8.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmss9.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmssbx10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmss8.tfm
 INPUT /usr/share/texmf/tex/latex/lm/omllmm.fd
 INPUT /usr/share/texmf/tex/latex/lm/omllmm.fd
