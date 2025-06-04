@@ -82,43 +82,72 @@
         \maketitle
     \end{frame}
 
-    \section{Enunciado do Problema}
     \begin{frame}
-        \frametitle{Enunciado do Problema}
+        \frametitle{Algoritmos Selecionados}
+        \begin{columns}
+            \begin{column}{0.35\textwidth}
+                \footnotesize
 
-        \begin{block}<1->
-            {Objetivo}
-            Projetar e descrever em VHDL um
-            circuito que multiplique duas matrizes,
-            some com uma terceira matriz e filtre a
-            matriz resultado de acordo com a definição
-            do cálculo abaixo. Além disso, comparar
-            a construção manual com a solução HLS do
-            Xilinx Vitis HLS.
-        \end{block}
+                \begin{center}
+                    \textbf{Bubble Sort}
+                \end{center}
 
-        \begin{block}<2->
-            {Função da Saída do Sistema $ (R_{2x2}) $}
-            Dadas as matrizes $ A_{2x2} $, $ B_{2x2} $
-            e $ C_{2x2} $ tais que $ a_{ij} $, $ b_{ij} $,
-            $ c_{ij} \in \mathbb{N} $ e $ a_{ij} < 255 $,
-            $ b_{ij} < 255 $, $ c_{ij} < 65535 $, $ \forall i $,
-            $ j \in \{ 1,2 \}$, e $ F(M_{2x2}) = Q_{2x2} $ tal que
+                \begin{itemize}
+                    \item Tamanho da entrada: 1.400;
+                    \item Complexidade: $O(n^2)$;
+                    \item Algoritmo de ordenação simples;
+                    \item Muitas comparações e trocas;
+                    \item Baixo uso de memória;
+                    \item Pouco paralelismo (dependência entre as instruções).
+                \end{itemize}
 
-            $$ q_{ij} = 
-                \begin{cases}
-                    m_{ij} & \text{se } 0 < m_{ij} \leqslant 128 \\
-                    128 & \text{se } m_{ij} > 128
-                \end{cases}
-                \text{,} \,\forall i \text{, } j \in \{ 1,2 \} \text{, então}
-            $$
+            \end{column}
 
-            $$ R = F[(A \times B) + C] $$
-        \end{block}
+            \begin{column}{0.02\textwidth}
+                \rule{.1mm}{0.75\textheight}
+            \end{column}
+
+            \begin{column}{0.30\textwidth}
+                \footnotesize
+
+                \begin{center}
+                    \textbf{Fast Fourrier Transform (FFT)}
+                \end{center}
+
+                \begin{itemize}
+                    \item Tamanho da entrada: 15.000;
+                    \item Complexidade: $O(n\log(n))$;
+                    \item Operações matemáticas complexas;
+                    \item Várias instruções de ponto flutuante;
+                    \item Acesso regular à memória;
+                    \item Alto paralelismo.
+                \end{itemize}
+
+            \end{column}
+
+            \begin{column}{0.02\textwidth}
+                \rule{.1mm}{0.75\textheight}
+            \end{column}
+
+            \begin{column}{0.35\textwidth}
+                \footnotesize
+
+                \begin{center}
+                    \textbf{Binary Search}
+                \end{center}
+
+                \begin{itemize}
+                    \item Tamanho da entrada: 1.200.000;
+                    \item Complexidade: $O(log(n))$ (vetor ordenado);
+                    \item Poucas instruções;
+                    \item Bastante acesso à memória (depende da cache);
+                    \item Depende da latência de acesso à memória.
+                \end{itemize}
+
+            \end{column}
+        \end{columns}
     \end{frame}
 
-    \section{Resolução PC-PO}
-    \subsection{Fluxograma ASM}
     \begin{frame}
         \frametitle{Fluxograma ASM}
 
@@ -139,7 +168,6 @@
         \end{onlyenv}
     \end{frame}
 
-    \subsection{Parte Operativa}
     \begin{frame}
         \frametitle{\textit{Datapath}}
         \begin{onlyenv}<1>
@@ -159,7 +187,6 @@
         \end{onlyenv}
     \end{frame}
 
-    \subsection{Parte de Controle}
     \begin{frame}
         \frametitle{FSM}
         \begin{onlyenv}<1>
@@ -179,7 +206,6 @@
         \end{onlyenv}
     \end{frame}
 
-    \subsection{Validações da Solução}
     \begin{frame}
         \frametitle{Propostas de Testes}
 
@@ -238,8 +264,6 @@
           \end{figure}
     \end{frame}
 
-    \section{Resolução HLS}
-    \subsection{Programa em C}
     \begin{frame}[fragile]
         \frametitle{Algoritmo em C}
 
@@ -272,7 +296,6 @@
         % {./code/matrix_operations.cpp}
     \end{frame}
 
-    \subsection{Solução Básica com HLS}
     \begin{frame}
         \frametitle{Síntese da Solução Básica com HLS}
 
@@ -303,7 +326,6 @@
           \end{figure}
     \end{frame}
 
-    \subsection{Primeira Solução Otimizada com HLS}
     \begin{frame}
         \frametitle{Síntese da Primeira Solução Otimizada com HLS}
 
@@ -335,7 +357,6 @@
           \end{figure}
     \end{frame}
 
-    \subsection{Segunda Solução Otimizada com HLS}
     \begin{frame}
         \frametitle{Síntese da Segunda Solução Otimizada com HLS}
 
@@ -368,7 +389,6 @@
           \end{figure}
     \end{frame}
 
-    \section{Comparação das Soluções}
     \begin{frame}
         \frametitle{Comparação do PC-PO com HLS}
         \begin{columns}

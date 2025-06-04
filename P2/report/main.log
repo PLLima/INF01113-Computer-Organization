@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.27)  2 JUN 2025 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.27)  3 JUN 2025 21:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -888,12 +888,12 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./main.nav)
-<images/logos/UFRGS.png, id=63, 1204.5pt x 962.59625pt>
+<images/logos/UFRGS.png, id=15, 1204.5pt x 962.59625pt>
 File: images/logos/UFRGS.png Graphic file (type png)
 <use images/logos/UFRGS.png>
 Package pdftex.def Info: images/logos/UFRGS.png  used on input line 83.
 (pdftex.def)             Requested size: 68.45801pt x 54.69817pt.
-<images/logos/INF.png, id=65, 219.9417pt x 130.5678pt>
+<images/logos/INF.png, id=17, 219.9417pt x 130.5678pt>
 File: images/logos/INF.png Graphic file (type png)
 <use images/logos/INF.png>
 Package pdftex.def Info: images/logos/INF.png  used on input line 83.
@@ -903,52 +903,56 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc} <./images/logos/UFRGS.png> <./images/logos/INF.png>]
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 118.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 149.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 118.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 149.
  (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 118.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 149.
  (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 118.
+(Font)              <9> on input line 149.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 118.
+(Font)              <6> on input line 149.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 118.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 118.
+(Font)              <5> on input line 149.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 149.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 118.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 149.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 118.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 118.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <9> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 149.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 118.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 149.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 149.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 118.
+(Font)              <10.95> on input line 149.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 149.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 149.
  [2
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [3
+] [3
 
 ] [4
 
-] [5
-
 ]
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 160.
- [6
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 188.
+ [5
+
+] [6
 
 ] [7
 
@@ -956,60 +960,60 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
 
 ] [9
 
-] [10
-
-] [11
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [10
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 223.
+(Font)              <14.4> on input line 249.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 223.
+(Font)              <10> on input line 249.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 223.
+(Font)              <7> on input line 249.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 223.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 249.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 223.
- [12
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 249.
+ [11
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [12
 
 ] [13
 
 ] [14
 
-] [15
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [15
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb) [16
 
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [17
+] [17
 
 ] [18
 
-] [19
-
 ]
 LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 304.
- [20
+(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 327.
+ [19
 
-] [21
+] [20
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 321.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 343.
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 321.
- [22
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 343.
+ [21
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}] [23
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}] [22
+
+] [23
 
 ] [24
 
@@ -1029,8 +1033,6 @@ LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
 
 ] [32
 
-] [33
-
 ]
 \tf@nav=\write6
 \openout6 = `main.nav'.
@@ -1047,21 +1049,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 00AF35283B1D14B0C61DBED042E9EBDD;1973.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29283 strings out of 476089
- 572710 string characters out of 5793231
- 1942975 words of memory out of 5000000
- 50637 multiletter control sequences out of 15000+600000
- 619027 words of font info for 88 fonts, out of 8000000 for 9000
+ 29142 strings out of 476089
+ 569063 string characters out of 5793231
+ 1945975 words of memory out of 5000000
+ 50503 multiletter control sequences out of 15000+600000
+ 628281 words of font info for 95 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
- 101i,15n,117p,468b,742s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (33 pages, 436077 bytes).
+ 101i,15n,117p,468b,855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (32 pages, 445671 bytes).
 PDF statistics:
- 1114 PDF objects out of 1200 (max. 8388607)
- 982 compressed objects within 10 object streams
- 79 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 984 PDF objects out of 1000 (max. 8388607)
+ 879 compressed objects within 9 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 59 words of extra memory for PDF output out of 10000 (max. 10000000)
 

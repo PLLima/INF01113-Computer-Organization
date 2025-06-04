@@ -1,13 +1,1 @@
 \babel@toc {brazilian}{}\relax 
-\beamer@sectionintoc {1}{Enunciado do Problema}{2}{0}{1}
-\beamer@sectionintoc {2}{Resolução PC-PO}{4}{0}{2}
-\beamer@subsectionintoc {2}{1}{Fluxograma ASM}{4}{0}{2}
-\beamer@subsectionintoc {2}{2}{Parte Operativa}{6}{0}{2}
-\beamer@subsectionintoc {2}{3}{Parte de Controle}{8}{0}{2}
-\beamer@subsectionintoc {2}{4}{Validações da Solução}{10}{0}{2}
-\beamer@sectionintoc {3}{Resolução HLS}{16}{0}{3}
-\beamer@subsectionintoc {3}{1}{Programa em C}{16}{0}{3}
-\beamer@subsectionintoc {3}{2}{Solução Básica com HLS}{18}{0}{3}
-\beamer@subsectionintoc {3}{3}{Primeira Solução Otimizada com HLS}{22}{0}{3}
-\beamer@subsectionintoc {3}{4}{Segunda Solução Otimizada com HLS}{26}{0}{3}
-\beamer@sectionintoc {4}{Comparação das Soluções}{30}{0}{4}
