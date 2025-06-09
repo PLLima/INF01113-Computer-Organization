@@ -11,8 +11,15 @@
 \usepackage{tcolorbox}
 \usepackage{listings}
 \usepackage{adjustbox}
+\usepackage{tikz}
 
 \usepackage{caption}
+
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\usepackage{lipsum}
+
+\apptocmd{\frame}{}{\justifying}{}
 
 \setbeamerfont{title}{series=\bfseries}
 \setbeamerfont{subtitle}{series=\normalfont}
@@ -138,7 +145,7 @@
                 \begin{itemize}
                     \footnotesize
                     \item Tamanho da entrada: 1.200.000;
-                    \item Complexidade: $O(log(n))$ (vetor ordenado);
+                    \item Complexidade: $O(\log(n))$ (vetor ordenado);
                     \item Poucas instruções;
                     \item Bastante acesso à memória (depende da \textit{cache});
                     \item Depende da latência de acesso à memória.
@@ -151,11 +158,62 @@
     \begin{frame}
         \frametitle{Parâmetros de Organização}
 
-        \begin{figure}[h]
-        \centering
-        % \adjincludegraphics[height=6.8cm, trim={0 0 0 {0.5\height}}, clip]{./images/solutions/PC-PO_-_ASM.jpg}
-        % \caption{\label{img:asm-2} Fluxograma ASM – Parte 2}
-        \end{figure}
+        \begin{columns}
+            \begin{column}{0.3\textwidth}
+
+                \begin{center}
+                    \begin{tikzpicture}
+                        \node[circle, fill=blue!70, draw, minimum size=.75cm] (node1) {1};
+                    \end{tikzpicture}
+
+                    \Large
+                    \textbf{Tamanho da \textit{Cache} L1}
+                \end{center}
+
+                \justifying
+                \footnotesize
+                Representa a quantidade de dados mais próximos da \textit{CPU}. Isso pode afetar o desempenho
+                de programas que dependam de dados com localidade temporal e espacial, afetando o número de
+                \textit{cache misses}.
+
+            \end{column}
+
+            \begin{column}{0.3\textwidth}
+
+                \begin{center}
+                    \begin{tikzpicture}
+                        \node[circle, fill=blue!70, draw, minimum size=.75cm] (node1) {2};
+                    \end{tikzpicture}
+
+                    \Large
+                    \textbf{Associatividade da \textit{Cache} L1}
+                \end{center}
+
+                \justifying
+                \footnotesize
+                É o número de blocos de cada conjunto de memória \textit{cache}. Também deve afetar a questão
+                de programas com dados que apresentam localidade espacial, através de mais ou menos \textit{cache misses}.
+
+            \end{column}
+
+            \begin{column}{0.3\textwidth}
+
+                \begin{center}
+                    \begin{tikzpicture}
+                        \node[circle, fill=blue!70, draw, minimum size=.75cm] (node1) {3};
+                    \end{tikzpicture}
+
+                    \Large
+                    \textbf{Tamanho do \textit{Fetch Buffer}}
+                \end{center}
+
+                \justifying
+                \footnotesize
+                Um maior tamanho de \textit{fetch buffer} implica em mais instruções sendo processadas simultâneamente. Ou seja,
+                deve afetar algoritmos que apresentem maior paralelismo de instruções.
+
+            \end{column}
+        \end{columns}
 
     \end{frame}
 
