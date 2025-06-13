@@ -19,6 +19,8 @@
 \usepackage{etoolbox}
 \usepackage{lipsum}
 
+\usepackage{pgfplots}
+
 \apptocmd{\frame}{}{\justifying}{}
 
 \setbeamerfont{title}{series=\bfseries}
@@ -220,11 +222,15 @@
     \begin{frame}
         \frametitle{Configuração Fixa}
 
-        \begin{figure}[h]
-            \centering
-            % \adjincludegraphics[height=6.8cm, trim={0 {0.593\height} 0 0}, clip]{./images/solutions/PC-PO_-_PO.jpg}
-            % \caption{\label{img:po-1} Parte Operativa – Parte 1}
-        \end{figure}
+        \LARGE
+        Como configuração fixa inicial, utilizou-se os seguintes parâmetros:
+
+        \begin{itemize}
+            \item Tamanho da \textit{Cache} L1: 16kB;
+            \item Associatividade da \textit{Cache} L1: 8-\textit{way};
+            \item Tamanho do \textit{Fetch Buffer}: 64 \textit{bytes};
+        \end{itemize}
+        Os demais parâmetros de configuração do processador foram mantidos.
 
     \end{frame}
 
