@@ -12,14 +12,17 @@
 \usepackage{listings}
 \usepackage{adjustbox}
 \usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{
+    table/search path={./data},
+    compat=newest
+}
 
 \usepackage{caption}
 
 \usepackage{ragged2e}
 \usepackage{etoolbox}
 \usepackage{lipsum}
-
-\usepackage{pgfplots}
 
 \apptocmd{\frame}{}{\justifying}{}
 
@@ -102,7 +105,6 @@
 
                 \begin{itemize}
                     \footnotesize
-                    \item Tamanho da entrada: 1.400;
                     \item Complexidade: $O(n^2)$;
                     \item Algoritmo de ordenação simples;
                     \item Muitas comparações e trocas;
@@ -124,7 +126,6 @@
 
                 \begin{itemize}
                     \footnotesize
-                    \item Tamanho da entrada: 15.000;
                     \item Complexidade: $O(n\log(n))$;
                     \item Operações matemáticas complexas;
                     \item Várias instruções de ponto flutuante;
@@ -146,7 +147,6 @@
 
                 \begin{itemize}
                     \footnotesize
-                    \item Tamanho da entrada: 1.200.000;
                     \item Complexidade: $O(\log(n))$ (vetor ordenado);
                     \item Poucas instruções;
                     \item Bastante acesso à memória (depende da \textit{cache});
@@ -237,11 +237,135 @@
     \begin{frame}
         \frametitle{Resultados mudando o tamanho de \textit{cache} L1}
 
-        \begin{figure}[h]
-            \centering
-            % \adjincludegraphics[height=6.8cm, trim={0 {0.53\height} 0 0}, clip]{./images/solutions/PC-PO_-_FSM.jpg}
-            % \caption{\label{img:fsm-1} Parte de Controle – Parte 1}
-        \end{figure}
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \centering
+                \begin{tikzpicture}[scale=0.7]
+                    \pgfplotsset{
+                        every axis legend/.append style={ at={(0.5,0.35)}, anchor=center,legend columns = 1},
+                    }
+                    \begin{axis}[
+                        title={IPC},
+                        xlabel={Tamanho da \textit{Cache} L1 [kB]},
+                        ylabel={Instruções por Ciclo},
+                        xmin=1, xmax=17,
+                        ymin=0.5, ymax=0.95,
+                        ymajorgrids=true,
+                        xmajorgrids=true,
+                        grid style=dashed,
+                    ]
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=blue,
+                            mark=circle,
+                            x=size,
+                            y=bubblesort
+                        ]
+                        {CacheSize_IPC.csv};
+                        \addlegendentry{\textit{Bubble Sort}};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=red,
+                            mark=circle,
+                            x=size,
+                            y=fft
+                        ]
+                        {CacheSize_IPC.csv};
+                        \addlegendentry{FFT};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=green,
+                            mark=circle,
+                            x=size,
+                            y=binary-search
+                        ]
+                        {CacheSize_IPC.csv};
+                        \addlegendentry{\textit{Binary Search}};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=black,
+                            mark=circle,
+                            style=densely dashed,
+                            x=size,
+                            y expr={(\thisrow{bubblesort}+\thisrow{fft}+\thisrow{binary-search})/3}
+                        ]
+                        {CacheSize_IPC.csv};
+                        \addlegendentry{Média};
+                    \end{axis}
+                \end{tikzpicture}
+            \end{column}
+
+            \begin{column}{0.5\textwidth}
+                \centering
+                \begin{tikzpicture}[scale=0.7]
+                    \pgfplotsset{
+                        every axis legend/.append style={ at={(0.5,0.2)}, anchor=center,legend columns = 1},
+                    }
+                    \begin{axis}[
+                        title={Tempo de Execução},
+                        xlabel={Tamanho da \textit{Cache} L1 [kB]},
+                        ylabel={Tempo [ms]},
+                        xmin=1, xmax=17,
+                        ymin=10, ymax=13,
+                        ymajorgrids=true,
+                        xmajorgrids=true,
+                        grid style=dashed,
+                    ]
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=blue,
+                            mark=circle,
+                            x=size,
+                            y expr={\thisrow{bubblesort}*1000}
+                        ]
+                        {CacheSize_time.csv};
+                        \addlegendentry{\textit{Bubble Sort}};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=red,
+                            mark=circle,
+                            x=size,
+                            y expr={\thisrow{fft}*1000}
+                        ]
+                        {CacheSize_time.csv};
+                        \addlegendentry{FFT};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=green,
+                            mark=circle,
+                            x=size,
+                            y expr={\thisrow{binary-search}*1000}
+                        ]
+                        {CacheSize_time.csv};
+                        \addlegendentry{\textit{Binary Search}};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=black,
+                            mark=circle,
+                            style=densely dashed,
+                            x=size,
+                            y expr={1000*(\thisrow{bubblesort}+\thisrow{fft}+\thisrow{binary-search})/3}
+                        ]
+                        {CacheSize_time.csv};
+                        \addlegendentry{Média};
+                    \end{axis}
+                \end{tikzpicture}
+            \end{column}
+        \end{columns}
 
     \end{frame}
 
