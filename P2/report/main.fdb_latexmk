@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1749851498.11988 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" "main.pdf" "main" 1749851500.2224 0
+["pdflatex"] 1749941564.56792 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" "main.pdf" "main" 1749941570.18816 0
   "/etc/texmf/web2c/texmf.cnf" 1728302084.72637 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" 1749851497.90845 15086 e3d93d1214e8435ca93a375cc0c447f0 ""
+  "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" 1749941564.16735 15087 8c8b39e79375cf17e9431b874d1166a8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -310,11 +310,11 @@
   "data/CacheSize_time.csv" 1749850938.75564 150 8f27f5a26afa8e4d2c744d5fcc27c174 ""
   "images/logos/INF.png" 1745096873.59264 15010 1abd8f9e244e530d3a1ab0c922b4a613 ""
   "images/logos/UFRGS.png" 1745096873.62364 88725 6440c8a13158bb4b7d2155d90ff2ae99 ""
-  "main.aux" 1749851500.08744 1990 bd3245241465a264aa2bca0b9a56fbb4 "pdflatex"
-  "main.nav" 1749851500.08844 1202 a971439ba5eedf62b158aa4c3f07763d "pdflatex"
-  "main.out" 1749851499.00745 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1749851497.90845 15086 e3d93d1214e8435ca93a375cc0c447f0 ""
-  "main.vrb" 1749851500.04544 380 f7e2d9d1d469d703ca357d3dff9907a8 "pdflatex"
+  "main.aux" 1749941569.83473 1990 bd3245241465a264aa2bca0b9a56fbb4 "pdflatex"
+  "main.nav" 1749941569.83773 1202 a971439ba5eedf62b158aa4c3f07763d "pdflatex"
+  "main.out" 1749941567.07255 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1749941564.16735 15087 8c8b39e79375cf17e9431b874d1166a8 ""
+  "main.vrb" 1749941569.73173 380 f7e2d9d1d469d703ca357d3dff9907a8 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
