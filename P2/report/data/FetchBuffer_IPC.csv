@@ -1,4 +1,4 @@
-buffer-size,bubblesort,fft,binary-search
+buffer-size,bubblesort,fft,matrix-mult
 8,0.786517,0.820118,0.534608
 16,0.880024,0.903378,0.534003
 32,0.882303,0.906374,0.536515

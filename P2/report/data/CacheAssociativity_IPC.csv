@@ -1,4 +1,4 @@
-associativity,bubblesort,fft,binary-search
+associativity,bubblesort,fft,matrix-mult
 1,0.883817,0.909767,0.536469
 2,0.883839,0.909656,0.535770
 4,0.883852,0.909662,0.535884
