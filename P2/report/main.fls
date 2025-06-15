@@ -591,4 +591,5 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb

@@ -382,7 +382,7 @@
                 \begin{itemize}
                     \footnotesize
                     \justifying
-                    \item Todos os algoritmos foram beneficiados;
+                    \item Quase todos os algoritmos foram beneficiados ;
                     \item Curva acentuada na mult. de matrizes (alta localidade temporal e espacial);
                     \item FFT se beneficiou bastante também (boa localidade, porém menos prevísivel que a mult. de matrizes);
                     \item \textit{Bubble Sort} se beneficiou pouco (pouca localidade espacial);
@@ -404,8 +404,7 @@
                     \justifying
                     \item Diminuição de \textit{cache misses} (diminuição de tempo gasto com acesso à memória);
                     \item Comportamento similar ao de IPC;
-                    \item Todos os algoritmos apresentam pelo menos um pouco de localidade espacial (mult. de matrizes mostra temporal também);
-                    \item A complexidade assintótica da multiplicação de matrizes agrega para o decaimento rápido da sua curva;
+                    \item Quase todos os algoritmos apresentam pelo menos um pouco de localidade espacial (mult. de matrizes mostra temporal também);
                     \item A média dos tempos também segue um comportamento similar ao decrescimento da média do IPC.
                 \end{itemize}
             \end{column}
@@ -552,29 +551,40 @@
         \frametitle{Análise dos Resultados}
 
         \begin{columns}
-            \begin{column}{0.5\textwidth}
+            \begin{column}{0.45\textwidth}
                 \begin{center}
                     \large
                     \textbf{Análise do IPC:}
                 \end{center}
+
                 \begin{itemize}
-                    \item ;
-                    \item ;
+                    \scriptsize
+                    \justifying
+                    \item Quase todos os programas foram beneficiados;
+                    \item Mult. de matrizes apresenta altos saltos nos primeiros aumentos e estabiliza em um platô (sofre com conflitos de \textit{cache});
+                    \item FFT apresentou os mesmos resultados que a mult. de matrizes, porém um pouco menos acentuados (mesmas justificativas);
+                    \item Já o \textit{Bubble Sort} apresentou resultados mais sutis que a FFT, com uma curva mais plana (por conta da menor localidade do algoritmo);
+                    \item IPC médio entre as aplicações segue um crescimento aproximadamente logaritmico (mostrando um bom benefício do aumento do parâmetro).
                 \end{itemize}
             \end{column}
 
             \begin{column}{0.01\textwidth}
-                \rule{.1mm}{0.6\textheight}
+                \rule{.1mm}{0.875\textheight}
             \end{column}
 
-            \begin{column}{0.5\textwidth}
+            \begin{column}{0.45\textwidth}
                 \begin{center}
                     \large
                     \textbf{Análise do Tempo de Execução:}
                 \end{center}
+
                 \begin{itemize}
-                    \item ;
-                    \item ;
+                    \scriptsize
+                    \justifying
+                    \item Diminuição de \textit{cache misses} devido a conflitos;
+                    \item Comportamento similar ao de IPC;
+                    \item Há algumas leves variações de 2-\textit{way} para 8-\textit{way} na FFT que podem se relacionar com uma menor previsibilidade de acessos à memória em comparação à mult. de matrizes;
+                    \item A média dos tempos segue um comportamento similar ao decrescimento da média do IPC.
                 \end{itemize}
             \end{column}
         \end{columns}
@@ -722,29 +732,40 @@
         \frametitle{Análise dos Resultados}
 
         \begin{columns}
-            \begin{column}{0.5\textwidth}
+            \begin{column}{0.45\textwidth}
                 \begin{center}
                     \large
                     \textbf{Análise do IPC:}
                 \end{center}
+
                 \begin{itemize}
-                    \item ;
-                    \item ;
+                    \scriptsize
+                    \justifying
+                    \item Aumento de desempenho quase generalizado (excluindo o \textit{Bubble Sort});
+                    \item Mult. de matrizes apresenta altos saltos nos primeiros aumentos e estabiliza a partir de um certo ponto (o problema passa a estar relacionado com a \textit{cache});
+                    \item FFT apresentou os mesmos resultados que a mult. de matrizes, mas variação total menor (mesmas justificativas);
+                    \item Já o \textit{Bubble Sort} apresentou resultados mais sutis que a FFT, com uma curva mais estável (possui poucas instruções previsíveis e o \textit{pipeline} básico consegue dar conta);
+                    \item IPC médio entre as aplicações segue um crescimento suave que estabiliza (mostrando um bom benefício do aumento do parâmetro).
                 \end{itemize}
             \end{column}
 
             \begin{column}{0.01\textwidth}
-                \rule{.1mm}{0.6\textheight}
+                \rule{.1mm}{0.875\textheight}
             \end{column}
 
-            \begin{column}{0.5\textwidth}
+            \begin{column}{0.45\textwidth}
                 \begin{center}
                     \large
                     \textbf{Análise do Tempo de Execução:}
                 \end{center}
+
                 \begin{itemize}
-                    \item ;
-                    \item ;
+                    \scriptsize
+                    \justifying
+                    \item Benefício para programas com fluxo de controle linear (poucas ramificações);
+                    \item Comportamento bem parecido ao de IPC;
+                    \item A média dos tempos segue um comportamento similar ao decrescimento da média do IPC;
+                    \item Conclui-se que o comportamento em relação ao tempo de execução é proporcional ao inverso do comportamento do IPC.
                 \end{itemize}
             \end{column}
         \end{columns}
