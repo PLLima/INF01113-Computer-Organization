@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1749956407.66983 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" "main.pdf" "main" 1749956409.91612 0
+["pdflatex"] 1749956704.99757 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" "main.pdf" "main" 1749956707.52473 0
   "/etc/texmf/web2c/texmf.cnf" 1728302084.72637 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" 1749956407.4647 25654 da9c30f2c3f35323a91b1cc23c92cb01 ""
+  "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" 1749956704.78482 25993 e0a024f67301d456a242612f20f2f64c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -311,10 +311,10 @@
   "data/FetchBuffer_time.csv" 1749955454.05365 157 53b7f54ecf7dc1f4b3d3a9f2f6fd5275 ""
   "images/logos/INF.png" 1745096873.59264 15010 1abd8f9e244e530d3a1ab0c922b4a613 ""
   "images/logos/UFRGS.png" 1745096873.62364 88725 6440c8a13158bb4b7d2155d90ff2ae99 ""
-  "main.aux" 1749956409.7917 1861 c2231348032b734c5b38cd300846e5f3 "pdflatex"
-  "main.nav" 1749956409.7927 1109 07396102f9d82bf25877ba7d82798efb "pdflatex"
-  "main.out" 1749956408.4857 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1749956407.4647 25654 da9c30f2c3f35323a91b1cc23c92cb01 ""
+  "main.aux" 1749956707.40183 1861 c2231348032b734c5b38cd300846e5f3 "pdflatex"
+  "main.nav" 1749956707.40283 1109 07396102f9d82bf25877ba7d82798efb "pdflatex"
+  "main.out" 1749956705.99583 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1749956704.78482 25993 e0a024f67301d456a242612f20f2f64c ""
   (generated)
   "main.aux"
   "main.log"
