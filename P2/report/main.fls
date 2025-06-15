@@ -556,6 +556,8 @@ INPUT ./data/CacheSize_time.csv
 INPUT ./data/CacheSize_time.csv
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmsso12.tfm
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmss12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmssbx10.tfm
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 OUTPUT main.vrb
 INPUT ./main.vrb
@@ -583,5 +585,4 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb
-INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb

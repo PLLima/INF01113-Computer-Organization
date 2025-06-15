@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1749954389.77661 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" "main.pdf" "main" 1749954391.63325 0
+["pdflatex"] 1749954631.5827 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" "main.pdf" "main" 1749954633.48657 0
   "/etc/texmf/web2c/texmf.cnf" 1728302084.72637 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" 1749954389.57515 15039 7f3f68007d56b6f3148577dd8b53c68f ""
+  "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" 1749954631.38065 14879 7fa0d3d91e1f35c5cddfe375c3b4c9bd ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -296,7 +296,6 @@
   "/usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb" 1255129361 108953 1f7b36ba493bc956ac3c5eab8852ab76 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb" 1255129361 109054 a09a49a2236510c86a00b8d9e5610ab1 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb" 1255129361 107277 12bb06b4f1b5546fd2b623f476f51ecb ""
-  "/usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb" 1255129361 106860 a773e4958b589eadcc5b01a914624508 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb" 1255129361 106652 ff05a0e8c2fd1774314bcad2c26aa3e8 ""
   "/usr/share/texmf/tex/latex/lm/lmodern.sty" 1616454256 1608 b00724785a9e9c599e5181bb8729160b ""
   "/usr/share/texmf/tex/latex/lm/omllmm.fd" 1616454256 890 57f5adccd504fb5c98bdf99ed7e7f195 ""
@@ -310,11 +309,11 @@
   "data/CacheSize_time.csv" 1749952492.00228 124 b88c16ce767992f45c577a8d159c54f7 ""
   "images/logos/INF.png" 1745096873.59264 15010 1abd8f9e244e530d3a1ab0c922b4a613 ""
   "images/logos/UFRGS.png" 1745096873.62364 88725 6440c8a13158bb4b7d2155d90ff2ae99 ""
-  "main.aux" 1749954391.51693 1990 bd3245241465a264aa2bca0b9a56fbb4 "pdflatex"
-  "main.nav" 1749954391.51793 1202 a971439ba5eedf62b158aa4c3f07763d "pdflatex"
-  "main.out" 1749954390.59804 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1749954389.57515 15039 7f3f68007d56b6f3148577dd8b53c68f ""
-  "main.vrb" 1749954391.48194 380 f7e2d9d1d469d703ca357d3dff9907a8 "pdflatex"
+  "main.aux" 1749954633.36758 1990 bd3245241465a264aa2bca0b9a56fbb4 "pdflatex"
+  "main.nav" 1749954633.36858 1202 a971439ba5eedf62b158aa4c3f07763d "pdflatex"
+  "main.out" 1749954632.44561 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1749954631.38065 14879 7fa0d3d91e1f35c5cddfe375c3b4c9bd ""
+  "main.vrb" 1749954633.33358 380 f7e2d9d1d469d703ca357d3dff9907a8 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
