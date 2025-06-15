@@ -374,29 +374,39 @@
         \frametitle{Análise dos Resultados}
 
         \begin{columns}
-            \begin{column}{0.5\textwidth}
+            \begin{column}{0.45\textwidth}
                 \begin{center}
                     \large
                     \textbf{Análise do IPC:}
                 \end{center}
                 \begin{itemize}
-                    \item ;
-                    \item ;
+                    \footnotesize
+                    \justifying
+                    \item Todos os algoritmos foram beneficiados;
+                    \item Curva acentuada na mult. de matrizes (alta localidade temporal e espacial);
+                    \item FFT se beneficiou bastante também (boa localidade, porém menos prevísivel que a mult. de matrizes);
+                    \item \textit{Bubble Sort} se beneficiou pouco (pouca localidade espacial);
+                    \item IPC médio entre as aplicações segue um crescimento aproximadamente logaritmico (mostrando um bom benefício do aumento do parâmetro).
                 \end{itemize}
             \end{column}
 
             \begin{column}{0.01\textwidth}
-                \rule{.1mm}{0.6\textheight}
+                \rule{.1mm}{0.875\textheight}
             \end{column}
 
-            \begin{column}{0.5\textwidth}
+            \begin{column}{0.45\textwidth}
                 \begin{center}
                     \large
                     \textbf{Análise do Tempo de Execução:}
                 \end{center}
                 \begin{itemize}
-                    \item ;
-                    \item ;
+                    \footnotesize
+                    \justifying
+                    \item Diminuição de \textit{cache misses} (diminuição de tempo gasto com acesso à memória);
+                    \item Comportamento similar ao de IPC;
+                    \item Todos os algoritmos apresentam pelo menos um pouco de localidade espacial (mult. de matrizes mostra temporal também);
+                    \item A complexidade assintótica da multiplicação de matrizes agrega para o decaimento rápido da sua curva;
+                    \item A média dos tempos também segue um comportamento similar ao decrescimento da média do IPC.
                 \end{itemize}
             \end{column}
         \end{columns}
