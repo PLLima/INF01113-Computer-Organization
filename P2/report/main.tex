@@ -250,6 +250,7 @@
                         ylabel={Instruções por Ciclo},
                         xmin=1, xmax=17,
                         ymin=0.8, ymax=1.3,
+                        xtick={2,4,8,16},
                         ymajorgrids=true,
                         xmajorgrids=true,
                         grid style=dashed,
@@ -314,6 +315,7 @@
                         ylabel={Tempo [s]},
                         xmin=1, xmax=17,
                         ymin=0.7, ymax=1.4,
+                        xtick={2,4,8,16},
                         ymajorgrids=true,
                         xmajorgrids=true,
                         grid style=dashed,
@@ -366,6 +368,335 @@
                 \end{tikzpicture}
             \end{column}
         \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Análise dos Resultados}
+
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \begin{center}
+                    \large
+                    \textbf{Análise do IPC:}
+                \end{center}
+                \begin{itemize}
+                    \item ;
+                    \item ;
+                \end{itemize}
+            \end{column}
+
+            \begin{column}{0.5\textwidth}
+                \begin{center}
+                    \large
+                    \textbf{Análise do Tempo de Execução:}
+                \end{center}
+                \begin{itemize}
+                    \item ;
+                    \item ;
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Resultados mudando a associatividade da cache L1}
+
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \centering
+                \begin{tikzpicture}[scale=0.7]
+                    \pgfplotsset{
+                        every axis legend/.append style={ at={(0.7,-0.4)}, anchor=center,legend columns = 1},
+                    }
+                    \begin{axis}[
+                        title={IPC},
+                        xlabel={Associatividade da \textit{Cache} L1 [\#-\textit{way}]},
+                        ylabel={Instruções por Ciclo},
+                        xmin=0, xmax=17,
+                        ymin=0.8, ymax=1.3,
+                        xtick={1,2,4,8,16},
+                        ymajorgrids=true,
+                        xmajorgrids=true,
+                        grid style=dashed,
+                    ]
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=blue,
+                            mark=circle,
+                            x=associativity,
+                            y=bubblesort
+                        ]
+                        {CacheAssociativity_IPC.csv};
+                        \addlegendentry{\textit{Bubble Sort}};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=red,
+                            mark=circle,
+                            x=associativity,
+                            y=fft
+                        ]
+                        {CacheAssociativity_IPC.csv};
+                        \addlegendentry{FFT};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=green,
+                            mark=circle,
+                            x=associativity,
+                            y=matrix-mult
+                        ]
+                        {CacheAssociativity_IPC.csv};
+                        \addlegendentry{Mult. de Matrizes};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=black,
+                            mark=circle,
+                            style=densely dashed,
+                            x=associativity,
+                            y expr={(\thisrow{bubblesort}+\thisrow{fft}+\thisrow{matrix-mult})/3}
+                        ]
+                        {CacheAssociativity_IPC.csv};
+                        \addlegendentry{Média};
+                    \end{axis}
+                \end{tikzpicture}
+            \end{column}
+
+            \begin{column}{0.5\textwidth}
+                \centering
+                \begin{tikzpicture}[scale=0.7]
+                    \pgfplotsset{
+                        every axis legend/.append style={ at={(0.7,-0.4)}, anchor=center,legend columns = 1},
+                    }
+                    \begin{axis}[
+                        title={Tempo de Execução},
+                        xlabel={Associatividade da \textit{Cache} L1 [\#-\textit{way}]},
+                        ylabel={Tempo [s]},
+                        xmin=0, xmax=17,
+                        ymin=0.7, ymax=1.4,
+                        xtick={1,2,4,8,16},
+                        ymajorgrids=true,
+                        xmajorgrids=true,
+                        grid style=dashed,
+                    ]
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=blue,
+                            mark=circle,
+                            x=associativity,
+                            y expr={\thisrow{bubblesort}}
+                        ]
+                        {CacheAssociativity_time.csv};
+                        \addlegendentry{\textit{Bubble Sort}};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=red,
+                            mark=circle,
+                            x=associativity,
+                            y expr={\thisrow{fft}}
+                        ]
+                        {CacheAssociativity_time.csv};
+                        \addlegendentry{FFT};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=green,
+                            mark=circle,
+                            x=associativity,
+                            y expr={\thisrow{matrix-mult}}
+                        ]
+                        {CacheAssociativity_time.csv};
+                        \addlegendentry{Mult. de Matrizes};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=black,
+                            mark=circle,
+                            style=densely dashed,
+                            x=associativity,
+                            y expr={(\thisrow{bubblesort}+\thisrow{fft}+\thisrow{matrix-mult})/3}
+                        ]
+                        {CacheAssociativity_time.csv};
+                        \addlegendentry{Média};
+                    \end{axis}
+                \end{tikzpicture}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Análise dos Resultados}
+
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \begin{center}
+                    \large
+                    \textbf{Análise do IPC:}
+                \end{center}
+                \begin{itemize}
+                    \item ;
+                    \item ;
+                \end{itemize}
+            \end{column}
+
+            \begin{column}{0.5\textwidth}
+                \begin{center}
+                    \large
+                    \textbf{Análise do Tempo de Execução:}
+                \end{center}
+                \begin{itemize}
+                    \item ;
+                    \item ;
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Resultados mudando o tamanho do \textit{fetch buffer}}
+
+
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \centering
+                \begin{tikzpicture}[scale=0.7]
+                    \pgfplotsset{
+                        every axis legend/.append style={ at={(0.7,-0.4)}, anchor=center,legend columns = 1},
+                    }
+                    \begin{axis}[
+                        title={IPC},
+                        xlabel={Tamanho do \textit{Fetch Buffer} [\textit{bytes}]},
+                        ylabel={Instruções por Ciclo},
+                        xmin=1, xmax=72,
+                        ymin=0.8, ymax=1.3,
+                        xtick={8,16,32,64},
+                        ymajorgrids=true,
+                        xmajorgrids=true,
+                        grid style=dashed,
+                    ]
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=blue,
+                            mark=circle,
+                            x=buffer-size,
+                            y=bubblesort
+                        ]
+                        {FetchBuffer_IPC.csv};
+                        \addlegendentry{\textit{Bubble Sort}};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=red,
+                            mark=circle,
+                            x=buffer-size,
+                            y=fft
+                        ]
+                        {FetchBuffer_IPC.csv};
+                        \addlegendentry{FFT};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=green,
+                            mark=circle,
+                            x=buffer-size,
+                            y=matrix-mult
+                        ]
+                        {FetchBuffer_IPC.csv};
+                        \addlegendentry{Mult. de Matrizes};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=black,
+                            mark=circle,
+                            style=densely dashed,
+                            x=buffer-size,
+                            y expr={(\thisrow{bubblesort}+\thisrow{fft}+\thisrow{matrix-mult})/3}
+                        ]
+                        {FetchBuffer_IPC.csv};
+                        \addlegendentry{Média};
+                    \end{axis}
+                \end{tikzpicture}
+            \end{column}
+
+            \begin{column}{0.5\textwidth}
+                \centering
+                \begin{tikzpicture}[scale=0.7]
+                    \pgfplotsset{
+                        every axis legend/.append style={ at={(0.7,-0.4)}, anchor=center,legend columns = 1},
+                    }
+                    \begin{axis}[
+                        title={Tempo de Execução},
+                        xlabel={Tamanho do \textit{Fetch Buffer} [\textit{bytes}]},
+                        ylabel={Tempo [s]},
+                        xmin=1, xmax=72,
+                        ymin=0.7, ymax=1.4,
+                        xtick={8,16,32,64},
+                        ymajorgrids=true,
+                        xmajorgrids=true,
+                        grid style=dashed,
+                    ]
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=blue,
+                            mark=circle,
+                            x=buffer-size,
+                            y expr={\thisrow{bubblesort}}
+                        ]
+                        {FetchBuffer_time.csv};
+                        \addlegendentry{\textit{Bubble Sort}};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=red,
+                            mark=circle,
+                            x=buffer-size,
+                            y expr={\thisrow{fft}}
+                        ]
+                        {FetchBuffer_time.csv};
+                        \addlegendentry{FFT};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=green,
+                            mark=circle,
+                            x=buffer-size,
+                            y expr={\thisrow{matrix-mult}}
+                        ]
+                        {FetchBuffer_time.csv};
+                        \addlegendentry{Mult. de Matrizes};
+
+                        \addplot table[
+                            col sep=comma,
+                            row sep=newline,
+                            color=black,
+                            mark=circle,
+                            style=densely dashed,
+                            x=buffer-size,
+                            y expr={(\thisrow{bubblesort}+\thisrow{fft}+\thisrow{matrix-mult})/3}
+                        ]
+                        {FetchBuffer_time.csv};
+                        \addlegendentry{Média};
+                    \end{axis}
+                \end{tikzpicture}
+            \end{column}
+        \end{columns}
 
     \end{frame}
 
@@ -395,70 +726,5 @@
                 \end{itemize}
             \end{column}
         \end{columns}
-
     \end{frame}
-
-    \begin{frame}
-        \frametitle{Resultados mudando a associatividade da cache L1}
-
-        \begingroup
-            Como a saída $ doutr = [128, 15, 70, 16] $, 
-            no modo da memória \textit{read first}, então
-            foi validado que $ R_1 = \begin{bmatrix} 128 & 15 \\ 70 & 16 \end{bmatrix} $.
-        \endgroup
-
-        \begin{figure}[h]
-            \centering
-            % \adjincludegraphics[width=0.85\linewidth, trim={{0.4\height} {0.3\height} 0 0}, clip]{./images/solutions/PC-PO-Sim1.png}
-            % \caption{\label{img:pc-po-simulation-1} Forma de Onda Funcional com entradas $ A $, $ B $ e $ C $}
-          \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Análise dos Resultados}
-
-        \begingroup
-            Como a saída $ doutr = [121, 10, 50, 3] $, 
-            no modo da memória \textit{read first}, então
-            foi validado que $ R_2 = \begin{bmatrix} 121 & 10 \\ 50 & 3 \end{bmatrix} $.
-        \endgroup
-
-        \begin{figure}[h]
-            \centering
-            % \adjincludegraphics[width=0.85\linewidth, trim={{0.4\height} {0.3\height} 0 0}, clip]{./images/solutions/PC-PO-Sim2.png}
-            % \caption{\label{img:pc-po-simulation-2} Forma de Onda Funcional com entradas $ A $, $ B_{NULL} $ e $ C $}
-          \end{figure}
-    \end{frame}
-
-    \begin{frame}[fragile]
-        \frametitle{Resultados mudando o tamanho do \textit{fetch buffer}}
-
-
-
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Análise dos Resultados}
-
-        
-
-    \end{frame}
-
-
-    \begin{frame}[fragile]
-        \frametitle{Algoritmo em C}
-
-        % \lstinputlisting
-        % [caption= Implementação de \texttt{matrix\_operations.h},
-        % captionpos=b, 
-        % basicstyle=\tiny,
-        % numbers=left,
-        % columns=flexible,
-        % xleftmargin=26pt,
-        % frame=single,
-        % framexleftmargin=22pt,
-        % language=C++]
-        % {./code/matrix_operations.cpp}
-    \end{frame}
-
 \end{document}
