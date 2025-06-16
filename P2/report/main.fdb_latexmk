@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1750035584.10627 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" "main.pdf" "main" 1750035590.84223 0
+["pdflatex"] 1750036404.2702 "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" "main.pdf" "main" 1750036411.15169 0
   "/etc/texmf/web2c/texmf.cnf" 1728302084.72637 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/pllima0909/Documents/Git/INF01113-Computer-Organization/P2/report/main.tex" 1750028888.19647 29483 650f1e9cd57adfdd2a421a906d76c528 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -305,16 +305,16 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1728302368.98316 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1732746323 6832104 b6b496d54b05523112511435600aeee5 ""
   "data/CacheAssociativity_IPC.csv" 1750035425.27175 184 e8948fdcae470ef526f6d5c06a79e80d ""
-  "data/CacheAssociativity_time.csv" 1750035583.2544 157 22b4891056a576860b17cbd5b8d67bd2 ""
+  "data/CacheAssociativity_time.csv" 1750036395.00267 157 22b4891056a576860b17cbd5b8d67bd2 ""
   "data/CacheSize_IPC.csv" 1750018709.02004 151 252e92d98615ebfc6375497be77ddcf0 ""
-  "data/CacheSize_time.csv" 1750018781.08655 124 9f1a16b6f3f13417cf09e91189cec1af ""
+  "data/CacheSize_time.csv" 1750035610.87664 124 9f1a16b6f3f13417cf09e91189cec1af ""
   "data/FetchBuffer_IPC.csv" 1750035478.26808 155 ba8aaab65d9f8c8165f7957b366815ef ""
-  "data/FetchBuffer_time.csv" 1750017515.37252 133 d2038fd97a8654c6670de9fcceda84ee ""
+  "data/FetchBuffer_time.csv" 1750036403.60995 133 074d2d571509664d43f0749f42b277d1 ""
   "images/logos/INF.png" 1745096873.59264 15010 1abd8f9e244e530d3a1ab0c922b4a613 ""
   "images/logos/UFRGS.png" 1745096873.62364 88725 6440c8a13158bb4b7d2155d90ff2ae99 ""
-  "main.aux" 1750035590.47368 1861 c2231348032b734c5b38cd300846e5f3 "pdflatex"
-  "main.nav" 1750035590.47668 1109 07396102f9d82bf25877ba7d82798efb "pdflatex"
-  "main.out" 1750035586.56707 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.aux" 1750036410.78517 1861 c2231348032b734c5b38cd300846e5f3 "pdflatex"
+  "main.nav" 1750036410.78817 1109 07396102f9d82bf25877ba7d82798efb "pdflatex"
+  "main.out" 1750036406.83005 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1750028888.19647 29483 650f1e9cd57adfdd2a421a906d76c528 ""
   (generated)
   "main.aux"
